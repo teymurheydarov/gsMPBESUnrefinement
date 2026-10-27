@@ -1,0 +1,7 @@
+build/
+output/
+*.pvd
+*.vtp
+*.vtu
+*.log
+!runs/**/out.log

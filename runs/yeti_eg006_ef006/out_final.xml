@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This file was created by G+Smo 26.9.0-->
+<xml>
+ <Geometry type="THBSpline2" id="0">
+  <Basis type="THBSplineBasis2" manualLevels="false">
+   <Basis type="TensorBSplineBasis2">
+    <Basis type="BSplineBasis" index="0">
+     <KnotVector degree="2">0 0 0 1 1 1 </KnotVector>
+    </Basis>
+    <Basis type="BSplineBasis" index="1">
+     <KnotVector degree="2">0 0 0 1 1 1 </KnotVector>
+    </Basis>
+   </Basis>
+  </Basis>
+  <coefs geoDim="2">
+   0.6514850208333404 4.341988572912324 
+   0.4710820581396747 4.512011773600352 
+   0.2882713934345845 4.685861987669901 
+   0.898299070920237 4.611903361644282 
+   1.034265937060162 4.804981431532175 
+   1.05510342165752 5.025507111387779 
+   1.233830239379218 4.305536477761231 
+   1.41698687191952 4.485806361077828 
+   1.361383576371514 4.752575803339068 
+  </coefs>
+ </Geometry>
+ <Geometry type="THBSpline2" id="1">
+  <Basis type="THBSplineBasis2" manualLevels="false">
+   <Basis type="TensorBSplineBasis2">
+    <Basis type="BSplineBasis" index="0">
+     <KnotVector degree="2">0 0 0 1 1 1 </KnotVector>
+    </Basis>
+    <Basis type="BSplineBasis" index="1">
+     <KnotVector degree="2">0 0 0 1 1 1 </KnotVector>
+    </Basis>
+   </Basis>
+  </Basis>
+  <coefs geoDim="2">
+   1.233830239379244 4.305536477761261 
+   1.416986871919478 4.485806361077775 
+   1.361383576371533 4.752575803339082 
+   1.516196899274237 4.318924637157919 
+   1.605383772317099 4.483017242351286 
+   1.640080023473049 4.703757638326777 
+   1.730411065841979 4.116528980551019 
+   1.770200326635954 4.356677951311488 
+   1.921050204895083 4.59582628781606 
+  </coefs>
+ </Geometry>
+ <Geometry type="THBSpline2" id="2">
+  <Basis type="THBSplineBasis2" manualLevels="false">
+   <Basis type="TensorBSplineBasis2">
+    <Basis type="BSplineBasis" index="0">
+     <KnotVector degree="2">0 0 0 1 1 1 </KnotVector>
+    </Basis>
+    <Basis type="BSplineBasis" index="1">
+     <KnotVector degree="2">0 0 0 1 1 1 </KnotVector>
+    </Basis>
+   </Basis>
+  </Basis>
+  <coefs geoDim="2">
+   1.730411065841961 4.11652898055094 
+   1.770200326635975 4.356677951311609 
+   1.921050204895081 4.595826287815998 
+   2.007442684178878 4.261023616318985 
+   2.07846452042417 4.392004470858246 
+   2.153331167663343 4.517805672765123 
+   2.146155931490019 3.967972317808492 
+   2.3036562389278 4.159917582126053 
+   2.385604484892248 4.387986161461233 
+  </coefs>
+ </Geometry>
+ <Geometry type="THBSpline2" id="3">
+  <Basis type="THBSplineBasis2" manualLevels="false">
+   <Basis type="TensorBSplineBasis2">
+    <Basis type="BSplineBasis" index="0">
+     <KnotVector degree="2">0 0 0 1 1 1 </KnotVector>
+    </Basis>
+    <Basis type="BSplineBasis" index="1">
+     <KnotVector degree="2">0 0 0 1 1 1 </KnotVector>
+    </Basis>
+   </Basis>
+  </Basis>
+  <coefs geoDim="2">
+   2.146155931490052 3.967972317808529 
+   2.303656238927757 4.159917582125991 
+   2.38560448489227 4.387986161461259 
+   2.382152412860347 3.970517422921201 
+   2.488844664251697 4.110069841689684 
+   2.602217181248927 4.263974071614923 
+   2.485248948365385 3.74832583605177 
+   2.564110071879313 3.970394610223848 
+   2.692962392097354 4.167359758311735 
+  </coefs>
+ </Geometry>
+ <Geometry type="THBSpline2" id="4">
+  <Basis type="THBSplineBasis2" manualLevels="false">
+   <Basis type="TensorBSplineBasis2">
+    <Basis type="BSplineBasis" index="0">
+     <KnotVector degree="2">0 0 0 1 1 1 </KnotVector>
+    </Basis>
+    <Basis type="BSplineBasis" index="1">
+     <KnotVector degree="2">0 0 0 1 1 1 </KnotVector>
+    </Basis>
+   </Basis>
+  </Basis>
+  <coefs geoDim="2">
+   2.485248948365343 3.748325836051773 
+   2.564110071879386 3.970394610223855 
+   2.692962392097301 4.167359758311728 
+   2.741194956797426 3.855905244555965 
+   2.829821623706136 3.956166286157062 
+   2.936798983821526 4.026315768659845 
+   2.783799721579248 3.596578674563879 
+   2.958386639425054 3.631608286624607 
+   3.132291209646904 3.667544808521649 
+  </coefs>
+ </Geometry>
+ <Geometry type="THBSpline2" id="5">
+  <Basis type="THBSplineBasis2" manualLevels="false">
+   <Basis type="TensorBSplineBasis2">
+    <Basis type="BSplineBasis" index="0">
+     <KnotVector degree="2">0 0 0 1 1 1 </KnotVector>
+    </Basis>
+    <Basis type="BSplineBasis" index="1">
+     <KnotVector degree="2">0 0 0 1 1 1 </KnotVector>
+    </Basis>
+   </Basis>
+  </Basis>
+  <coefs geoDim="2">
+   0.7583397428389 3.61566004655863 
+   0.4600684545819184 4.009528903918446 
+   0.6514850208333429 4.34198857291239 
+   0.5485046448812408 3.530609569479856 
+   0.2206481177193815 3.939870202188106 
+   0.4710820581396746 4.512011773600259 
+   0.3075855525576326 3.512390751476252 
+   -0.03030969271951811 3.906817536853631 
+   0.288271393434585 4.685861987669933 
+  </coefs>
+ </Geometry>
+ <Geometry type="THBSpline2" id="6">
+  <Basis type="THBSplineBasis2" manualLevels="false">
+   <Basis type="TensorBSplineBasis2">
+    <Basis type="BSplineBasis" index="0">
+     <KnotVector degree="2">0 0 0 1 1 1 </KnotVector>
+    </Basis>
+    <Basis type="BSplineBasis" index="1">
+     <KnotVector degree="2">0 0 0 1 1 1 </KnotVector>
+    </Basis>
+   </Basis>
+  </Basis>
+  <coefs geoDim="2">
+   1.306311939829953 3.664428366357436 
+   1.490749656306408 3.954700380148255 
+   1.233830239379229 4.305536477761211 
+   1.492064711587927 3.60834730960274 
+   1.509995035921365 3.965052045215402 
+   1.516196899274262 4.31892463715798 
+   1.676306159304756 3.584327568172039 
+   1.520365842322349 3.862868413526048 
+   1.730411065841966 4.116528980550994 
+  </coefs>
+ </Geometry>
+ <Geometry type="THBSpline2" id="7">
+  <Basis type="THBSplineBasis2" manualLevels="false">
+   <Basis type="TensorBSplineBasis2">
+    <Basis type="BSplineBasis" index="0">
+     <KnotVector degree="2">0 0 0 1 1 1 </KnotVector>
+    </Basis>
+    <Basis type="BSplineBasis" index="1">
+     <KnotVector degree="2">0 0 0 1 1 1 </KnotVector>
+    </Basis>
+   </Basis>
+  </Basis>
+  <coefs geoDim="2">
+   2.024717631921631 3.489793703235637 
+   2.255708527979869 3.669305314442323 
+   2.14615593149 3.967972317808612 
+   2.191297902712162 3.397136703608971 
+   2.259772847399387 3.670390413128879 
+   2.38215241286043 3.970517422921074 
+   2.353436854686871 3.298771859741464 
+   2.262983644831782 3.568748478978822 
+   2.485248948365343 3.748325836051829 
+  </coefs>
+ </Geometry>
+ <Geometry type="THBSpline2" id="8">
+  <Basis type="THBSplineBasis2" manualLevels="false">
+   <Basis type="TensorBSplineBasis2">
+    <Basis type="BSplineBasis" index="0">
+     <KnotVector degree="2">0 0 0 1 1 1 </KnotVector>
+    </Basis>
+    <Basis type="BSplineBasis" index="1">
+     <KnotVector degree="2">0 0 0 1 1 1 </KnotVector>
+    </Basis>
+   </Basis>
+  </Basis>
+  <coefs geoDim="2">
+   2.62302223967895 3.224947851834272 
+   2.819284927414647 3.339549311304104 
+   2.783799721579221 3.596578674563874 
+   2.834436767864552 3.165028933148132 
+   2.970484965985302 3.327599756203512 
+   2.958386639425098 3.631608286624652 
+   3.048862353982648 3.104622813732717 
+   3.119984580213628 3.320541817277476 
+   3.132291209646891 3.667544808521617 
+  </coefs>
+ </Geometry>
+ <Geometry type="THBSpline2" id="9">
+  <Basis type="THBSplineBasis2" manualLevels="false">
+   <Basis type="TensorBSplineBasis2">
+    <Basis type="BSplineBasis" index="0">
+     <KnotVector degree="2">0 0 0 1 1 1 </KnotVector>
+    </Basis>
+    <Basis type="BSplineBasis" index="1">
+     <KnotVector degree="2">0 0 0 1 1 1 </KnotVector>
+    </Basis>
+   </Basis>
+  </Basis>
+  <coefs geoDim="2">
+   0.8229776351451102 3.141470682513153 
+   0.7005830329576721 3.347747926545307 
+   0.7583397428388896 3.615660046558594 
+   0.6081245608156847 3.098899604801165 
+   0.5175861164850664 3.295158161642926 
+   0.5485046448812524 3.530609569479893 
+   0.3673652944914789 3.066072642023691 
+   0.3002681603930902 3.286038473567947 
+   0.3075855525576284 3.512390751476242 
+  </coefs>
+ </Geometry>
+ <Geometry type="THBSpline2" id="10">
+  <Basis type="THBSplineBasis2" manualLevels="false">
+   <Basis type="TensorBSplineBasis2">
+    <Basis type="BSplineBasis" index="0">
+     <KnotVector degree="2">0 0 0 1 1 1 </KnotVector>
+    </Basis>
+    <Basis type="BSplineBasis" index="1">
+     <KnotVector degree="2">0 0 0 1 1 1 </KnotVector>
+    </Basis>
+   </Basis>
+  </Basis>
+  <coefs geoDim="2">
+   0.8229776351451037 3.141470682513171 
+   0.7005830329576765 3.347747926545281 
+   0.7583397428388907 3.61566004655861 
+   1.09439801211349 3.341878318366494 
+   1.067048747041683 3.34440380563819 
+   1.095920903297341 3.350615652240934 
+   1.354014071170519 3.270622637519932 
+   1.331367201359012 3.472630379474114 
+   1.306311939829942 3.664428366357502 
+  </coefs>
+ </Geometry>
+ <Geometry type="THBSpline2" id="11">
+  <Basis type="THBSplineBasis2" manualLevels="false">
+   <Basis type="TensorBSplineBasis2">
+    <Basis type="BSplineBasis" index="0">
+     <KnotVector degree="2">0 0 0 1 1 1 </KnotVector>
+    </Basis>
+    <Basis type="BSplineBasis" index="1">
+     <KnotVector degree="2">0 0 0 1 1 1 </KnotVector>
+    </Basis>
+   </Basis>
+  </Basis>
+  <coefs geoDim="2">
+   1.35401407117051 3.270622637519938 
+   1.331367201359031 3.472630379474105 
+   1.306311939829928 3.664428366357506 
+   1.50204012314867 3.271601680525417 
+   1.471093085608621 3.457449738921199 
+   1.492064711587962 3.608347309602624 
+   1.612221534629003 3.2473493584278 
+   1.599647897382722 3.432904353930991 
+   1.676306159304743 3.584327568172097 
+  </coefs>
+ </Geometry>
+ <Geometry type="THBSpline2" id="12">
+  <Basis type="THBSplineBasis2" manualLevels="false">
+   <Basis type="TensorBSplineBasis2">
+    <Basis type="BSplineBasis" index="0">
+     <KnotVector degree="2">0 0 0 1 1 1 </KnotVector>
+    </Basis>
+    <Basis type="BSplineBasis" index="1">
+     <KnotVector degree="2">0 0 0 1 1 1 </KnotVector>
+    </Basis>
+   </Basis>
+  </Basis>
+  <coefs geoDim="2">
+   1.612221534629029 3.247349358427822 
+   1.599647897382683 3.432904353930938 
+   1.676306159304759 3.584327568172128 
+   1.763982979231593 3.222558417177783 
+   1.780279778785965 3.282433359939298 
+   1.794773976096203 3.367420367664911 
+   1.965701432038688 3.172046003241538 
+   2.057310723190765 3.290517649969133 
+   2.024717631921654 3.489793703235638 
+  </coefs>
+ </Geometry>
+ <Geometry type="THBSpline2" id="13">
+  <Basis type="THBSplineBasis2" manualLevels="false">
+   <Basis type="TensorBSplineBasis2">
+    <Basis type="BSplineBasis" index="0">
+     <KnotVector degree="2">0 0 0 1 1 1 </KnotVector>
+    </Basis>
+    <Basis type="BSplineBasis" index="1">
+     <KnotVector degree="2">0 0 0 1 1 1 </KnotVector>
+    </Basis>
+   </Basis>
+  </Basis>
+  <coefs geoDim="2">
+   1.965701432038639 3.172046003241559 
+   2.057310723190859 3.290517649969089 
+   2.024717631921603 3.489793703235658 
+   2.110919342961035 3.139633867228617 
+   2.142816034416919 3.255717589156372 
+   2.191297902712216 3.397136703608929 
+   2.225349609676951 3.087358855159289 
+   2.226672108085344 3.195664734285801 
+   2.353436854686835 3.298771859741481 
+  </coefs>
+ </Geometry>
+ <Geometry type="THBSpline2" id="14">
+  <Basis type="THBSplineBasis2" manualLevels="false">
+   <Basis type="TensorBSplineBasis2">
+    <Basis type="BSplineBasis" index="0">
+     <KnotVector degree="2">0 0 0 1 1 1 </KnotVector>
+    </Basis>
+    <Basis type="BSplineBasis" index="1">
+     <KnotVector degree="2">0 0 0 1 1 1 </KnotVector>
+    </Basis>
+   </Basis>
+  </Basis>
+  <coefs geoDim="2">
+   2.225349609676981 3.087358855159201 
+   2.226672108085278 3.195664734285963 
+   2.353436854686879 3.298771859741393 
+   2.329430650536261 3.071202275197488 
+   2.356327009652404 3.087444810836184 
+   2.426081602022015 3.108505023759433 
+   2.524097068409007 2.895459549207605 
+   2.634873725250835 3.050323904907919 
+   2.623022239678971 3.224947851834283 
+  </coefs>
+ </Geometry>
+ <Geometry type="THBSpline2" id="15">
+  <Basis type="THBSplineBasis2" manualLevels="false">
+   <Basis type="TensorBSplineBasis2">
+    <Basis type="BSplineBasis" index="0">
+     <KnotVector degree="2">0 0 0 1 1 1 </KnotVector>
+    </Basis>
+    <Basis type="BSplineBasis" index="1">
+     <KnotVector degree="2">0 0 0 1 1 1 </KnotVector>
+    </Basis>
+   </Basis>
+  </Basis>
+  <coefs geoDim="2">
+   2.524097068409048 2.895459549207592 
+   2.634873725250762 3.050323904907954 
+   2.623022239679009 3.224947851834267 
+   2.790932911830587 2.833588102559517 
+   2.837874795165306 2.977602643889953 
+   2.834436767864444 3.165028933148108 
+   3.057554183175133 2.774634203562931 
+   3.042237061596174 2.915753191282513 
+   3.048862353982695 3.104622813732731 
+  </coefs>
+ </Geometry>
+ <Geometry type="THBSpline2" id="16">
+  <Basis type="THBSplineBasis2" manualLevels="false">
+   <Basis type="TensorBSplineBasis2">
+    <Basis type="BSplineBasis" index="0">
+     <KnotVector degree="2">0 0 0 1 1 1 </KnotVector>
+    </Basis>
+    <Basis type="BSplineBasis" index="1">
+     <KnotVector degree="2">0 0 0 1 1 1 </KnotVector>
+    </Basis>
+   </Basis>
+   <box level="1">
+    0 0 2 2 
+   </box>
+  </Basis>
+  <coefs geoDim="2">
+   0.8229776351451276 3.141470682513146 
+   0.7155510979803884 3.120185143657208 
+   0.4877449276535822 3.082486123412358 
+   0.3673652944914816 3.066072642023759 
+   0.5909705817743868 2.783242727920125 
+   0.5181410814275333 2.774106212174158 
+   0.3785420517738777 2.753536177358076 
+   0.3117724012781156 2.742114604425749 
+   1.157971696711334 2.18340830531867 
+   1.009736967792678 2.132447204113512 
+   0.7101686941353474 2.031682328876867 
+   0.5588352162157149 1.981880480658762 
+   1.485901481608337 1.962520154253222 
+   1.316096270276379 1.910571948866284 
+   0.9768214231053929 1.806548832712418 
+   0.8073517872664008 1.75447392194524 
+  </coefs>
+ </Geometry>
+ <Geometry type="THBSpline2" id="17">
+  <Basis type="THBSplineBasis2" manualLevels="false">
+   <Basis type="TensorBSplineBasis2">
+    <Basis type="BSplineBasis" index="0">
+     <KnotVector degree="2">0 0 0 1 1 1 </KnotVector>
+    </Basis>
+    <Basis type="BSplineBasis" index="1">
+     <KnotVector degree="2">0 0 0 1 1 1 </KnotVector>
+    </Basis>
+   </Basis>
+  </Basis>
+  <coefs geoDim="2">
+   1.48590148160833 1.962520154253168 
+   1.146291058944419 1.858623743479512 
+   0.8073517872663855 1.754473921945249 
+   1.222444814536725 1.236341616479966 
+   1.013573248463027 1.194593818868235 
+   0.8041669012926078 1.153046034040118 
+   1.418433909254059 0.819106429972973 
+   1.223929314862464 0.6721708301493218 
+   1.029493631171284 0.5252119625537005 
+  </coefs>
+ </Geometry>
+ <Geometry type="THBSpline2" id="18">
+  <Basis type="THBSplineBasis2" manualLevels="false">
+   <Basis type="TensorBSplineBasis2">
+    <Basis type="BSplineBasis" index="0">
+     <KnotVector degree="2">0 0 0 1 1 1 </KnotVector>
+    </Basis>
+    <Basis type="BSplineBasis" index="1">
+     <KnotVector degree="2">0 0 0 1 1 1 </KnotVector>
+    </Basis>
+   </Basis>
+  </Basis>
+  <coefs geoDim="2">
+   1.418433909254041 0.8191064299729754 
+   1.223929314862495 0.6721708301493171 
+   1.029493631171266 0.5252119625537013 
+   1.81943469426745 0.5901441754367612 
+   1.763448931447976 0.2868510598899359 
+   1.707408956651015 -0.01644667544970047 
+   2.258107258345095 0.8672064725443989 
+   2.492985137357664 0.6646690478842884 
+   2.727867887946412 0.4621611785150079 
+  </coefs>
+ </Geometry>
+ <Geometry type="THBSpline2" id="19">
+  <Basis type="THBSplineBasis2" manualLevels="false">
+   <Basis type="TensorBSplineBasis2">
+    <Basis type="BSplineBasis" index="0">
+     <KnotVector degree="2">0 0 0 1 1 1 </KnotVector>
+    </Basis>
+    <Basis type="BSplineBasis" index="1">
+     <KnotVector degree="2">0 0 0 1 1 1 </KnotVector>
+    </Basis>
+   </Basis>
+  </Basis>
+  <coefs geoDim="2">
+   2.258107258345071 0.8672064725443971 
+   2.492985137357707 0.664669047884294 
+   2.727867887946395 0.4621611785149997 
+   2.5600451562493 1.105270532531526 
+   2.853469669604356 1.090686331173843 
+   3.14690646458444 1.075850915042837 
+   2.656779391144111 2.010394378002222 
+   2.892161304702138 1.963971389702062 
+   3.127521631443606 1.917846466217535 
+  </coefs>
+ </Geometry>
+ <Geometry type="THBSpline2" id="20">
+  <Basis type="THBSplineBasis2" manualLevels="false">
+   <Basis type="TensorBSplineBasis2">
+    <Basis type="BSplineBasis" index="0">
+     <KnotVector degree="2">0 0 0 1 1 1 </KnotVector>
+    </Basis>
+    <Basis type="BSplineBasis" index="1">
+     <KnotVector degree="2">0 0 0 1 1 1 </KnotVector>
+    </Basis>
+   </Basis>
+  </Basis>
+  <coefs geoDim="2">
+   2.656779391144113 2.010394378002245 
+   2.892161304702131 1.963971389702018 
+   3.127521631443601 1.917846466217563 
+   2.713298116064809 2.664646578714979 
+   2.911031612242619 2.557836043795681 
+   3.108938627607793 2.448642818008528 
+   2.524097068408996 2.895459549207643 
+   2.790932911830673 2.833588102559433 
+   3.057554183175081 2.774634203562979 
+  </coefs>
+ </Geometry>
+ <MultiPatch parDim="2" id="21">
+  <patches type="id_range">0 20</patches>
+  <interfaces>0 3 5 2 1 0 1 0
+   0 4 1 3 0 1 1 0
+   1 1 6 2 0 1 0 1
+   1 4 2 3 0 1 1 0
+   2 4 3 3 0 1 1 0
+   3 1 7 2 0 1 0 1
+   3 4 4 3 0 1 1 0
+   4 4 8 2 1 0 1 1
+   5 1 9 2 0 1 0 1
+   6 1 11 2 0 1 0 1
+   7 1 13 2 0 1 0 1
+   8 1 15 2 0 1 0 1
+   9 1 16 3 1 0 1 1
+   9 3 10 3 0 1 1 1
+   10 4 11 3 0 1 1 0
+   11 4 12 3 0 1 1 0
+   12 4 13 3 0 1 1 0
+   13 4 14 3 0 1 1 0
+   14 4 15 3 0 1 1 0
+   15 1 20 4 1 0 0 1
+   16 4 17 3 0 1 1 0
+   17 4 18 3 0 1 1 0
+   18 4 19 3 0 1 1 0
+   19 4 20 3 0 1 1 0
+  </interfaces>
+  <boundary>0 1
+   0 2
+   1 2
+   2 1
+   2 2
+   3 2
+   4 1
+   4 2
+   5 3
+   5 4
+   6 3
+   6 4
+   7 3
+   7 4
+   8 3
+   8 4
+   9 4
+   10 1
+   10 2
+   11 1
+   12 1
+   12 2
+   13 1
+   14 1
+   14 2
+   15 4
+   16 1
+   16 2
+   17 1
+   17 2
+   18 1
+   18 2
+   19 1
+   19 2
+   20 1
+   20 2
+  </boundary>
+ </MultiPatch>
+</xml>
+
