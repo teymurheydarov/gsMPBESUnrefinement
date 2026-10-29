@@ -21,8 +21,8 @@ optimization stages are formulated with [CasADi](https://web.casadi.org).
 | `examples/unrefinement_example.cpp` | the command-line program used for all experiments |
 | `unittests/` | unit tests of the module (20 tests) |
 | `filedata/` | `two_patches_refined.xml`, the input of the unit tests (G+Smo adds this folder to its file search path) |
-| `data/geometries/` | the four input parameterizations of the paper |
-| `runs/<run>/` | the logs of the 22 runs of Section 7 (see below) |
+| `data/geometries/` | the five input parameterizations of the paper |
+| `runs/<run>/` | the logs of the 25 runs of Section 7 (see below) |
 | `run_all.ps1` | reruns all experiments and compares the results with `runs/` (Windows) |
 
 ## Requirements
@@ -74,7 +74,7 @@ powershell -ExecutionPolicy Bypass -File .\run_all.ps1 `
 `-ExecutionPolicy Bypass` applies to this call only; Windows blocks `.ps1`
 scripts by default. The script writes every run to `output/<run>/` and prints
 the final number of MPBES functions next to the number in `runs/<run>/out.log`.
-`-Only run1,run2` selects runs. The whole set takes a few minutes.
+`-Only run1,run2` selects runs. The whole set takes about 40 minutes.
 
 On other systems, every run can be started with the command line in the first
 line of `runs/<run>/cmd_output.txt` (paths relative to the module folder).
@@ -98,16 +98,27 @@ the present code gives identical `out.log` files (every candidate, every
 decision, every printed error) and final control points that agree to
 1.5e-11; only the times differ.
 
+The fits sample the Gauss points of the elements of the candidate's
+hierarchical mesh (2 p + 2 per direction and element, every point with
+weight 1), as the code of the single-patch algorithm (Heydarov, Buffa,
+Jüttler, *An Unrefinement Algorithm for Planar THB-spline Parameterizations*)
+does; conditions
+(C2) and (C3) are checked on a uniform grid. The first version of this
+repository (commit `78e2643`) fitted on the uniform grid as well; that
+sampling remains available with `-p grid`, and the logs of that version are
+in the history.
+
 | Run | Input | Paper | MPBES functions |
 |---|---|---|---|
 | `yeti_eg001_ef001`, `yeti_eg003_ef003`, `yeti_eg006_ef006` | Yeti | Table 2, row 1; Figure 2 | 239, 157, 122 |
 | `yeti_nof_ef010`, `yeti_nof_ef030`, `yeti_nof_ef060` | Yeti | Table 2, row 2 | 239, 157, 122 |
 | `yeti_F_ef010`, `yeti_F_ef030`, `yeti_F_ef060` | Yeti | Table 2, row 3; Figure 3 | 171, 128, 117 |
-| `rotor_eg0001_ef0001`, `rotor_nog_ef0001` | rotor | Section 7.1; Figure 4 | 466, 251 |
-| `mask_folded_ls_only`, `mask_folded_lo_only`, `mask_folded_nlo_full` | mask | Table 3; Figure 5 | 1089, 208, 130 |
-| `joystick_grendas`, `joystick_lex` | joystick | Table 4; Figure 6 | 464, 472 |
-| `joystick_global`, `joystick_lambda0`, `joystick_lambda1` | joystick | Section 7.2.3 | 464, 464, 464 |
-| `rotor_global`, `rotor_lambda0`, `rotor_lambda2` | rotor | Table 5; Figures 7, 8 | 168, 168, 168 |
+| `rotor_eg0001_ef0001`, `rotor_nog_ef0001` | rotor | Section 7.1; Figure 4 | 476, 242 |
+| `mask_folded_ls_only`, `mask_folded_lo_only`, `mask_folded_nlo_full` | mask | Table 3; Figure 5 | 1089, 1089, 175 |
+| `triangle_ls_only`, `triangle_lo_only`, `triangle_nlo_full` | triangle | Table 3; Figure 6 | 3169, 581, 581 |
+| `joystick_grendas`, `joystick_lex` | joystick | Table 4; Figure 7 | 512, 512 |
+| `joystick_global`, `joystick_lambda0`, `joystick_lambda1` | joystick | Section 7.2.3 | 512, 503, 503 |
+| `rotor_global`, `rotor_lambda0`, `rotor_lambda2` | rotor | Table 5; Figures 8, 9 | 168, 168, 168 |
 
 Notes on the settings:
 
@@ -115,12 +126,13 @@ Notes on the settings:
   `yeti_nof_*` and `yeti_F_*` use `-g 1.0`, which never binds on the Yeti
   (the largest global error of a regular candidate in these runs is 0.086).
 - The mask input is itself not regular (the log reports 6 cells not certified
-  for the initial parameterization), so with LS alone no coarsening is
-  accepted.
-- The run time of `mask_folded_lo_only` exceeds that of
-  `mask_folded_nlo_full`: without the non-linear stage most candidates are
-  rejected (112 of 216, against 16 of 51), and every rejection leads to a
-  further candidate.
+  for the initial parameterization), so with LS alone, and also with LS+LO, no
+  coarsening is accepted: every candidate keeps folded cells after both stages.
+- The triangle (`triangle_wavy_L5.xml`) is a generated input: three bilinear
+  patches with a wavy boundary, 3169 MPBES functions over five levels, with two
+  folded cells in the initial parameterization. With LS alone no coarsening is
+  accepted; the linear stage removes the folds, and the non-linear stage adds
+  nothing.
 
 The times in the logs are those of single sequential runs on a Windows 11
 laptop on mains power; they depend on the machine and its power state. The
@@ -138,7 +150,8 @@ final numbers of MPBES functions do not.
 | `--interfaces` | measure (C3) on the interfaces as well | off |
 | `-s` | cell selection `grendas` or `lex` | grendas |
 | `-l` | locality parameter lambda of the fitting subdomain; -1 is global fitting | -1 |
-| `-x` | factor f of the q_p = max(5, ceil(f sqrt(n_p))) sample points per direction | 1 |
+| `-x` | factor f of the q_p = max(5, ceil(f sqrt(n_p))) points per direction of the grid of (C2) | 1 |
+| `-p` | sample points of the fit: `gauss` (Gauss points of the elements) or `grid` (the q_p x q_p grid) | gauss |
 | `-t` | stages: 1 = LS, 2 = LS+LO, 3 = LS+LO+NLO | 3 |
 | `-o`, `--noplot` | output prefix; no Paraview output | |
 

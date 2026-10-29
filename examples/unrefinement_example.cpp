@@ -59,9 +59,9 @@ int main(int argc, char *argv[])
 {
     std::string fn = "mask_L3_PatchOnly689_noR.xml";
     real_t epsG = 1e6, epsF = 1e6, delta = 0.2, sampleFactor = 1;
-    std::string feature, selection = "grendas", solver = "gn", out = "unrefined", logName, samples = "grid";
+    std::string feature, selection = "grendas", solver = "gn", out = "unrefined", logName, samples = "gauss";
     index_t lambda = -1, stages = 3, verbosity = 1, maxIter = 10, gaussNodes = 0, quadNodes = 2;
-    bool interfaces = false, noplot = false, freezeBoundary = false, unitWeights = false;
+    bool interfaces = false, noplot = false, freezeBoundary = false, quadWeights = false;
 
     gsCmdLine cmd("Unrefinement of a planar multipatch THB-spline parameterisation in the MPBES basis "
                   "(Algorithm 1 of Heydarov, Buffa, Juettler), with the optimisation stages in CasADi.");
@@ -75,11 +75,11 @@ int main(int argc, char *argv[])
     cmd.addReal  ("d", "delta",     "delta of the Grendas selection", delta);
     cmd.addInt   ("l", "lambda",    "Locality parameter of the fitting subdomain (-1: global fitting)", lambda);
     cmd.addReal  ("x", "sample_factor", "f in the q_p = max(5, ceil(f sqrt(n_p))) points per direction of the fit and of (C2)", sampleFactor);
-    cmd.addString("p", "samples",   "Sample points of the fit: grid (the uniform grid of the paper), gauss (Gauss points of the "
-                                    "elements of the candidate's hierarchical mesh, with their weights) or lobatto (the same with "
-                                    "the Gauss-Lobatto rule, which samples the element ends); (C2) stays on the grid", samples);
-    cmd.addInt   ("n", "gauss_nodes", "Gauss or Gauss-Lobatto nodes per direction and element of the fit (0: degree + 1)", gaussNodes);
-    cmd.addSwitch("unit_weights",   "gauss/lobatto: merge coincident points and give every point weight 1, as the grid", unitWeights);
+    cmd.addString("p", "samples",   "Sample points of the fit: gauss (Gauss points of the elements of the candidate's hierarchical "
+                                    "mesh, as the HBJ code), grid (the uniform grid of the first version of the paper) or lobatto "
+                                    "(the Gauss-Lobatto rule, which samples the element ends); (C2) stays on the grid", samples);
+    cmd.addInt   ("n", "gauss_nodes", "Gauss or Gauss-Lobatto nodes per direction and element of the fit (0: 2 degree + 2, as the HBJ code)", gaussNodes);
+    cmd.addSwitch("quadrature_weights", "gauss/lobatto: weight the points by the quadrature weights instead of weight 1 per point", quadWeights);
     cmd.addInt   ("q", "quad_nodes", "Gauss nodes per direction and element for the functionals of the optimisation stages", quadNodes);
     cmd.addInt   ("t", "stages",    "Projection stages: 1 LS, 2 LS+LO, 3 LS+LO+NLO", stages);
     cmd.addString("S", "solver",    "Optimiser of the stages: gn (Gauss-Newton) or ipopt", solver);
@@ -111,7 +111,7 @@ int main(int argc, char *argv[])
     opt.samples = (samples == "gauss")   ? gsMPBESUnrefinement<>::GaussPoints
                 : (samples == "lobatto") ? gsMPBESUnrefinement<>::GaussLobattoPoints : gsMPBESUnrefinement<>::UniformGrid;
     opt.gaussNodes = gaussNodes;
-    opt.unitWeights = unitWeights;
+    opt.unitWeights = !quadWeights;
     opt.projection.quadratureNodes = quadNodes;
     opt.stages = stages;
     opt.projection.solver = solver;

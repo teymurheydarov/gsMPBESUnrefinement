@@ -46,6 +46,9 @@ $Runs = [ordered]@{
     "rotor_lambda2"        = @('rotorRE.xml', '-t 3 --noplot -g 0.03 -e 0.03 -x 2 -l 2')
     "rotor_eg0001_ef0001"  = @('rotorRE.xml', '-t 3 --noplot -g 0.001 -e 0.001 -x 2')
     "rotor_nog_ef0001"     = @('rotorRE.xml', '-t 3 --noplot -e 0.001 -x 2')
+    "triangle_ls_only"     = @('triangle_wavy_L5.xml', '-t 1 --noplot -g 0.01 -e 0.01')
+    "triangle_lo_only"     = @('triangle_wavy_L5.xml', '-t 2 --noplot -g 0.01 -e 0.01')
+    "triangle_nlo_full"    = @('triangle_wavy_L5.xml', '-t 3 --noplot -g 0.01 -e 0.01')
 }
 
 function Count([string]$log) {

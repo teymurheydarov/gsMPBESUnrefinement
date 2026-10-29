@@ -405,8 +405,8 @@ void gsMPBESUnrefinement<T>::gaussSamples(const gsMPBES<T> & basis,
         if (!domain.empty() && domain[p].empty()) continue;
         const gsTHBSplineBasis<2,T> & thb = basis.thbBasis(static_cast<index_t>(p));
         gsVector<index_t> numNodes(2);
-        numNodes[0] = (m_opt.gaussNodes > 0) ? m_opt.gaussNodes : thb.degree(0) + 1;
-        numNodes[1] = (m_opt.gaussNodes > 0) ? m_opt.gaussNodes : thb.degree(1) + 1;
+        numNodes[0] = (m_opt.gaussNodes > 0) ? m_opt.gaussNodes : 2 * thb.degree(0) + 2;
+        numNodes[1] = (m_opt.gaussNodes > 0) ? m_opt.gaussNodes : 2 * thb.degree(1) + 2;
         // Gauss-Lobatto: the points on an edge shared by two elements enter twice, each
         // with the weight of its element, which is the composite rule
         typename gsQuadRule<T>::uPtr rule;

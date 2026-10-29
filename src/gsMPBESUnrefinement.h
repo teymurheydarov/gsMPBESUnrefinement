@@ -80,7 +80,7 @@ public:
     enum Samples
     {
         UniformGrid = 0,   ///< the q_p x q_p grid of the paper (and the covering grid of a local fit)
-        GaussPoints = 1,   ///< Gauss points of the elements of the hierarchical mesh of the candidate, with their weights
+        GaussPoints = 1,   ///< Gauss points of the elements of the hierarchical mesh of the candidate (the default, as the HBJ code)
         GaussLobattoPoints = 2 ///< as GaussPoints with the Gauss-Lobatto rule: the element ends, so the patch sides, are sampled
     };
 
@@ -95,9 +95,9 @@ public:
         int lambda = -1;                   ///< locality parameter of the fitting subdomain, -1: global fitting
         int stages = 3;                    ///< 1: least squares only, 2: with the linear, 3: with the non-linear stage
         T sampleFactor = 1;                ///< f in q_p = max(5, ceil(f sqrt(n_p))) points per direction and patch
-        Samples samples = UniformGrid;     ///< sample points of the fit; (C2) stays on the uniform grid
-        int gaussNodes = 0;                ///< nodes per direction and element for GaussPoints and GaussLobattoPoints, 0: degree + 1
-        bool unitWeights = false;          ///< GaussPoints/GaussLobattoPoints: coincident points merged, every point weight 1 (as the grid)
+        Samples samples = GaussPoints;     ///< sample points of the fit; (C2) stays on the uniform grid
+        int gaussNodes = 0;                ///< nodes per direction and element for GaussPoints and GaussLobattoPoints, 0: 2 degree + 2 (gsGaussRule(basis, 2, 2) of the HBJ code)
+        bool unitWeights = true;           ///< GaussPoints/GaussLobattoPoints: coincident points merged, every point weight 1 (as the HBJ code and the grid); false: the quadrature weights
         index_t featurePoints = 10;        ///< points per side of the feature set
         int certificateDepth = 8;          ///< bisection depth of the Bernstein certificate
         typename gsMPBESProjection<T>::Options projection;
