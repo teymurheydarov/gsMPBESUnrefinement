@@ -112,7 +112,7 @@ in the history.
 |---|---|---|---|
 | `yeti_eg001_ef001`, `yeti_eg003_ef003`, `yeti_eg006_ef006` | Yeti | Table 2, row 1; Figure 2 | 239, 157, 122 |
 | `yeti_nof_ef010`, `yeti_nof_ef030`, `yeti_nof_ef060` | Yeti | Table 2, row 2 | 239, 157, 122 |
-| `yeti_F_ef010`, `yeti_F_ef030`, `yeti_F_ef060` | Yeti | Table 2, row 3; Figure 3 | 171, 128, 117 |
+| `yeti_F_ef010`, `yeti_F_ef030`, `yeti_F_ef060` | Yeti | Table 2, row 3; Figure 3 | 178, 128, 117 |
 | `rotor_eg0001_ef0001`, `rotor_nog_ef0001` | rotor | Section 7.1; Figure 4 | 476, 242 |
 | `mask_folded_ls_only`, `mask_folded_lo_only`, `mask_folded_nlo_full` | mask | Table 3; Figure 5 | 1089, 1089, 175 |
 | `triangle_ls_only`, `triangle_lo_only`, `triangle_nlo_full` | triangle | Table 3; Figure 6 | 3169, 581, 581 |
@@ -124,7 +124,7 @@ Notes on the settings:
 
 - An unconstrained tolerance is the program's default `1e6`. The runs
   `yeti_nof_*` and `yeti_F_*` use `-g 1.0`, which never binds on the Yeti
-  (the largest global error of a regular candidate in these runs is 0.086).
+  (the largest global error of a regular candidate in these runs is 0.079).
 - The mask input is itself not regular (the log reports 6 cells not certified
   for the initial parameterization), so with LS alone, and also with LS+LO, no
   coarsening is accepted: every candidate keeps folded cells after both stages.
