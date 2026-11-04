@@ -119,6 +119,7 @@ public:
         T globalError = 0;          ///< e_global
         T featureError = 0;         ///< e_feature
         index_t notCertified = -1;  ///< n_-, -1 if the certificate was not computed
+        index_t cells = 0;          ///< cells of the hierarchical mesh of all patches (set with the certificate)
         bool certified = false;
         bool valid = false;         ///< (C1), (C2) and (C3) hold
     };

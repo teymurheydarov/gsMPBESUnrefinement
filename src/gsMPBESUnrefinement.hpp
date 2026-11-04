@@ -292,6 +292,7 @@ gsMPBESUnrefinement<T>::check(const gsMPBES<T> & basis, const gsMatrix<T> & coef
         typename gsBernsteinCertificate<T>::Result r = cert.certify(basis, coefs, basis.thbBases());
         ch.certified = r.certified;
         ch.notCertified = r.notCertified;
+        ch.cells = r.cells;
     }
     ch.valid = accurate && ch.certified;
     return ch;
@@ -567,7 +568,6 @@ bool gsMPBESUnrefinement<T>::project(const gsMPBES<T> & candidate, gsMatrix<T> &
     fittingSetup(candidate, group, newFunctions, proj, numFree);
     rec.secondsAssembly += clock.stop();
     rec.numFree = numFree;
-    const size_t nP = m_p0.nPatches();
     auto timedCheck = [&](const gsMatrix<T> & c) -> Check
     {
         gsStopwatch w;
@@ -577,9 +577,8 @@ bool gsMPBESUnrefinement<T>::project(const gsMPBES<T> & candidate, gsMatrix<T> &
     };
     auto rho = [&](const Check & ch) -> T
     {
-        // rho = 100 n_- / n_J with n_J = nP m^2 the points of a uniform m x m regularity grid per patch
-        const index_t m = math::max(index_t(20), static_cast<index_t>(math::ceil(2 * math::sqrt(T(candidate.size()) / T(nP)))));
-        return T(100) * T(ch.notCertified) / T(nP * m * m);
+        // rho = 100 n_- / n_c, the percentage of the cells of the hierarchical meshes on which (C1) fails
+        return ch.cells > 0 ? T(100) * T(ch.notCertified) / T(ch.cells) : T(0);
     };
     std::ostringstream detail;
 

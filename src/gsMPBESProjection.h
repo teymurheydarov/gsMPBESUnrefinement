@@ -187,7 +187,7 @@ public:
 
        \param globalError  e_global of the preceding candidate
        \param featureError e_feature of the preceding candidate
-       \param rho          100 n_- / n_J
+       \param rho          100 n_- / n_c (n_c: cells of the hierarchical meshes)
        \param nMinus       n_-, the number of cells not certified
        \param b            the stage constant (bLinear or bNonlinear)
        \param linear       the linear stage uses omega_u and omega_l only
