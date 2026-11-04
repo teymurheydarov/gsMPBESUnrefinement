@@ -21,9 +21,9 @@ optimization stages are formulated with [CasADi](https://web.casadi.org).
 | `examples/unrefinement_example.cpp` | the command-line program used for all experiments |
 | `unittests/` | unit tests of the module (20 tests) |
 | `filedata/` | `two_patches_refined.xml`, the input of the unit tests (G+Smo adds this folder to its file search path) |
-| `data/geometries/` | the five input parameterizations of the paper |
-| `runs/<run>/` | the logs of the 25 runs of Section 7 (see below) |
-| `run_all.ps1` | reruns all experiments and compares the results with `runs/` (Windows) |
+| `data/geometries/` | the five input parameterizations of the paper and two earlier inputs kept for reference |
+| `runs/<run>/` | the logs of the 28 runs of Section 7 and of 6 reference runs on the earlier inputs (see below) |
+| `run_all.ps1` | reruns the 28 runs of the paper and compares the results with `runs/` (Windows) |
 
 ## Requirements
 
@@ -74,10 +74,12 @@ powershell -ExecutionPolicy Bypass -File .\run_all.ps1 `
 `-ExecutionPolicy Bypass` applies to this call only; Windows blocks `.ps1`
 scripts by default. The script writes every run to `output/<run>/` and prints
 the final number of MPBES functions next to the number in `runs/<run>/out.log`.
-`-Only run1,run2` selects runs. The whole set takes about 40 minutes.
+`-Only run1,run2` selects runs. The times in the logs of the 28 runs add up to
+about 90 minutes.
 
-On other systems, every run can be started with the command line in the first
-line of `runs/<run>/cmd_output.txt` (paths relative to the module folder).
+On other systems, and for the 6 reference runs, which the script does not
+contain, every run can be started with the command line in the first line of
+`runs/<run>/cmd_output.txt` (paths relative to the module folder).
 
 ## The runs
 
@@ -97,6 +99,15 @@ algorithm does not use. Neither changes a result: rerunning the earlier and
 the present code gives identical `out.log` files (every candidate, every
 decision, every printed error) and final control points that agree to
 1.5e-11; only the times differ.
+
+Commit `9bd6a8a` changed the quantity rho of the adaptive weights of the
+optimization stages from 100 n_- / n_J (n_J the points of a uniform
+regularity grid) to 100 n_- / n_c (n_c the cells of the hierarchical meshes
+of all patches), as in the paper. The runs that reach the linear or
+non-linear stage (`mask_*`, `triangle_*`) were computed with the new rho;
+the logs of the earlier rho are in the history. The other runs are decided
+by the least-squares stage alone, where rho is not computed; rerunning them
+with the present code gives the same candidates, decisions and errors.
 
 The fits sample the Gauss points of the elements of the candidate's
 hierarchical mesh (2 p + 2 per direction and element, every point with
@@ -169,6 +180,16 @@ final numbers of MPBES functions do not.
 | `-p` | sample points of the fit: `gauss` (Gauss points of the elements) or `grid` (the q_p x q_p grid) | gauss |
 | `-t` | stages: 1 = LS, 2 = LS+LO, 3 = LS+LO+NLO | 3 |
 | `-o`, `--noplot` | output prefix; no Paraview output | |
+
+Further options, not used in the runs (their defaults are the values of the paper):
+
+| Option | Meaning | Default |
+|---|---|---|
+| `--b_linear`, `--b_nonlinear` | constant b of the adaptive weights of the linear and the non-linear stage | 2e-4, 2e-3 |
+| `--beta_cap` | cap of n_-/10 in the factor beta = 1.35 (1 + min(cap, n_-/10)) of the weights | 10 |
+| `--weight_floor` | floor of every weight as a fraction of beta b | 0.25 |
+| `--scale_uniformity`, `--scale_length`, `--scale_orthogonality`, `--scale_skewness`, `--scale_eccentricity` | non-linear stage: factor on the weight of the functional after the weight rule (0 switches it off) | 1 |
+| `--dump_first <file>` | writes the cells and the fitting domain of the first candidate (Figure 8) | |
 
 ## License
 
