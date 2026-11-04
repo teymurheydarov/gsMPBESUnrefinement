@@ -57,7 +57,7 @@ namespace
 
 int main(int argc, char *argv[])
 {
-    std::string fn = "mask_L3_PatchOnly689_noR.xml";
+    std::string fn = "mask_bands_L3.xml";
     real_t epsG = 1e6, epsF = 1e6, delta = 0.2, sampleFactor = 1;
     real_t bLinear = 2e-4, bNonlinear = 2e-3, betaCap = 10, weightFloor = 0.25;
     real_t scaleU = 1, scaleL = 1, scaleO = 1, scaleS = 1, scaleE = 1;
