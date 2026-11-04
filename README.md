@@ -118,7 +118,8 @@ in the history.
 | `triangle_wedge_ls_only`, `triangle_wedge_lo_only`, `triangle_wedge_nlo_full` | triangle | Table 3; Figure 6 | 1994, 349, 349 |
 | `joystick_grendas`, `joystick_lex` | joystick | Table 4; Figure 7 | 512, 512 |
 | `joystick_global`, `joystick_lambda0`, `joystick_lambda1` | joystick | Section 7.2.3 | 512, 503, 503 |
-| `rotor_global`, `rotor_lambda0`, `rotor_lambda2` | rotor | Table 5; Figures 8, 9 | 168, 168, 168 |
+| `rotor_lambda0_ef00002`, `rotor_lambda2_ef00002`, `rotor_global_ef00002` | rotor | Table 5; Figures 8, 9 | 356, 405, 478 |
+| `rotor_global`, `rotor_lambda0`, `rotor_lambda2` | rotor | Section 7.2.3 (text) | 168, 168, 168 |
 
 Notes on the settings:
 
@@ -143,6 +144,10 @@ Notes on the settings:
   and the non-linear stage is never invoked. The earlier input `triangle_wavy_L5.xml`
   (two folded cells in p0) and its runs `triangle_*` (3169, 581, 581 at `-g 0.01
   -e 0.01`) are kept for reference.
+- The rotor runs of Table 5 use `-g 0.03 -e 0.0002`; with `-e 0.03` (`rotor_global`,
+  `rotor_lambda0`, `rotor_lambda2`) every coarsening is accepted and all three settings end
+  in the coarsest space. The cells and the fitting domain of the first candidate (Figure 8)
+  are written by `--dump_first <file>`.
 
 The times in the logs are those of single sequential runs on a Windows 11
 laptop on mains power; they depend on the machine and its power state. The

@@ -1,0 +1,835 @@
+gsMPBESUnrefinement: 36 patches, 6 levels, 3376 MPBES functions; p0 in the MPBES space: e_g 3.77189e-11, e_f 3.19398e-11, certified (n_- 0)
+  epsilon_g 0.03, epsilon_f 0.0002, feature 24 sides, selection Grendas, lambda 2, stages 3, solver gn, fit samples Gauss points (unit weights), functional quadrature 2 nodes per direction, weights b 0.0002 / 0.002, beta cap 10, floor 0.25, scales u/l/o/s/e 1/1/1/1/1
+level 5 (cells of level 4 refined to 5): 64 eligible cells
+    LS: e_g 3.77189e-11, e_f 3.19398e-11, n_- 0
+  Grendas group of 15 cell(s) on 1 patch(es) (first: patch 22, cell (4,11)): 3333 functions, 174 fitted, 9504 samples; stage 1: e_g 3.77189e-11, e_f 3.19398e-11, n_- 0 -> ACCEPTED (0.19 s)
+    LS: e_g 3.77189e-11, e_f 3.19398e-11, n_- 0
+  Grendas group of 11 cell(s) on 1 patch(es) (first: patch 22, cell (6,9)): 3302 functions, 182 fitted, 9864 samples; stage 1: e_g 3.77189e-11, e_f 3.19398e-11, n_- 0 -> ACCEPTED (0.22 s)
+    LS: e_g 3.77189e-11, e_f 3.19398e-11, n_- 0
+  Grendas group of 9 cell(s) on 1 patch(es) (first: patch 22, cell (10,9)): 3276 functions, 169 fitted, 9216 samples; stage 1: e_g 3.77189e-11, e_f 3.19398e-11, n_- 0 -> ACCEPTED (0.20 s)
+    LS: e_g 3.77189e-11, e_f 3.19398e-11, n_- 0
+  Grendas group of 7 cell(s) on 1 patch(es) (first: patch 22, cell (5,6)): 3257 functions, 156 fitted, 8388 samples; stage 1: e_g 3.77189e-11, e_f 3.19398e-11, n_- 0 -> ACCEPTED (0.18 s)
+    LS: e_g 3.77189e-11, e_f 3.19398e-11, n_- 0
+  Grendas group of 5 cell(s) on 1 patch(es) (first: patch 22, cell (10,7)): 3243 functions, 128 fitted, 7200 samples; stage 1: e_g 3.77189e-11, e_f 3.19398e-11, n_- 0 -> ACCEPTED (0.17 s)
+    LS: e_g 3.77189e-11, e_f 3.19398e-11, n_- 0
+  Grendas group of 4 cell(s) on 1 patch(es) (first: patch 22, cell (9,6)): 3232 functions, 116 fitted, 6732 samples; stage 1: e_g 3.77189e-11, e_f 3.19398e-11, n_- 0 -> ACCEPTED (0.15 s)
+    LS: e_g 3.77189e-11, e_f 3.19398e-11, n_- 0
+  Grendas group of 3 cell(s) on 1 patch(es) (first: patch 22, cell (5,4)): 3228 functions, 111 fitted, 6372 samples; stage 1: e_g 3.77189e-11, e_f 3.19398e-11, n_- 0 -> ACCEPTED (0.15 s)
+    LS: e_g 3.77189e-11, e_f 3.19398e-11, n_- 0
+  Grendas group of 3 cell(s) on 1 patch(es) (first: patch 22, cell (8,5)): 3220 functions, 79 fitted, 4896 samples; stage 1: e_g 3.77189e-11, e_f 3.19398e-11, n_- 0 -> ACCEPTED (0.12 s)
+    LS: e_g 3.77189e-11, e_f 3.19398e-11, n_- 0
+  Grendas group of 2 cell(s) on 1 patch(es) (first: patch 22, cell (10,5)): 3216 functions, 56 fitted, 3780 samples; stage 1: e_g 3.77189e-11, e_f 3.19398e-11, n_- 0 -> ACCEPTED (0.11 s)
+    LS: e_g 3.77189e-11, e_f 3.19398e-11, n_- 0
+  Grendas group of 2 cell(s) on 1 patch(es) (first: patch 22, cell (7,4)): 3216 functions, 56 fitted, 3564 samples; stage 1: e_g 3.77189e-11, e_f 3.19398e-11, n_- 0 -> ACCEPTED (0.11 s)
+    LS: e_g 3.77189e-11, e_f 3.19398e-11, n_- 0
+  Grendas group of 1 cell(s) on 1 patch(es) (first: patch 22, cell (9,4)): 3216 functions, 49 fitted, 3132 samples; stage 1: e_g 3.77189e-11, e_f 3.19398e-11, n_- 0 -> ACCEPTED (0.11 s)
+    LS: e_g 3.77189e-11, e_f 3.19398e-11, n_- 0
+  Grendas group of 1 cell(s) on 1 patch(es) (first: patch 22, cell (10,4)): 3216 functions, 49 fitted, 3024 samples; stage 1: e_g 3.77189e-11, e_f 3.19398e-11, n_- 0 -> ACCEPTED (0.10 s)
+    LS: e_g 3.77189e-11, e_f 3.19398e-11, n_- 0
+  Grendas group of 1 cell(s) on 1 patch(es) (first: patch 22, cell (11,4)): 3216 functions, 49 fitted, 2916 samples; stage 1: e_g 3.77189e-11, e_f 3.19398e-11, n_- 0 -> ACCEPTED (0.09 s)
+level 4 (cells of level 3 refined to 4): 64 eligible cells
+    LS: e_g 3.77189e-11, e_f 3.19398e-11, n_- 0
+  Grendas group of 17 cell(s) on 1 patch(es) (first: patch 22, cell (0,7)): 3154 functions, 137 fitted, 6336 samples; stage 1: e_g 3.77189e-11, e_f 3.19398e-11, n_- 0 -> ACCEPTED (0.13 s)
+    LS: e_g 3.77189e-11, e_f 3.19398e-11, n_- 0
+  Grendas group of 12 cell(s) on 1 patch(es) (first: patch 22, cell (5,6)): 3118 functions, 145 fitted, 6516 samples; stage 1: e_g 3.77189e-11, e_f 3.19398e-11, n_- 0 -> ACCEPTED (0.13 s)
+    LS: e_g 3.77189e-11, e_f 3.19398e-11, n_- 0
+  Grendas group of 8 cell(s) on 1 patch(es) (first: patch 22, cell (7,5)): 3095 functions, 143 fitted, 6228 samples; stage 1: e_g 3.77189e-11, e_f 3.19398e-11, n_- 0 -> ACCEPTED (0.12 s)
+    LS: e_g 3.77189e-11, e_f 3.19398e-11, n_- 0
+  Grendas group of 6 cell(s) on 1 patch(es) (first: patch 22, cell (1,2)): 3076 functions, 122 fitted, 5400 samples; stage 1: e_g 3.77189e-11, e_f 3.19398e-11, n_- 0 -> ACCEPTED (0.11 s)
+    LS: e_g 3.19398e-11, e_f 3.19398e-11, n_- 0
+  Grendas group of 5 cell(s) on 1 patch(es) (first: patch 22, cell (7,3)): 3062 functions, 112 fitted, 4788 samples; stage 1: e_g 3.19398e-11, e_f 3.19398e-11, n_- 0 -> ACCEPTED (0.10 s)
+    LS: e_g 3.23043e-11, e_f 3.19398e-11, n_- 0
+  Grendas group of 4 cell(s) on 1 patch(es) (first: patch 22, cell (0,0)): 3051 functions, 93 fitted, 4068 samples; stage 1: e_g 3.23043e-11, e_f 3.19398e-11, n_- 0 -> ACCEPTED (0.09 s)
+    LS: e_g 3.23043e-11, e_f 3.19398e-11, n_- 0
+  Grendas group of 3 cell(s) on 1 patch(es) (first: patch 22, cell (3,1)): 3043 functions, 69 fitted, 3204 samples; stage 1: e_g 3.23043e-11, e_f 3.19398e-11, n_- 0 -> ACCEPTED (0.08 s)
+    LS: e_g 3.23017e-11, e_f 3.19398e-11, n_- 0
+  Grendas group of 2 cell(s) on 1 patch(es) (first: patch 22, cell (5,1)): 3038 functions, 71 fitted, 3204 samples; stage 1: e_g 3.23017e-11, e_f 3.19398e-11, n_- 0 -> ACCEPTED (0.09 s)
+    LS: e_g 3.22864e-11, e_f 3.19398e-11, n_- 0
+  Grendas group of 2 cell(s) on 1 patch(es) (first: patch 22, cell (6,1)): 3033 functions, 45 fitted, 2304 samples; stage 1: e_g 3.22864e-11, e_f 3.19398e-11, n_- 0 -> ACCEPTED (0.08 s)
+    LS: e_g 3.22864e-11, e_f 3.19398e-11, n_- 0
+  Grendas group of 2 cell(s) on 1 patch(es) (first: patch 22, cell (3,0)): 3029 functions, 44 fitted, 2052 samples; stage 1: e_g 3.22864e-11, e_f 3.19398e-11, n_- 0 -> ACCEPTED (0.07 s)
+    LS: e_g 3.22848e-11, e_f 3.19398e-11, n_- 0
+  Grendas group of 1 cell(s) on 1 patch(es) (first: patch 22, cell (5,0)): 3027 functions, 38 fitted, 1944 samples; stage 1: e_g 3.22848e-11, e_f 3.19398e-11, n_- 0 -> ACCEPTED (0.07 s)
+    LS: e_g 3.35097e-11, e_f 3.19398e-11, n_- 0
+  Grendas group of 1 cell(s) on 1 patch(es) (first: patch 22, cell (6,0)): 3025 functions, 31 fitted, 1620 samples; stage 1: e_g 3.35097e-11, e_f 3.19398e-11, n_- 0 -> ACCEPTED (0.07 s)
+    LS: e_g 3.21744e-11, e_f 3.19398e-11, n_- 0
+  Grendas group of 1 cell(s) on 1 patch(es) (first: patch 22, cell (7,0)): 3024 functions, 25 fitted, 1296 samples; stage 1: e_g 3.21744e-11, e_f 3.19398e-11, n_- 0 -> ACCEPTED (0.07 s)
+level 3 (cells of level 2 refined to 3): 576 eligible cells
+    LS: e_g 0.000388183, e_f 0.000140154, n_- 0
+  Grendas group of 226 cell(s) on 22 patch(es) (first: patch 29, cell (3,3)): 2125 functions, 911 fitted, 33408 samples; stage 1: e_g 0.000388183, e_f 0.000140154, n_- 0 -> ACCEPTED (0.28 s)
+    LS: e_g 0.000437305, e_f 0.000133595, n_- 0
+  Grendas group of 109 cell(s) on 24 patch(es) (first: patch 30, cell (0,3)): 1743 functions, 1127 fitted, 34236 samples; stage 1: e_g 0.000437305, e_f 0.000133595, n_- 0 -> ACCEPTED (0.31 s)
+    LS: e_g 0.000830415, e_f 0.00023171, n_- 0
+  Grendas group of 68 cell(s) on 18 patch(es) (first: patch 13, cell (1,3)): 1521 functions, 723 fitted, 23220 samples; stage 1: e_g 0.000830415, e_f 0.00023171, n_- 0 -> rejected (0.20 s)
+    LS: e_g 0.000437305, e_f 0.000133595, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 0, cell (3,3)): 1736 functions, 57 fitted, 3348 samples; stage 1: e_g 0.000437305, e_f 0.000133595, n_- 0 -> ACCEPTED (0.06 s)
+    LS: e_g 0.000830545, e_f 0.00023171, n_- 0
+  Grendas group of 68 cell(s) on 18 patch(es) (first: patch 13, cell (1,3)): 1514 functions, 721 fitted, 23400 samples; stage 1: e_g 0.000830545, e_f 0.00023171, n_- 0 -> rejected (0.20 s)
+    LS: e_g 0.000437305, e_f 0.000133595, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 0, cell (2,3)): 1731 functions, 68 fitted, 3636 samples; stage 1: e_g 0.000437305, e_f 0.000133595, n_- 0 -> ACCEPTED (0.06 s)
+    LS: e_g 0.000830339, e_f 0.00023171, n_- 0
+  Grendas group of 67 cell(s) on 18 patch(es) (first: patch 13, cell (1,3)): 1512 functions, 723 fitted, 23472 samples; stage 1: e_g 0.000830339, e_f 0.00023171, n_- 0 -> rejected (0.20 s)
+    LS: e_g 0.000437305, e_f 0.000133595, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 0, cell (1,3)): 1726 functions, 63 fitted, 3528 samples; stage 1: e_g 0.000437305, e_f 0.000133595, n_- 0 -> ACCEPTED (0.07 s)
+    LS: e_g 0.000830281, e_f 0.00023171, n_- 0
+  Grendas group of 67 cell(s) on 18 patch(es) (first: patch 13, cell (1,3)): 1507 functions, 722 fitted, 23364 samples; stage 1: e_g 0.000830281, e_f 0.00023171, n_- 0 -> rejected (0.21 s)
+    LS: e_g 0.000437305, e_f 0.000133595, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 0, cell (0,3)): 1721 functions, 47 fitted, 3096 samples; stage 1: e_g 0.000437305, e_f 0.000133595, n_- 0 -> ACCEPTED (0.06 s)
+    LS: e_g 0.000830174, e_f 0.00023171, n_- 0
+  Grendas group of 67 cell(s) on 18 patch(es) (first: patch 13, cell (1,3)): 1502 functions, 721 fitted, 23328 samples; stage 1: e_g 0.000830174, e_f 0.00023171, n_- 0 -> rejected (0.20 s)
+    LS: e_g 0.000437305, e_f 0.000133595, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 0, cell (3,2)): 1716 functions, 58 fitted, 3060 samples; stage 1: e_g 0.000437305, e_f 0.000133595, n_- 0 -> ACCEPTED (0.06 s)
+    LS: e_g 0.000830183, e_f 0.00023171, n_- 0
+  Grendas group of 67 cell(s) on 18 patch(es) (first: patch 13, cell (1,3)): 1497 functions, 720 fitted, 23292 samples; stage 1: e_g 0.000830183, e_f 0.00023171, n_- 0 -> rejected (0.20 s)
+    LS: e_g 0.000437305, e_f 0.000133595, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 0, cell (2,2)): 1713 functions, 70 fitted, 3600 samples; stage 1: e_g 0.000437305, e_f 0.000133595, n_- 0 -> ACCEPTED (0.07 s)
+    LS: e_g 0.000830174, e_f 0.000231706, n_- 0
+  Grendas group of 66 cell(s) on 18 patch(es) (first: patch 13, cell (1,3)): 1497 functions, 723 fitted, 23400 samples; stage 1: e_g 0.000830174, e_f 0.000231706, n_- 0 -> rejected (0.20 s)
+    LS: e_g 0.000437305, e_f 0.000133595, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 0, cell (1,2)): 1710 functions, 67 fitted, 3492 samples; stage 1: e_g 0.000437305, e_f 0.000133595, n_- 0 -> ACCEPTED (0.06 s)
+    LS: e_g 0.000830176, e_f 0.000231706, n_- 0
+  Grendas group of 66 cell(s) on 18 patch(es) (first: patch 13, cell (1,3)): 1494 functions, 723 fitted, 23400 samples; stage 1: e_g 0.000830176, e_f 0.000231706, n_- 0 -> rejected (0.22 s)
+    LS: e_g 0.000437305, e_f 0.000133595, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 0, cell (0,2)): 1707 functions, 52 fitted, 2736 samples; stage 1: e_g 0.000437305, e_f 0.000133595, n_- 0 -> ACCEPTED (0.07 s)
+    LS: e_g 0.000830149, e_f 0.000231706, n_- 0
+  Grendas group of 66 cell(s) on 18 patch(es) (first: patch 13, cell (1,3)): 1491 functions, 723 fitted, 23400 samples; stage 1: e_g 0.000830149, e_f 0.000231706, n_- 0 -> rejected (0.20 s)
+    LS: e_g 0.000437305, e_f 0.000133595, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 0, cell (3,1)): 1702 functions, 47 fitted, 2628 samples; stage 1: e_g 0.000437305, e_f 0.000133595, n_- 0 -> ACCEPTED (0.06 s)
+    LS: e_g 0.000830168, e_f 0.000231706, n_- 0
+  Grendas group of 65 cell(s) on 18 patch(es) (first: patch 13, cell (1,3)): 1489 functions, 725 fitted, 23400 samples; stage 1: e_g 0.000830168, e_f 0.000231706, n_- 0 -> rejected (0.20 s)
+    LS: e_g 0.000437305, e_f 0.000133595, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 0, cell (2,1)): 1699 functions, 56 fitted, 3240 samples; stage 1: e_g 0.000437305, e_f 0.000133595, n_- 0 -> ACCEPTED (0.06 s)
+    LS: e_g 0.000830135, e_f 0.000231706, n_- 0
+  Grendas group of 65 cell(s) on 18 patch(es) (first: patch 13, cell (1,3)): 1486 functions, 725 fitted, 23400 samples; stage 1: e_g 0.000830135, e_f 0.000231706, n_- 0 -> rejected (0.20 s)
+    LS: e_g 0.000437305, e_f 0.000133595, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 0, cell (1,1)): 1696 functions, 53 fitted, 3132 samples; stage 1: e_g 0.000437305, e_f 0.000133595, n_- 0 -> ACCEPTED (0.06 s)
+    LS: e_g 0.000830144, e_f 0.000231706, n_- 0
+  Grendas group of 65 cell(s) on 18 patch(es) (first: patch 13, cell (1,3)): 1483 functions, 725 fitted, 23400 samples; stage 1: e_g 0.000830144, e_f 0.000231706, n_- 0 -> rejected (0.21 s)
+    LS: e_g 0.000437305, e_f 0.000133595, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 0, cell (0,1)): 1693 functions, 41 fitted, 2304 samples; stage 1: e_g 0.000437305, e_f 0.000133595, n_- 0 -> ACCEPTED (0.06 s)
+    LS: e_g 0.000830155, e_f 0.000231706, n_- 0
+  Grendas group of 64 cell(s) on 18 patch(es) (first: patch 13, cell (1,3)): 1483 functions, 728 fitted, 23508 samples; stage 1: e_g 0.000830155, e_f 0.000231706, n_- 0 -> rejected (0.21 s)
+    LS: e_g 0.000437305, e_f 0.000194789, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 0, cell (3,0)): 1688 functions, 31 fitted, 1476 samples; stage 1: e_g 0.000437305, e_f 0.000194789, n_- 0 -> ACCEPTED (0.05 s)
+    LS: e_g 0.000830152, e_f 0.000231706, n_- 0
+  Grendas group of 64 cell(s) on 18 patch(es) (first: patch 13, cell (1,3)): 1478 functions, 727 fitted, 23400 samples; stage 1: e_g 0.000830152, e_f 0.000231706, n_- 0 -> rejected (0.20 s)
+    LS: e_g 0.000437305, e_f 0.000237528, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 0, cell (2,0)): 1685 functions, 36 fitted, 1944 samples; stage 1: e_g 0.000437305, e_f 0.000237528, n_- 0 -> rejected (0.05 s)
+    LS: e_g 0.000437305, e_f 0.000193592, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 0, cell (1,0)): 1682 functions, 33 fitted, 1944 samples; stage 1: e_g 0.000437305, e_f 0.000193592, n_- 0 -> ACCEPTED (0.05 s)
+    LS: e_g 0.000830155, e_f 0.000231706, n_- 0
+  Grendas group of 63 cell(s) on 18 patch(es) (first: patch 13, cell (1,3)): 1475 functions, 730 fitted, 23508 samples; stage 1: e_g 0.000830155, e_f 0.000231706, n_- 0 -> rejected (0.20 s)
+    LS: e_g 0.000437305, e_f 0.000279636, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 0, cell (0,0)): 1679 functions, 25 fitted, 1260 samples; stage 1: e_g 0.000437305, e_f 0.000279636, n_- 0 -> rejected (0.05 s)
+    LS: e_g 0.000437305, e_f 0.000193592, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 1, cell (3,3)): 1675 functions, 57 fitted, 3348 samples; stage 1: e_g 0.000437305, e_f 0.000193592, n_- 0 -> ACCEPTED (0.06 s)
+    LS: e_g 0.000830155, e_f 0.000231706, n_- 0
+  Grendas group of 63 cell(s) on 18 patch(es) (first: patch 13, cell (1,3)): 1468 functions, 728 fitted, 23688 samples; stage 1: e_g 0.000830155, e_f 0.000231706, n_- 0 -> rejected (0.21 s)
+    LS: e_g 0.000437305, e_f 0.000193592, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 1, cell (2,3)): 1670 functions, 68 fitted, 3636 samples; stage 1: e_g 0.000437305, e_f 0.000193592, n_- 0 -> ACCEPTED (0.07 s)
+    LS: e_g 0.000795598, e_f 0.000231706, n_- 0
+  Grendas group of 62 cell(s) on 18 patch(es) (first: patch 13, cell (1,3)): 1466 functions, 730 fitted, 23760 samples; stage 1: e_g 0.000795598, e_f 0.000231706, n_- 0 -> rejected (0.21 s)
+    LS: e_g 0.000437305, e_f 0.000193592, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 1, cell (1,3)): 1665 functions, 63 fitted, 3528 samples; stage 1: e_g 0.000437305, e_f 0.000193592, n_- 0 -> ACCEPTED (0.07 s)
+    LS: e_g 0.000795598, e_f 0.000231706, n_- 0
+  Grendas group of 62 cell(s) on 18 patch(es) (first: patch 13, cell (1,3)): 1461 functions, 729 fitted, 23652 samples; stage 1: e_g 0.000795598, e_f 0.000231706, n_- 0 -> rejected (0.20 s)
+    LS: e_g 0.000437305, e_f 0.000193592, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 1, cell (0,3)): 1660 functions, 47 fitted, 3096 samples; stage 1: e_g 0.000437305, e_f 0.000193592, n_- 0 -> ACCEPTED (0.06 s)
+    LS: e_g 0.000795598, e_f 0.000231706, n_- 0
+  Grendas group of 62 cell(s) on 18 patch(es) (first: patch 13, cell (1,3)): 1456 functions, 728 fitted, 23616 samples; stage 1: e_g 0.000795598, e_f 0.000231706, n_- 0 -> rejected (0.20 s)
+    LS: e_g 0.000437305, e_f 0.000193592, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 1, cell (3,2)): 1655 functions, 58 fitted, 3060 samples; stage 1: e_g 0.000437305, e_f 0.000193592, n_- 0 -> ACCEPTED (0.06 s)
+    LS: e_g 0.000795598, e_f 0.000231706, n_- 0
+  Grendas group of 61 cell(s) on 18 patch(es) (first: patch 13, cell (1,3)): 1454 functions, 730 fitted, 23688 samples; stage 1: e_g 0.000795598, e_f 0.000231706, n_- 0 -> rejected (0.20 s)
+    LS: e_g 0.000437305, e_f 0.000193592, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 1, cell (2,2)): 1652 functions, 70 fitted, 3600 samples; stage 1: e_g 0.000437305, e_f 0.000193592, n_- 0 -> ACCEPTED (0.06 s)
+    LS: e_g 0.000795598, e_f 0.000231706, n_- 0
+  Grendas group of 61 cell(s) on 18 patch(es) (first: patch 13, cell (1,3)): 1451 functions, 730 fitted, 23688 samples; stage 1: e_g 0.000795598, e_f 0.000231706, n_- 0 -> rejected (0.21 s)
+    LS: e_g 0.000437305, e_f 0.000193592, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 1, cell (1,2)): 1649 functions, 67 fitted, 3492 samples; stage 1: e_g 0.000437305, e_f 0.000193592, n_- 0 -> ACCEPTED (0.07 s)
+    LS: e_g 0.000795598, e_f 0.000231706, n_- 0
+  Grendas group of 61 cell(s) on 18 patch(es) (first: patch 13, cell (1,3)): 1448 functions, 730 fitted, 23688 samples; stage 1: e_g 0.000795598, e_f 0.000231706, n_- 0 -> rejected (0.21 s)
+    LS: e_g 0.000437305, e_f 0.000193592, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 1, cell (0,2)): 1646 functions, 52 fitted, 2736 samples; stage 1: e_g 0.000437305, e_f 0.000193592, n_- 0 -> ACCEPTED (0.06 s)
+    LS: e_g 0.000795598, e_f 0.000231706, n_- 0
+  Grendas group of 61 cell(s) on 18 patch(es) (first: patch 13, cell (1,3)): 1445 functions, 730 fitted, 23688 samples; stage 1: e_g 0.000795598, e_f 0.000231706, n_- 0 -> rejected (0.20 s)
+    LS: e_g 0.000437305, e_f 0.000193592, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 1, cell (3,1)): 1641 functions, 47 fitted, 2628 samples; stage 1: e_g 0.000437305, e_f 0.000193592, n_- 0 -> ACCEPTED (0.06 s)
+    LS: e_g 0.000795598, e_f 0.000231706, n_- 0
+  Grendas group of 60 cell(s) on 18 patch(es) (first: patch 13, cell (1,3)): 1443 functions, 732 fitted, 23688 samples; stage 1: e_g 0.000795598, e_f 0.000231706, n_- 0 -> rejected (0.20 s)
+    LS: e_g 0.000437305, e_f 0.000193592, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 1, cell (2,1)): 1638 functions, 56 fitted, 3240 samples; stage 1: e_g 0.000437305, e_f 0.000193592, n_- 0 -> ACCEPTED (0.06 s)
+    LS: e_g 0.000795598, e_f 0.000231706, n_- 0
+  Grendas group of 60 cell(s) on 18 patch(es) (first: patch 13, cell (1,3)): 1440 functions, 732 fitted, 23688 samples; stage 1: e_g 0.000795598, e_f 0.000231706, n_- 0 -> rejected (0.20 s)
+    LS: e_g 0.000437305, e_f 0.000193592, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 1, cell (1,1)): 1635 functions, 53 fitted, 3132 samples; stage 1: e_g 0.000437305, e_f 0.000193592, n_- 0 -> ACCEPTED (0.06 s)
+    LS: e_g 0.000795598, e_f 0.000231706, n_- 0
+  Grendas group of 60 cell(s) on 18 patch(es) (first: patch 13, cell (1,3)): 1437 functions, 732 fitted, 23688 samples; stage 1: e_g 0.000795598, e_f 0.000231706, n_- 0 -> rejected (0.22 s)
+    LS: e_g 0.000437305, e_f 0.000193592, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 1, cell (0,1)): 1632 functions, 41 fitted, 2304 samples; stage 1: e_g 0.000437305, e_f 0.000193592, n_- 0 -> ACCEPTED (0.06 s)
+    LS: e_g 0.000795598, e_f 0.000231706, n_- 0
+  Grendas group of 59 cell(s) on 18 patch(es) (first: patch 13, cell (1,3)): 1437 functions, 735 fitted, 23796 samples; stage 1: e_g 0.000795598, e_f 0.000231706, n_- 0 -> rejected (0.20 s)
+    LS: e_g 0.000437305, e_f 0.000193592, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 1, cell (3,0)): 1627 functions, 31 fitted, 1476 samples; stage 1: e_g 0.000437305, e_f 0.000193592, n_- 0 -> ACCEPTED (0.05 s)
+    LS: e_g 0.000795598, e_f 0.000231706, n_- 0
+  Grendas group of 59 cell(s) on 18 patch(es) (first: patch 13, cell (1,3)): 1432 functions, 734 fitted, 23688 samples; stage 1: e_g 0.000795598, e_f 0.000231706, n_- 0 -> rejected (0.20 s)
+    LS: e_g 0.000437305, e_f 0.000193592, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 1, cell (2,0)): 1624 functions, 36 fitted, 1944 samples; stage 1: e_g 0.000437305, e_f 0.000193592, n_- 0 -> ACCEPTED (0.06 s)
+    LS: e_g 0.000795598, e_f 0.000231707, n_- 0
+  Grendas group of 58 cell(s) on 18 patch(es) (first: patch 13, cell (1,3)): 1432 functions, 737 fitted, 23796 samples; stage 1: e_g 0.000795598, e_f 0.000231707, n_- 0 -> rejected (0.20 s)
+    LS: e_g 0.000437305, e_f 0.000193592, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 1, cell (1,0)): 1621 functions, 33 fitted, 1836 samples; stage 1: e_g 0.000437305, e_f 0.000193592, n_- 0 -> ACCEPTED (0.05 s)
+    LS: e_g 0.000795598, e_f 0.000231707, n_- 0
+  Grendas group of 58 cell(s) on 18 patch(es) (first: patch 13, cell (1,3)): 1429 functions, 737 fitted, 23796 samples; stage 1: e_g 0.000795598, e_f 0.000231707, n_- 0 -> rejected (0.20 s)
+    LS: e_g 0.000437305, e_f 0.000193592, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 1, cell (0,0)): 1618 functions, 25 fitted, 1152 samples; stage 1: e_g 0.000437305, e_f 0.000193592, n_- 0 -> ACCEPTED (0.05 s)
+    LS: e_g 0.000795598, e_f 0.000231707, n_- 0
+  Grendas group of 58 cell(s) on 18 patch(es) (first: patch 13, cell (1,3)): 1426 functions, 737 fitted, 23796 samples; stage 1: e_g 0.000795598, e_f 0.000231707, n_- 0 -> rejected (0.21 s)
+    LS: e_g 0.000437305, e_f 0.000193592, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 2, cell (0,3)): 1614 functions, 45 fitted, 2448 samples; stage 1: e_g 0.000437305, e_f 0.000193592, n_- 0 -> ACCEPTED (0.05 s)
+    LS: e_g 0.000795598, e_f 0.000231707, n_- 0
+  Grendas group of 57 cell(s) on 18 patch(es) (first: patch 13, cell (1,3)): 1426 functions, 737 fitted, 23796 samples; stage 1: e_g 0.000795598, e_f 0.000231707, n_- 0 -> rejected (0.20 s)
+    LS: e_g 0.000437305, e_f 0.000193592, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 2, cell (2,2)): 1611 functions, 65 fitted, 3132 samples; stage 1: e_g 0.000437305, e_f 0.000193592, n_- 0 -> ACCEPTED (0.06 s)
+    LS: e_g 0.000795598, e_f 0.000231706, n_- 0
+  Grendas group of 57 cell(s) on 18 patch(es) (first: patch 13, cell (1,3)): 1423 functions, 734 fitted, 23688 samples; stage 1: e_g 0.000795598, e_f 0.000231706, n_- 0 -> rejected (0.20 s)
+    LS: e_g 0.000437305, e_f 0.000193592, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 2, cell (1,2)): 1608 functions, 62 fitted, 3024 samples; stage 1: e_g 0.000437305, e_f 0.000193592, n_- 0 -> ACCEPTED (0.06 s)
+    LS: e_g 0.000795598, e_f 0.000231706, n_- 0
+  Grendas group of 57 cell(s) on 18 patch(es) (first: patch 13, cell (1,3)): 1420 functions, 731 fitted, 23580 samples; stage 1: e_g 0.000795598, e_f 0.000231706, n_- 0 -> rejected (0.20 s)
+    LS: e_g 0.000437305, e_f 0.000193592, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 2, cell (0,2)): 1605 functions, 49 fitted, 2484 samples; stage 1: e_g 0.000437305, e_f 0.000193592, n_- 0 -> ACCEPTED (0.05 s)
+    LS: e_g 0.000795598, e_f 0.000231706, n_- 0
+  Grendas group of 57 cell(s) on 18 patch(es) (first: patch 13, cell (1,3)): 1417 functions, 728 fitted, 23472 samples; stage 1: e_g 0.000795598, e_f 0.000231706, n_- 0 -> rejected (0.22 s)
+    LS: e_g 0.000437305, e_f 0.000193592, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 2, cell (3,1)): 1601 functions, 44 fitted, 2052 samples; stage 1: e_g 0.000437305, e_f 0.000193592, n_- 0 -> ACCEPTED (0.06 s)
+    LS: e_g 0.000795598, e_f 0.000231706, n_- 0
+  Grendas group of 56 cell(s) on 18 patch(es) (first: patch 13, cell (1,3)): 1417 functions, 728 fitted, 23472 samples; stage 1: e_g 0.000795598, e_f 0.000231706, n_- 0 -> rejected (0.20 s)
+    LS: e_g 0.000437305, e_f 0.000193592, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 2, cell (2,1)): 1598 functions, 52 fitted, 2700 samples; stage 1: e_g 0.000437305, e_f 0.000193592, n_- 0 -> ACCEPTED (0.06 s)
+    LS: e_g 0.000795598, e_f 0.000231706, n_- 0
+  Grendas group of 56 cell(s) on 17 patch(es) (first: patch 13, cell (1,3)): 1414 functions, 687 fitted, 22536 samples; stage 1: e_g 0.000795598, e_f 0.000231706, n_- 0 -> rejected (0.19 s)
+    LS: e_g 0.000437305, e_f 0.000193592, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 2, cell (1,1)): 1595 functions, 49 fitted, 2592 samples; stage 1: e_g 0.000437305, e_f 0.000193592, n_- 0 -> ACCEPTED (0.06 s)
+    LS: e_g 0.000795598, e_f 0.000231706, n_- 0
+  Grendas group of 56 cell(s) on 17 patch(es) (first: patch 13, cell (1,3)): 1411 functions, 687 fitted, 22536 samples; stage 1: e_g 0.000795598, e_f 0.000231706, n_- 0 -> rejected (0.19 s)
+    LS: e_g 0.000437305, e_f 0.000193592, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 2, cell (0,1)): 1592 functions, 38 fitted, 2052 samples; stage 1: e_g 0.000437305, e_f 0.000193592, n_- 0 -> ACCEPTED (0.05 s)
+    LS: e_g 0.000795598, e_f 0.000231706, n_- 0
+  Grendas group of 56 cell(s) on 17 patch(es) (first: patch 13, cell (1,3)): 1408 functions, 686 fitted, 22428 samples; stage 1: e_g 0.000795598, e_f 0.000231706, n_- 0 -> rejected (0.19 s)
+    LS: e_g 0.000437305, e_f 0.000193592, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 2, cell (3,0)): 1588 functions, 29 fitted, 1440 samples; stage 1: e_g 0.000437305, e_f 0.000193592, n_- 0 -> ACCEPTED (0.05 s)
+    LS: e_g 0.000795598, e_f 0.000231706, n_- 0
+  Grendas group of 55 cell(s) on 17 patch(es) (first: patch 13, cell (1,3)): 1408 functions, 689 fitted, 22428 samples; stage 1: e_g 0.000795598, e_f 0.000231706, n_- 0 -> rejected (0.20 s)
+    LS: e_g 0.000437305, e_f 0.000193592, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 2, cell (2,0)): 1586 functions, 34 fitted, 2052 samples; stage 1: e_g 0.000437305, e_f 0.000193592, n_- 0 -> ACCEPTED (0.06 s)
+    LS: e_g 0.000795598, e_f 0.000231706, n_- 0
+  Grendas group of 55 cell(s) on 17 patch(es) (first: patch 13, cell (1,3)): 1406 functions, 689 fitted, 22428 samples; stage 1: e_g 0.000795598, e_f 0.000231706, n_- 0 -> rejected (0.20 s)
+    LS: e_g 0.000437305, e_f 0.000193592, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 2, cell (1,0)): 1584 functions, 32 fitted, 1944 samples; stage 1: e_g 0.000437305, e_f 0.000193592, n_- 0 -> ACCEPTED (0.05 s)
+    LS: e_g 0.000795598, e_f 0.000231706, n_- 0
+  Grendas group of 55 cell(s) on 17 patch(es) (first: patch 13, cell (1,3)): 1404 functions, 689 fitted, 22428 samples; stage 1: e_g 0.000795598, e_f 0.000231706, n_- 0 -> rejected (0.19 s)
+    LS: e_g 0.000437305, e_f 0.000193592, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 2, cell (0,0)): 1582 functions, 25 fitted, 1440 samples; stage 1: e_g 0.000437305, e_f 0.000193592, n_- 0 -> ACCEPTED (0.06 s)
+    LS: e_g 0.000795598, e_f 0.000231706, n_- 0
+  Grendas group of 55 cell(s) on 17 patch(es) (first: patch 13, cell (1,3)): 1402 functions, 688 fitted, 22320 samples; stage 1: e_g 0.000795598, e_f 0.000231706, n_- 0 -> rejected (0.19 s)
+    LS: e_g 0.000437305, e_f 0.000193592, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 4, cell (1,3)): 1578 functions, 47 fitted, 2160 samples; stage 1: e_g 0.000437305, e_f 0.000193592, n_- 0 -> ACCEPTED (0.05 s)
+    LS: e_g 0.000795598, e_f 0.000231706, n_- 0
+  Grendas group of 54 cell(s) on 17 patch(es) (first: patch 13, cell (1,3)): 1402 functions, 688 fitted, 22320 samples; stage 1: e_g 0.000795598, e_f 0.000231706, n_- 0 -> rejected (0.19 s)
+    LS: e_g 0.000437305, e_f 0.000193592, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 4, cell (0,3)): 1574 functions, 38 fitted, 1872 samples; stage 1: e_g 0.000437305, e_f 0.000193592, n_- 0 -> ACCEPTED (0.05 s)
+    LS: e_g 0.000795598, e_f 0.000231706, n_- 0
+  Grendas group of 54 cell(s) on 17 patch(es) (first: patch 13, cell (1,3)): 1399 functions, 685 fitted, 22212 samples; stage 1: e_g 0.000795598, e_f 0.000231706, n_- 0 -> rejected (0.20 s)
+    LS: e_g 0.000437305, e_f 0.000193592, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 4, cell (1,2)): 1571 functions, 54 fitted, 1944 samples; stage 1: e_g 0.000437305, e_f 0.000193592, n_- 0 -> ACCEPTED (0.05 s)
+    LS: e_g 0.000795598, e_f 0.000231706, n_- 0
+  Grendas group of 54 cell(s) on 17 patch(es) (first: patch 13, cell (1,3)): 1396 functions, 682 fitted, 22104 samples; stage 1: e_g 0.000795598, e_f 0.000231706, n_- 0 -> rejected (0.18 s)
+    LS: e_g 0.000437305, e_f 0.000193592, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 4, cell (0,2)): 1569 functions, 46 fitted, 1656 samples; stage 1: e_g 0.000437305, e_f 0.000193592, n_- 0 -> ACCEPTED (0.05 s)
+    LS: e_g 0.000795598, e_f 0.000231706, n_- 0
+  Grendas group of 54 cell(s) on 17 patch(es) (first: patch 13, cell (1,3)): 1394 functions, 680 fitted, 21996 samples; stage 1: e_g 0.000795598, e_f 0.000231706, n_- 0 -> rejected (0.19 s)
+    LS: e_g 0.000437305, e_f 0.000193592, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 4, cell (2,1)): 1566 functions, 49 fitted, 1728 samples; stage 1: e_g 0.000437305, e_f 0.000193592, n_- 0 -> ACCEPTED (0.05 s)
+    LS: e_g 0.000795598, e_f 0.000231706, n_- 0
+  Grendas group of 54 cell(s) on 17 patch(es) (first: patch 13, cell (1,3)): 1391 functions, 677 fitted, 21888 samples; stage 1: e_g 0.000795598, e_f 0.000231706, n_- 0 -> rejected (0.19 s)
+    LS: e_g 0.000437305, e_f 0.000193592, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 4, cell (1,1)): 1563 functions, 46 fitted, 1620 samples; stage 1: e_g 0.000437305, e_f 0.000193592, n_- 0 -> ACCEPTED (0.06 s)
+    LS: e_g 0.000795598, e_f 0.000231706, n_- 0
+  Grendas group of 53 cell(s) on 17 patch(es) (first: patch 13, cell (1,3)): 1391 functions, 677 fitted, 21888 samples; stage 1: e_g 0.000795598, e_f 0.000231706, n_- 0 -> rejected (0.18 s)
+    LS: e_g 0.000437305, e_f 0.000193592, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 4, cell (0,1)): 1561 functions, 38 fitted, 1332 samples; stage 1: e_g 0.000437305, e_f 0.000193592, n_- 0 -> ACCEPTED (0.05 s)
+    LS: e_g 0.000795598, e_f 0.000231706, n_- 0
+  Grendas group of 53 cell(s) on 17 patch(es) (first: patch 13, cell (1,3)): 1389 functions, 675 fitted, 21780 samples; stage 1: e_g 0.000795598, e_f 0.000231706, n_- 0 -> rejected (0.19 s)
+    LS: e_g 0.000437305, e_f 0.000193592, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 4, cell (2,0)): 1558 functions, 35 fitted, 1080 samples; stage 1: e_g 0.000437305, e_f 0.000193592, n_- 0 -> ACCEPTED (0.05 s)
+    LS: e_g 0.000795598, e_f 0.000231706, n_- 0
+  Grendas group of 53 cell(s) on 16 patch(es) (first: patch 13, cell (1,3)): 1386 functions, 642 fitted, 21024 samples; stage 1: e_g 0.000795598, e_f 0.000231706, n_- 0 -> rejected (0.18 s)
+    LS: e_g 0.000437305, e_f 0.000193592, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 4, cell (1,0)): 1555 functions, 32 fitted, 972 samples; stage 1: e_g 0.000437305, e_f 0.000193592, n_- 0 -> ACCEPTED (0.04 s)
+    LS: e_g 0.000795598, e_f 0.000231706, n_- 0
+  Grendas group of 53 cell(s) on 16 patch(es) (first: patch 13, cell (1,3)): 1383 functions, 642 fitted, 21024 samples; stage 1: e_g 0.000795598, e_f 0.000231706, n_- 0 -> rejected (0.18 s)
+    LS: e_g 0.000437305, e_f 0.000193592, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 4, cell (0,0)): 1553 functions, 25 fitted, 720 samples; stage 1: e_g 0.000437305, e_f 0.000193592, n_- 0 -> ACCEPTED (0.04 s)
+    LS: e_g 0.000795598, e_f 0.000231706, n_- 0
+  Grendas group of 52 cell(s) on 16 patch(es) (first: patch 13, cell (1,3)): 1384 functions, 645 fitted, 21132 samples; stage 1: e_g 0.000795598, e_f 0.000231706, n_- 0 -> rejected (0.18 s)
+    LS: e_g 0.000437305, e_f 0.000193592, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 5, cell (0,0)): 1552 functions, 25 fitted, 900 samples; stage 1: e_g 0.000437305, e_f 0.000193592, n_- 0 -> ACCEPTED (0.04 s)
+    LS: e_g 0.000795598, e_f 0.000231706, n_- 0
+  Grendas group of 52 cell(s) on 15 patch(es) (first: patch 13, cell (1,3)): 1381 functions, 617 fitted, 20196 samples; stage 1: e_g 0.000795598, e_f 0.000231706, n_- 0 -> rejected (0.17 s)
+    LS: e_g 0.000437305, e_f 0.000193592, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 7, cell (3,3)): 1543 functions, 40 fitted, 2448 samples; stage 1: e_g 0.000437305, e_f 0.000193592, n_- 0 -> ACCEPTED (0.05 s)
+    LS: e_g 0.000795598, e_f 0.000231706, n_- 0
+  Grendas group of 52 cell(s) on 15 patch(es) (first: patch 13, cell (1,3)): 1377 functions, 613 fitted, 20232 samples; stage 1: e_g 0.000795598, e_f 0.000231706, n_- 0 -> rejected (0.20 s)
+    LS: e_g 0.000437305, e_f 0.000193592, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 7, cell (2,3)): 1543 functions, 45 fitted, 2520 samples; stage 1: e_g 0.000437305, e_f 0.000193592, n_- 0 -> ACCEPTED (0.06 s)
+    LS: e_g 0.000795598, e_f 0.000231706, n_- 0
+  Grendas group of 51 cell(s) on 15 patch(es) (first: patch 13, cell (1,3)): 1377 functions, 613 fitted, 20232 samples; stage 1: e_g 0.000795598, e_f 0.000231706, n_- 0 -> rejected (0.18 s)
+    LS: e_g 0.000437305, e_f 0.000193592, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 7, cell (3,2)): 1537 functions, 48 fitted, 2304 samples; stage 1: e_g 0.000437305, e_f 0.000193592, n_- 0 -> ACCEPTED (0.05 s)
+    LS: e_g 0.000795598, e_f 0.000231706, n_- 0
+  Grendas group of 51 cell(s) on 15 patch(es) (first: patch 13, cell (1,3)): 1371 functions, 607 fitted, 20196 samples; stage 1: e_g 0.000795598, e_f 0.000231706, n_- 0 -> rejected (0.17 s)
+    LS: e_g 0.000437305, e_f 0.000193592, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 7, cell (2,2)): 1537 functions, 54 fitted, 2376 samples; stage 1: e_g 0.000437305, e_f 0.000193592, n_- 0 -> ACCEPTED (0.05 s)
+    LS: e_g 0.000795598, e_f 0.000231706, n_- 0
+  Grendas group of 51 cell(s) on 15 patch(es) (first: patch 13, cell (1,3)): 1371 functions, 607 fitted, 20088 samples; stage 1: e_g 0.000795598, e_f 0.000231706, n_- 0 -> rejected (0.17 s)
+    LS: e_g 0.000437305, e_f 0.000193592, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 7, cell (3,1)): 1532 functions, 43 fitted, 2088 samples; stage 1: e_g 0.000437305, e_f 0.000193592, n_- 0 -> ACCEPTED (0.05 s)
+    LS: e_g 0.000795598, e_f 0.000231706, n_- 0
+  Grendas group of 51 cell(s) on 15 patch(es) (first: patch 13, cell (1,3)): 1365 functions, 601 fitted, 19980 samples; stage 1: e_g 0.000795598, e_f 0.000231706, n_- 0 -> rejected (0.17 s)
+    LS: e_g 0.000437305, e_f 0.000193592, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 7, cell (2,1)): 1528 functions, 45 fitted, 2160 samples; stage 1: e_g 0.000437305, e_f 0.000193592, n_- 0 -> ACCEPTED (0.05 s)
+    LS: e_g 0.000795598, e_f 0.000231706, n_- 0
+  Grendas group of 51 cell(s) on 15 patch(es) (first: patch 13, cell (1,3)): 1365 functions, 601 fitted, 19872 samples; stage 1: e_g 0.000795598, e_f 0.000231706, n_- 0 -> rejected (0.18 s)
+    LS: e_g 0.000437305, e_f 0.000193592, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 7, cell (1,1)): 1528 functions, 45 fitted, 2052 samples; stage 1: e_g 0.000437305, e_f 0.000193592, n_- 0 -> ACCEPTED (0.06 s)
+    LS: e_g 0.000795598, e_f 0.000231706, n_- 0
+  Grendas group of 50 cell(s) on 15 patch(es) (first: patch 13, cell (1,3)): 1365 functions, 600 fitted, 19836 samples; stage 1: e_g 0.000795598, e_f 0.000231706, n_- 0 -> rejected (0.18 s)
+    LS: e_g 0.000437305, e_f 0.000193592, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 7, cell (3,0)): 1523 functions, 29 fitted, 1368 samples; stage 1: e_g 0.000437305, e_f 0.000193592, n_- 0 -> ACCEPTED (0.05 s)
+    LS: e_g 0.000795598, e_f 0.000231706, n_- 0
+  Grendas group of 50 cell(s) on 15 patch(es) (first: patch 13, cell (1,3)): 1359 functions, 594 fitted, 19728 samples; stage 1: e_g 0.000795598, e_f 0.000231706, n_- 0 -> rejected (0.17 s)
+    LS: e_g 0.000437305, e_f 0.000193592, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 7, cell (2,0)): 1519 functions, 30 fitted, 1404 samples; stage 1: e_g 0.000437305, e_f 0.000193592, n_- 0 -> ACCEPTED (0.05 s)
+    LS: e_g 0.000795598, e_f 0.000231706, n_- 0
+  Grendas group of 50 cell(s) on 15 patch(es) (first: patch 13, cell (1,3)): 1359 functions, 594 fitted, 19620 samples; stage 1: e_g 0.000795598, e_f 0.000231706, n_- 0 -> rejected (0.17 s)
+    LS: e_g 0.000437305, e_f 0.000193592, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 7, cell (1,0)): 1519 functions, 30 fitted, 1296 samples; stage 1: e_g 0.000437305, e_f 0.000193592, n_- 0 -> ACCEPTED (0.04 s)
+    LS: e_g 0.000795598, e_f 0.000231706, n_- 0
+  Grendas group of 49 cell(s) on 14 patch(es) (first: patch 13, cell (1,3)): 1359 functions, 564 fitted, 18612 samples; stage 1: e_g 0.000795598, e_f 0.000231706, n_- 0 -> rejected (0.16 s)
+    LS: e_g 0.000437305, e_f 0.000193592, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 8, cell (3,0)): 1517 functions, 25 fitted, 1224 samples; stage 1: e_g 0.000437305, e_f 0.000193592, n_- 0 -> ACCEPTED (0.05 s)
+    LS: e_g 0.000830155, e_f 0.000231706, n_- 0
+  Grendas group of 49 cell(s) on 13 patch(es) (first: patch 13, cell (1,3)): 1356 functions, 541 fitted, 17964 samples; stage 1: e_g 0.000830155, e_f 0.000231706, n_- 0 -> rejected (0.16 s)
+    LS: e_g 0.000437305, e_f 0.000193592, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 10, cell (3,3)): 1511 functions, 55 fitted, 3096 samples; stage 1: e_g 0.000437305, e_f 0.000193592, n_- 0 -> ACCEPTED (0.06 s)
+    LS: e_g 0.000830164, e_f 0.000231706, n_- 0
+  Grendas group of 49 cell(s) on 13 patch(es) (first: patch 13, cell (1,3)): 1350 functions, 540 fitted, 18000 samples; stage 1: e_g 0.000830164, e_f 0.000231706, n_- 0 -> rejected (0.18 s)
+    LS: e_g 0.000437305, e_f 0.000193592, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 10, cell (2,3)): 1506 functions, 63 fitted, 3240 samples; stage 1: e_g 0.000437305, e_f 0.000193592, n_- 0 -> ACCEPTED (0.06 s)
+    LS: e_g 0.000830163, e_f 0.000231706, n_- 0
+  Grendas group of 49 cell(s) on 13 patch(es) (first: patch 13, cell (1,3)): 1345 functions, 539 fitted, 17892 samples; stage 1: e_g 0.000830163, e_f 0.000231706, n_- 0 -> rejected (0.16 s)
+    LS: e_g 0.000437305, e_f 0.000193592, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 10, cell (1,3)): 1501 functions, 58 fitted, 3132 samples; stage 1: e_g 0.000437305, e_f 0.000193592, n_- 0 -> ACCEPTED (0.06 s)
+    LS: e_g 0.000795605, e_f 0.000231706, n_- 0
+  Grendas group of 48 cell(s) on 13 patch(es) (first: patch 13, cell (1,3)): 1343 functions, 541 fitted, 17892 samples; stage 1: e_g 0.000795605, e_f 0.000231706, n_- 0 -> rejected (0.16 s)
+    LS: e_g 0.000437305, e_f 0.000193592, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 10, cell (0,3)): 1497 functions, 45 fitted, 2628 samples; stage 1: e_g 0.000437305, e_f 0.000193592, n_- 0 -> ACCEPTED (0.05 s)
+    LS: e_g 0.000795605, e_f 0.000231706, n_- 0
+  Grendas group of 48 cell(s) on 13 patch(es) (first: patch 13, cell (1,3)): 1339 functions, 540 fitted, 17784 samples; stage 1: e_g 0.000795605, e_f 0.000231706, n_- 0 -> rejected (0.16 s)
+    LS: e_g 0.000437305, e_f 0.000193592, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 10, cell (3,2)): 1493 functions, 57 fitted, 2736 samples; stage 1: e_g 0.000437305, e_f 0.000193592, n_- 0 -> ACCEPTED (0.05 s)
+    LS: e_g 0.000795605, e_f 0.000231706, n_- 0
+  Grendas group of 48 cell(s) on 13 patch(es) (first: patch 13, cell (1,3)): 1335 functions, 540 fitted, 17784 samples; stage 1: e_g 0.000795605, e_f 0.000231706, n_- 0 -> rejected (0.16 s)
+    LS: e_g 0.000437305, e_f 0.000193592, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 10, cell (2,2)): 1490 functions, 66 fitted, 2808 samples; stage 1: e_g 0.000437305, e_f 0.000193592, n_- 0 -> ACCEPTED (0.06 s)
+    LS: e_g 0.000795605, e_f 0.000231706, n_- 0
+  Grendas group of 48 cell(s) on 13 patch(es) (first: patch 13, cell (1,3)): 1332 functions, 540 fitted, 17784 samples; stage 1: e_g 0.000795605, e_f 0.000231706, n_- 0 -> rejected (0.16 s)
+    LS: e_g 0.000437305, e_f 0.000193592, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 10, cell (1,2)): 1487 functions, 63 fitted, 2700 samples; stage 1: e_g 0.000437305, e_f 0.000193592, n_- 0 -> ACCEPTED (0.06 s)
+    LS: e_g 0.000795605, e_f 0.000231706, n_- 0
+  Grendas group of 47 cell(s) on 13 patch(es) (first: patch 13, cell (1,3)): 1332 functions, 543 fitted, 17892 samples; stage 1: e_g 0.000795605, e_f 0.000231706, n_- 0 -> rejected (0.16 s)
+    LS: e_g 0.000437305, e_f 0.000193592, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 10, cell (0,2)): 1485 functions, 50 fitted, 2196 samples; stage 1: e_g 0.000437305, e_f 0.000193592, n_- 0 -> ACCEPTED (0.05 s)
+    LS: e_g 0.000795605, e_f 0.000231706, n_- 0
+  Grendas group of 47 cell(s) on 13 patch(es) (first: patch 13, cell (1,3)): 1330 functions, 543 fitted, 17892 samples; stage 1: e_g 0.000795605, e_f 0.000231706, n_- 0 -> rejected (0.16 s)
+    LS: e_g 0.000437305, e_f 0.000193592, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 10, cell (3,1)): 1481 functions, 47 fitted, 2304 samples; stage 1: e_g 0.000437305, e_f 0.000193592, n_- 0 -> ACCEPTED (0.05 s)
+    LS: e_g 0.000795605, e_f 0.000231706, n_- 0
+  Grendas group of 47 cell(s) on 13 patch(es) (first: patch 13, cell (1,3)): 1326 functions, 543 fitted, 17892 samples; stage 1: e_g 0.000795605, e_f 0.000231706, n_- 0 -> rejected (0.16 s)
+    LS: e_g 0.000437305, e_f 0.000193592, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 10, cell (2,1)): 1478 functions, 54 fitted, 2376 samples; stage 1: e_g 0.000437305, e_f 0.000193592, n_- 0 -> ACCEPTED (0.05 s)
+    LS: e_g 0.000795605, e_f 0.000231707, n_- 0
+  Grendas group of 46 cell(s) on 13 patch(es) (first: patch 13, cell (1,3)): 1326 functions, 546 fitted, 18000 samples; stage 1: e_g 0.000795605, e_f 0.000231707, n_- 0 -> rejected (0.16 s)
+    LS: e_g 0.000437305, e_f 0.000193592, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 10, cell (1,1)): 1475 functions, 51 fitted, 2268 samples; stage 1: e_g 0.000437305, e_f 0.000193592, n_- 0 -> ACCEPTED (0.05 s)
+    LS: e_g 0.000795605, e_f 0.000231707, n_- 0
+  Grendas group of 46 cell(s) on 13 patch(es) (first: patch 13, cell (1,3)): 1323 functions, 546 fitted, 18000 samples; stage 1: e_g 0.000795605, e_f 0.000231707, n_- 0 -> rejected (0.16 s)
+    LS: e_g 0.000437305, e_f 0.000193592, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 10, cell (0,1)): 1473 functions, 40 fitted, 1764 samples; stage 1: e_g 0.000437305, e_f 0.000193592, n_- 0 -> ACCEPTED (0.05 s)
+    LS: e_g 0.000795605, e_f 0.000231707, n_- 0
+  Grendas group of 46 cell(s) on 13 patch(es) (first: patch 13, cell (1,3)): 1321 functions, 546 fitted, 18000 samples; stage 1: e_g 0.000795605, e_f 0.000231707, n_- 0 -> rejected (0.17 s)
+    LS: e_g 0.000437305, e_f 0.000193592, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 10, cell (3,0)): 1468 functions, 31 fitted, 1152 samples; stage 1: e_g 0.000437305, e_f 0.000193592, n_- 0 -> ACCEPTED (0.04 s)
+    LS: e_g 0.000795604, e_f 0.00019057, n_- 0
+  Grendas group of 45 cell(s) on 13 patch(es) (first: patch 13, cell (1,3)): 1319 functions, 549 fitted, 18108 samples; stage 1: e_g 0.000795604, e_f 0.00019057, n_- 0 -> ACCEPTED (0.16 s)
+    LS: e_g 0.00090567, e_f 0.00018992, n_- 0
+  Grendas group of 31 cell(s) on 9 patch(es) (first: patch 15, cell (2,0)): 1223 functions, 389 fitted, 14328 samples; stage 1: e_g 0.00090567, e_f 0.00018992, n_- 0 -> ACCEPTED (0.13 s)
+    LS: e_g 0.000861372, e_f 0.000192525, n_- 0
+  Grendas group of 22 cell(s) on 9 patch(es) (first: patch 18, cell (2,1)): 1165 functions, 303 fitted, 11376 samples; stage 1: e_g 0.000861372, e_f 0.000192525, n_- 0 -> ACCEPTED (0.10 s)
+    LS: e_g 0.000861969, e_f 0.000186358, n_- 0
+  Grendas group of 16 cell(s) on 8 patch(es) (first: patch 18, cell (2,0)): 1108 functions, 318 fitted, 10872 samples; stage 1: e_g 0.000861969, e_f 0.000186358, n_- 0 -> ACCEPTED (0.11 s)
+    LS: e_g 0.000861969, e_f 0.000186358, n_- 0
+  Grendas group of 12 cell(s) on 6 patch(es) (first: patch 27, cell (0,1)): 1068 functions, 266 fitted, 7848 samples; stage 1: e_g 0.000861969, e_f 0.000186358, n_- 0 -> ACCEPTED (0.08 s)
+    LS: e_g 0.000861969, e_f 0.000182497, n_- 0
+  Grendas group of 9 cell(s) on 6 patch(es) (first: patch 21, cell (2,2)): 1044 functions, 241 fitted, 7056 samples; stage 1: e_g 0.000861969, e_f 0.000182497, n_- 0 -> ACCEPTED (0.07 s)
+    LS: e_g 0.000861969, e_f 0.000182497, n_- 0
+  Grendas group of 6 cell(s) on 3 patch(es) (first: patch 21, cell (0,1)): 1023 functions, 155 fitted, 4824 samples; stage 1: e_g 0.000861969, e_f 0.000182497, n_- 0 -> ACCEPTED (0.06 s)
+    LS: e_g 0.000861969, e_f 0.000182497, n_- 0
+  Grendas group of 5 cell(s) on 3 patch(es) (first: patch 21, cell (2,1)): 1009 functions, 141 fitted, 4284 samples; stage 1: e_g 0.000861969, e_f 0.000182497, n_- 0 -> ACCEPTED (0.05 s)
+    LS: e_g 0.000861969, e_f 0.000182497, n_- 0
+  Grendas group of 4 cell(s) on 3 patch(es) (first: patch 33, cell (3,1)): 995 functions, 105 fitted, 3456 samples; stage 1: e_g 0.000861969, e_f 0.000182497, n_- 0 -> ACCEPTED (0.05 s)
+    LS: e_g 0.000861969, e_f 0.000182497, n_- 0
+  Grendas group of 3 cell(s) on 2 patch(es) (first: patch 10, cell (0,0)): 984 functions, 66 fitted, 2268 samples; stage 1: e_g 0.000861969, e_f 0.000182497, n_- 0 -> ACCEPTED (0.04 s)
+    LS: e_g 0.000861969, e_f 0.000182497, n_- 0
+  Grendas group of 2 cell(s) on 2 patch(es) (first: patch 24, cell (2,0)): 978 functions, 71 fitted, 2268 samples; stage 1: e_g 0.000861969, e_f 0.000182497, n_- 0 -> ACCEPTED (0.04 s)
+    LS: e_g 0.000861969, e_f 0.000182497, n_- 0
+  Grendas group of 2 cell(s) on 2 patch(es) (first: patch 33, cell (2,0)): 972 functions, 65 fitted, 2052 samples; stage 1: e_g 0.000861969, e_f 0.000182497, n_- 0 -> ACCEPTED (0.04 s)
+    LS: e_g 0.000861969, e_f 0.000182497, n_- 0
+  Grendas group of 2 cell(s) on 2 patch(es) (first: patch 21, cell (2,0)): 969 functions, 63 fitted, 2052 samples; stage 1: e_g 0.000861969, e_f 0.000182497, n_- 0 -> ACCEPTED (0.04 s)
+    LS: e_g 0.000861969, e_f 0.000182497, n_- 0
+  Grendas group of 1 cell(s) on 1 patch(es) (first: patch 21, cell (3,0)): 966 functions, 25 fitted, 828 samples; stage 1: e_g 0.000861969, e_f 0.000182497, n_- 0 -> ACCEPTED (0.03 s)
+    LS: e_g 0.000861969, e_f 0.000182497, n_- 0
+  Grendas group of 1 cell(s) on 1 patch(es) (first: patch 24, cell (0,0)): 964 functions, 25 fitted, 720 samples; stage 1: e_g 0.000861969, e_f 0.000182497, n_- 0 -> ACCEPTED (0.03 s)
+    LS: e_g 0.000861969, e_f 0.000182497, n_- 0
+  Grendas group of 1 cell(s) on 1 patch(es) (first: patch 33, cell (3,0)): 962 functions, 25 fitted, 720 samples; stage 1: e_g 0.000861969, e_f 0.000182497, n_- 0 -> ACCEPTED (0.03 s)
+level 2 (cells of level 1 refined to 2): 142 eligible cells
+    LS: e_g 0.000910696, e_f 0.000265005, n_- 0
+  Grendas group of 55 cell(s) on 18 patch(es) (first: patch 17, cell (1,1)): 697 functions, 260 fitted, 8604 samples; stage 1: e_g 0.000910696, e_f 0.000265005, n_- 0 -> rejected (0.08 s)
+    LS: e_g 0.00124499, e_f 0.000277727, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 0, cell (1,1)): 955 functions, 31 fitted, 1584 samples; stage 1: e_g 0.00124499, e_f 0.000277727, n_- 0 -> rejected (0.03 s)
+    LS: e_g 0.000924087, e_f 0.000325626, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 0, cell (0,1)): 955 functions, 31 fitted, 1584 samples; stage 1: e_g 0.000924087, e_f 0.000325626, n_- 0 -> rejected (0.03 s)
+    LS: e_g 0.000861969, e_f 0.000182497, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 1, cell (1,1)): 955 functions, 29 fitted, 1368 samples; stage 1: e_g 0.000861969, e_f 0.000182497, n_- 0 -> ACCEPTED (0.03 s)
+    LS: e_g 0.000910696, e_f 0.000265005, n_- 0
+  Grendas group of 54 cell(s) on 18 patch(es) (first: patch 17, cell (1,1)): 694 functions, 264 fitted, 8712 samples; stage 1: e_g 0.000910696, e_f 0.000265005, n_- 0 -> rejected (0.08 s)
+    LS: e_g 0.000861969, e_f 0.000182497, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 1, cell (0,1)): 950 functions, 24 fitted, 1512 samples; stage 1: e_g 0.000861969, e_f 0.000182497, n_- 0 -> ACCEPTED (0.03 s)
+    LS: e_g 0.000909592, e_f 0.000265641, n_- 0
+  Grendas group of 53 cell(s) on 18 patch(es) (first: patch 17, cell (1,1)): 693 functions, 268 fitted, 8748 samples; stage 1: e_g 0.000909592, e_f 0.000265641, n_- 0 -> rejected (0.08 s)
+    LS: e_g 0.000861969, e_f 0.000182497, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 1, cell (1,0)): 945 functions, 19 fitted, 1404 samples; stage 1: e_g 0.000861969, e_f 0.000182497, n_- 0 -> ACCEPTED (0.03 s)
+    LS: e_g 0.000909592, e_f 0.000265641, n_- 0
+  Grendas group of 53 cell(s) on 18 patch(es) (first: patch 17, cell (1,1)): 688 functions, 268 fitted, 8748 samples; stage 1: e_g 0.000909592, e_f 0.000265641, n_- 0 -> rejected (0.08 s)
+    LS: e_g 0.000861969, e_f 0.000182497, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 1, cell (0,0)): 942 functions, 16 fitted, 1296 samples; stage 1: e_g 0.000861969, e_f 0.000182497, n_- 0 -> ACCEPTED (0.03 s)
+    LS: e_g 0.000909592, e_f 0.000265641, n_- 0
+  Grendas group of 52 cell(s) on 18 patch(es) (first: patch 17, cell (1,1)): 689 functions, 272 fitted, 8784 samples; stage 1: e_g 0.000909592, e_f 0.000265641, n_- 0 -> rejected (0.08 s)
+    LS: e_g 0.000861969, e_f 0.000182497, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 2, cell (1,1)): 935 functions, 27 fitted, 1800 samples; stage 1: e_g 0.000861969, e_f 0.000182497, n_- 0 -> ACCEPTED (0.03 s)
+    LS: e_g 0.000909592, e_f 0.000265641, n_- 0
+  Grendas group of 52 cell(s) on 18 patch(es) (first: patch 17, cell (1,1)): 683 functions, 271 fitted, 8676 samples; stage 1: e_g 0.000909592, e_f 0.000265641, n_- 0 -> rejected (0.08 s)
+    LS: e_g 0.000861969, e_f 0.000182497, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 2, cell (0,1)): 930 functions, 22 fitted, 1872 samples; stage 1: e_g 0.000861969, e_f 0.000182497, n_- 0 -> ACCEPTED (0.03 s)
+    LS: e_g 0.000909597, e_f 0.000265642, n_- 0
+  Grendas group of 51 cell(s) on 18 patch(es) (first: patch 17, cell (1,1)): 682 functions, 274 fitted, 8676 samples; stage 1: e_g 0.000909597, e_f 0.000265642, n_- 0 -> rejected (0.08 s)
+    LS: e_g 0.000861969, e_f 0.000182497, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 2, cell (1,0)): 926 functions, 18 fitted, 1764 samples; stage 1: e_g 0.000861969, e_f 0.000182497, n_- 0 -> ACCEPTED (0.03 s)
+    LS: e_g 0.000909597, e_f 0.000265642, n_- 0
+  Grendas group of 51 cell(s) on 18 patch(es) (first: patch 17, cell (1,1)): 678 functions, 273 fitted, 8568 samples; stage 1: e_g 0.000909597, e_f 0.000265642, n_- 0 -> rejected (0.08 s)
+    LS: e_g 0.000861969, e_f 0.000182497, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 2, cell (0,0)): 924 functions, 16 fitted, 1656 samples; stage 1: e_g 0.000861969, e_f 0.000182497, n_- 0 -> ACCEPTED (0.03 s)
+    LS: e_g 0.000909597, e_f 0.000265642, n_- 0
+  Grendas group of 51 cell(s) on 18 patch(es) (first: patch 17, cell (1,1)): 676 functions, 273 fitted, 8568 samples; stage 1: e_g 0.000909597, e_f 0.000265642, n_- 0 -> rejected (0.08 s)
+    LS: e_g 0.000861969, e_f 0.000182497, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 3, cell (1,1)): 917 functions, 27 fitted, 1332 samples; stage 1: e_g 0.000861969, e_f 0.000182497, n_- 0 -> ACCEPTED (0.03 s)
+    LS: e_g 0.000909597, e_f 0.000265642, n_- 0
+  Grendas group of 50 cell(s) on 18 patch(es) (first: patch 17, cell (1,1)): 676 functions, 273 fitted, 8568 samples; stage 1: e_g 0.000909597, e_f 0.000265642, n_- 0 -> rejected (0.08 s)
+    LS: e_g 0.000861969, e_f 0.000182497, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 3, cell (0,1)): 912 functions, 22 fitted, 1296 samples; stage 1: e_g 0.000861969, e_f 0.000182497, n_- 0 -> ACCEPTED (0.03 s)
+    LS: e_g 0.000909592, e_f 0.000265641, n_- 0
+  Grendas group of 50 cell(s) on 18 patch(es) (first: patch 17, cell (1,1)): 672 functions, 269 fitted, 8532 samples; stage 1: e_g 0.000909592, e_f 0.000265641, n_- 0 -> rejected (0.08 s)
+    LS: e_g 0.000861969, e_f 0.000182497, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 3, cell (1,0)): 908 functions, 18 fitted, 1188 samples; stage 1: e_g 0.000861969, e_f 0.000182497, n_- 0 -> ACCEPTED (0.03 s)
+    LS: e_g 0.000909592, e_f 0.000265641, n_- 0
+  Grendas group of 50 cell(s) on 17 patch(es) (first: patch 17, cell (1,1)): 668 functions, 256 fitted, 8496 samples; stage 1: e_g 0.000909592, e_f 0.000265641, n_- 0 -> rejected (0.08 s)
+    LS: e_g 0.000861969, e_f 0.000182497, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 3, cell (0,0)): 906 functions, 16 fitted, 1080 samples; stage 1: e_g 0.000861969, e_f 0.000182497, n_- 0 -> ACCEPTED (0.03 s)
+    LS: e_g 0.000909592, e_f 0.000265641, n_- 0
+  Grendas group of 50 cell(s) on 17 patch(es) (first: patch 17, cell (1,1)): 666 functions, 255 fitted, 8388 samples; stage 1: e_g 0.000909592, e_f 0.000265641, n_- 0 -> rejected (0.08 s)
+    LS: e_g 0.000861969, e_f 0.000182497, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 4, cell (1,1)): 899 functions, 27 fitted, 1296 samples; stage 1: e_g 0.000861969, e_f 0.000182497, n_- 0 -> ACCEPTED (0.03 s)
+    LS: e_g 0.000909592, e_f 0.000265642, n_- 0
+  Grendas group of 49 cell(s) on 17 patch(es) (first: patch 17, cell (1,1)): 664 functions, 259 fitted, 8316 samples; stage 1: e_g 0.000909592, e_f 0.000265642, n_- 0 -> rejected (0.07 s)
+    LS: e_g 0.000861969, e_f 0.000199871, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 4, cell (0,1)): 895 functions, 23 fitted, 1188 samples; stage 1: e_g 0.000861969, e_f 0.000199871, n_- 0 -> ACCEPTED (0.03 s)
+    LS: e_g 0.000909592, e_f 0.000265642, n_- 0
+  Grendas group of 49 cell(s) on 17 patch(es) (first: patch 17, cell (1,1)): 660 functions, 258 fitted, 8208 samples; stage 1: e_g 0.000909592, e_f 0.000265642, n_- 0 -> rejected (0.07 s)
+    LS: e_g 0.000967951, e_f 0.000633558, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 4, cell (1,0)): 890 functions, 18 fitted, 1080 samples; stage 1: e_g 0.000967951, e_f 0.000633558, n_- 0 -> rejected (0.03 s)
+    LS: e_g 0.00100176, e_f 0.0007204, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 4, cell (0,0)): 891 functions, 19 fitted, 1080 samples; stage 1: e_g 0.00100176, e_f 0.0007204, n_- 0 -> rejected (0.03 s)
+    LS: e_g 0.000861969, e_f 0.000199871, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 5, cell (1,1)): 888 functions, 25 fitted, 1548 samples; stage 1: e_g 0.000861969, e_f 0.000199871, n_- 0 -> ACCEPTED (0.03 s)
+    LS: e_g 0.000909592, e_f 0.000265642, n_- 0
+  Grendas group of 48 cell(s) on 17 patch(es) (first: patch 17, cell (1,1)): 660 functions, 258 fitted, 8208 samples; stage 1: e_g 0.000909592, e_f 0.000265642, n_- 0 -> rejected (0.07 s)
+    LS: e_g 0.000861969, e_f 0.000199871, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 5, cell (0,1)): 884 functions, 21 fitted, 1440 samples; stage 1: e_g 0.000861969, e_f 0.000199871, n_- 0 -> ACCEPTED (0.03 s)
+    LS: e_g 0.000909591, e_f 0.000265641, n_- 0
+  Grendas group of 48 cell(s) on 17 patch(es) (first: patch 17, cell (1,1)): 657 functions, 255 fitted, 8100 samples; stage 1: e_g 0.000909591, e_f 0.000265641, n_- 0 -> rejected (0.07 s)
+    LS: e_g 0.000861969, e_f 0.000199871, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 5, cell (1,0)): 880 functions, 17 fitted, 1332 samples; stage 1: e_g 0.000861969, e_f 0.000199871, n_- 0 -> ACCEPTED (0.03 s)
+    LS: e_g 0.000909591, e_f 0.000265641, n_- 0
+  Grendas group of 47 cell(s) on 16 patch(es) (first: patch 17, cell (1,1)): 657 functions, 245 fitted, 7848 samples; stage 1: e_g 0.000909591, e_f 0.000265641, n_- 0 -> rejected (0.07 s)
+    LS: e_g 0.000861969, e_f 0.000199871, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 5, cell (0,0)): 879 functions, 16 fitted, 1224 samples; stage 1: e_g 0.000861969, e_f 0.000199871, n_- 0 -> ACCEPTED (0.03 s)
+    LS: e_g 0.000909591, e_f 0.000265641, n_- 0
+  Grendas group of 47 cell(s) on 16 patch(es) (first: patch 17, cell (1,1)): 656 functions, 245 fitted, 7848 samples; stage 1: e_g 0.000909591, e_f 0.000265641, n_- 0 -> rejected (0.07 s)
+    LS: e_g 0.000861969, e_f 0.000199871, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 6, cell (1,1)): 872 functions, 25 fitted, 1080 samples; stage 1: e_g 0.000861969, e_f 0.000199871, n_- 0 -> ACCEPTED (0.03 s)
+    LS: e_g 0.000909591, e_f 0.000265641, n_- 0
+  Grendas group of 46 cell(s) on 16 patch(es) (first: patch 17, cell (1,1)): 656 functions, 245 fitted, 7848 samples; stage 1: e_g 0.000909591, e_f 0.000265641, n_- 0 -> rejected (0.07 s)
+    LS: e_g 0.000861969, e_f 0.000199871, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 6, cell (0,1)): 868 functions, 21 fitted, 972 samples; stage 1: e_g 0.000861969, e_f 0.000199871, n_- 0 -> ACCEPTED (0.03 s)
+    LS: e_g 0.000909591, e_f 0.000265641, n_- 0
+  Grendas group of 46 cell(s) on 16 patch(es) (first: patch 17, cell (1,1)): 652 functions, 241 fitted, 7812 samples; stage 1: e_g 0.000909591, e_f 0.000265641, n_- 0 -> rejected (0.07 s)
+    LS: e_g 0.000861969, e_f 0.000199871, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 6, cell (1,0)): 864 functions, 17 fitted, 864 samples; stage 1: e_g 0.000861969, e_f 0.000199871, n_- 0 -> ACCEPTED (0.03 s)
+    LS: e_g 0.000909591, e_f 0.000265641, n_- 0
+  Grendas group of 45 cell(s) on 16 patch(es) (first: patch 17, cell (1,1)): 652 functions, 241 fitted, 7812 samples; stage 1: e_g 0.000909591, e_f 0.000265641, n_- 0 -> rejected (0.08 s)
+    LS: e_g 0.000861969, e_f 0.000199871, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 6, cell (0,0)): 863 functions, 16 fitted, 756 samples; stage 1: e_g 0.000861969, e_f 0.000199871, n_- 0 -> ACCEPTED (0.02 s)
+    LS: e_g 0.000910694, e_f 0.000265007, n_- 0
+  Grendas group of 45 cell(s) on 15 patch(es) (first: patch 17, cell (1,1)): 648 functions, 225 fitted, 7560 samples; stage 1: e_g 0.000910694, e_f 0.000265007, n_- 0 -> rejected (0.07 s)
+    LS: e_g 0.000861969, e_f 0.000199871, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 7, cell (1,1)): 856 functions, 28 fitted, 1404 samples; stage 1: e_g 0.000861969, e_f 0.000199871, n_- 0 -> ACCEPTED (0.03 s)
+    LS: e_g 0.000910698, e_f 0.000265015, n_- 0
+  Grendas group of 45 cell(s) on 15 patch(es) (first: patch 17, cell (1,1)): 641 functions, 224 fitted, 7632 samples; stage 1: e_g 0.000910698, e_f 0.000265015, n_- 0 -> rejected (0.08 s)
+    LS: e_g 0.000861969, e_f 0.000210075, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 7, cell (0,1)): 852 functions, 24 fitted, 1296 samples; stage 1: e_g 0.000861969, e_f 0.000210075, n_- 0 -> rejected (0.03 s)
+    LS: e_g 0.000916182, e_f 0.000847181, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 7, cell (1,0)): 851 functions, 23 fitted, 1296 samples; stage 1: e_g 0.000916182, e_f 0.000847181, n_- 0 -> rejected (0.03 s)
+    LS: e_g 0.00091509, e_f 0.000589595, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 7, cell (0,0)): 849 functions, 21 fitted, 1296 samples; stage 1: e_g 0.00091509, e_f 0.000589595, n_- 0 -> rejected (0.03 s)
+    LS: e_g 0.000861969, e_f 0.000199871, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 8, cell (1,1)): 849 functions, 26 fitted, 1656 samples; stage 1: e_g 0.000861969, e_f 0.000199871, n_- 0 -> ACCEPTED (0.03 s)
+    LS: e_g 0.000909588, e_f 0.00026564, n_- 0
+  Grendas group of 43 cell(s) on 15 patch(es) (first: patch 17, cell (1,1)): 645 functions, 228 fitted, 7596 samples; stage 1: e_g 0.000909588, e_f 0.00026564, n_- 0 -> rejected (0.07 s)
+    LS: e_g 0.000861969, e_f 0.000199871, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 8, cell (0,1)): 845 functions, 22 fitted, 1548 samples; stage 1: e_g 0.000861969, e_f 0.000199871, n_- 0 -> ACCEPTED (0.03 s)
+    LS: e_g 0.000910686, e_f 0.00026499, n_- 0
+  Grendas group of 43 cell(s) on 15 patch(es) (first: patch 17, cell (1,1)): 641 functions, 224 fitted, 7560 samples; stage 1: e_g 0.000910686, e_f 0.00026499, n_- 0 -> rejected (0.07 s)
+    LS: e_g 0.000861969, e_f 0.000199871, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 8, cell (1,0)): 841 functions, 18 fitted, 1440 samples; stage 1: e_g 0.000861969, e_f 0.000199871, n_- 0 -> ACCEPTED (0.03 s)
+    LS: e_g 0.000910672, e_f 0.000264963, n_- 0
+  Grendas group of 43 cell(s) on 15 patch(es) (first: patch 17, cell (1,1)): 639 functions, 222 fitted, 7452 samples; stage 1: e_g 0.000910672, e_f 0.000264963, n_- 0 -> rejected (0.07 s)
+    LS: e_g 0.000861969, e_f 0.000199871, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 8, cell (0,0)): 839 functions, 16 fitted, 1332 samples; stage 1: e_g 0.000861969, e_f 0.000199871, n_- 0 -> ACCEPTED (0.03 s)
+    LS: e_g 0.000910682, e_f 0.000264982, n_- 0
+  Grendas group of 42 cell(s) on 14 patch(es) (first: patch 17, cell (1,1)): 639 functions, 210 fitted, 6840 samples; stage 1: e_g 0.000910682, e_f 0.000264982, n_- 0 -> rejected (0.07 s)
+    LS: e_g 0.000861969, e_f 0.000199871, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 9, cell (1,1)): 832 functions, 25 fitted, 1080 samples; stage 1: e_g 0.000861969, e_f 0.000199871, n_- 0 -> ACCEPTED (0.03 s)
+    LS: e_g 0.000910682, e_f 0.000264982, n_- 0
+  Grendas group of 42 cell(s) on 14 patch(es) (first: patch 17, cell (1,1)): 635 functions, 206 fitted, 6804 samples; stage 1: e_g 0.000910682, e_f 0.000264982, n_- 0 -> rejected (0.06 s)
+    LS: e_g 0.000861969, e_f 0.000199871, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 9, cell (0,1)): 828 functions, 21 fitted, 972 samples; stage 1: e_g 0.000861969, e_f 0.000199871, n_- 0 -> ACCEPTED (0.03 s)
+    LS: e_g 0.000910682, e_f 0.000264982, n_- 0
+  Grendas group of 41 cell(s) on 14 patch(es) (first: patch 17, cell (1,1)): 635 functions, 206 fitted, 6804 samples; stage 1: e_g 0.000910682, e_f 0.000264982, n_- 0 -> rejected (0.07 s)
+    LS: e_g 0.000861969, e_f 0.000199871, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 9, cell (1,0)): 824 functions, 17 fitted, 864 samples; stage 1: e_g 0.000861969, e_f 0.000199871, n_- 0 -> ACCEPTED (0.02 s)
+    LS: e_g 0.000910682, e_f 0.000264982, n_- 0
+  Grendas group of 41 cell(s) on 14 patch(es) (first: patch 17, cell (1,1)): 631 functions, 202 fitted, 6696 samples; stage 1: e_g 0.000910682, e_f 0.000264982, n_- 0 -> rejected (0.07 s)
+    LS: e_g 0.000861969, e_f 0.000199871, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 9, cell (0,0)): 823 functions, 16 fitted, 756 samples; stage 1: e_g 0.000861969, e_f 0.000199871, n_- 0 -> ACCEPTED (0.02 s)
+    LS: e_g 0.000910631, e_f 0.000264924, n_- 0
+  Grendas group of 40 cell(s) on 13 patch(es) (first: patch 17, cell (1,1)): 631 functions, 190 fitted, 6480 samples; stage 1: e_g 0.000910631, e_f 0.000264924, n_- 0 -> rejected (0.06 s)
+    LS: e_g 0.000972451, e_f 0.000199871, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 10, cell (1,1)): 816 functions, 28 fitted, 1512 samples; stage 1: e_g 0.000972451, e_f 0.000199871, n_- 0 -> ACCEPTED (0.03 s)
+    LS: e_g 0.000972451, e_f 0.000264924, n_- 0
+  Grendas group of 40 cell(s) on 13 patch(es) (first: patch 17, cell (1,1)): 624 functions, 190 fitted, 6480 samples; stage 1: e_g 0.000972451, e_f 0.000264924, n_- 0 -> rejected (0.06 s)
+    LS: e_g 0.0016257, e_f 0.000378175, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 10, cell (0,1)): 812 functions, 24 fitted, 1404 samples; stage 1: e_g 0.0016257, e_f 0.000378175, n_- 0 -> rejected (0.03 s)
+    LS: e_g 0.00123366, e_f 0.00118128, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 10, cell (1,0)): 811 functions, 23 fitted, 1404 samples; stage 1: e_g 0.00123366, e_f 0.00118128, n_- 0 -> rejected (0.03 s)
+    LS: e_g 0.00181636, e_f 0.00125229, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 10, cell (0,0)): 809 functions, 21 fitted, 1404 samples; stage 1: e_g 0.00181636, e_f 0.00125229, n_- 0 -> rejected (0.03 s)
+    LS: e_g 0.000972319, e_f 0.000199871, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 11, cell (1,1)): 809 functions, 26 fitted, 1656 samples; stage 1: e_g 0.000972319, e_f 0.000199871, n_- 0 -> ACCEPTED (0.03 s)
+    LS: e_g 0.000972319, e_f 0.000262223, n_- 0
+  Grendas group of 38 cell(s) on 13 patch(es) (first: patch 17, cell (1,1)): 625 functions, 197 fitted, 6516 samples; stage 1: e_g 0.000972319, e_f 0.000262223, n_- 0 -> rejected (0.07 s)
+    LS: e_g 0.00100111, e_f 0.000199871, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 11, cell (0,1)): 805 functions, 22 fitted, 1548 samples; stage 1: e_g 0.00100111, e_f 0.000199871, n_- 0 -> ACCEPTED (0.03 s)
+    LS: e_g 0.00100115, e_f 0.000263818, n_- 0
+  Grendas group of 37 cell(s) on 13 patch(es) (first: patch 17, cell (1,1)): 625 functions, 200 fitted, 6516 samples; stage 1: e_g 0.00100115, e_f 0.000263818, n_- 0 -> rejected (0.07 s)
+    LS: e_g 0.00114287, e_f 0.000199871, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 11, cell (1,0)): 801 functions, 18 fitted, 1440 samples; stage 1: e_g 0.00114287, e_f 0.000199871, n_- 0 -> ACCEPTED (0.03 s)
+    LS: e_g 0.00114287, e_f 0.000263824, n_- 0
+  Grendas group of 37 cell(s) on 13 patch(es) (first: patch 17, cell (1,1)): 621 functions, 200 fitted, 6516 samples; stage 1: e_g 0.00114287, e_f 0.000263824, n_- 0 -> rejected (0.06 s)
+    LS: e_g 0.00136451, e_f 0.000199871, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 11, cell (0,0)): 799 functions, 16 fitted, 1332 samples; stage 1: e_g 0.00136451, e_f 0.000199871, n_- 0 -> ACCEPTED (0.03 s)
+    LS: e_g 0.00136451, e_f 0.000263807, n_- 0
+  Grendas group of 37 cell(s) on 13 patch(es) (first: patch 17, cell (1,1)): 619 functions, 200 fitted, 6516 samples; stage 1: e_g 0.00136451, e_f 0.000263807, n_- 0 -> rejected (0.07 s)
+    LS: e_g 0.00136451, e_f 0.000199871, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 12, cell (1,1)): 792 functions, 25 fitted, 1080 samples; stage 1: e_g 0.00136451, e_f 0.000199871, n_- 0 -> ACCEPTED (0.03 s)
+    LS: e_g 0.00136451, e_f 0.000263807, n_- 0
+  Grendas group of 36 cell(s) on 13 patch(es) (first: patch 17, cell (1,1)): 619 functions, 200 fitted, 6516 samples; stage 1: e_g 0.00136451, e_f 0.000263807, n_- 0 -> rejected (0.06 s)
+    LS: e_g 0.00136451, e_f 0.000199871, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 12, cell (0,1)): 788 functions, 21 fitted, 972 samples; stage 1: e_g 0.00136451, e_f 0.000199871, n_- 0 -> ACCEPTED (0.03 s)
+    LS: e_g 0.00136451, e_f 0.000262015, n_- 0
+  Grendas group of 36 cell(s) on 13 patch(es) (first: patch 17, cell (1,1)): 616 functions, 197 fitted, 6408 samples; stage 1: e_g 0.00136451, e_f 0.000262015, n_- 0 -> rejected (0.06 s)
+    LS: e_g 0.00136451, e_f 0.000291339, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 12, cell (1,0)): 784 functions, 17 fitted, 864 samples; stage 1: e_g 0.00136451, e_f 0.000291339, n_- 0 -> rejected (0.02 s)
+    LS: e_g 0.00136451, e_f 0.000232091, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 12, cell (0,0)): 785 functions, 18 fitted, 864 samples; stage 1: e_g 0.00136451, e_f 0.000232091, n_- 0 -> rejected (0.02 s)
+    LS: e_g 0.00157754, e_f 0.000199871, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 13, cell (1,1)): 781 functions, 27 fitted, 1692 samples; stage 1: e_g 0.00157754, e_f 0.000199871, n_- 0 -> ACCEPTED (0.03 s)
+    LS: e_g 0.00157818, e_f 0.000230557, n_- 0
+  Grendas group of 35 cell(s) on 12 patch(es) (first: patch 17, cell (1,1)): 613 functions, 183 fitted, 6156 samples; stage 1: e_g 0.00157818, e_f 0.000230557, n_- 0 -> rejected (0.06 s)
+    LS: e_g 0.00196378, e_f 0.000199871, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 13, cell (0,1)): 777 functions, 23 fitted, 1584 samples; stage 1: e_g 0.00196378, e_f 0.000199871, n_- 0 -> ACCEPTED (0.03 s)
+    LS: e_g 0.00196398, e_f 0.000221545, n_- 0
+  Grendas group of 35 cell(s) on 12 patch(es) (first: patch 17, cell (1,1)): 609 functions, 182 fitted, 6048 samples; stage 1: e_g 0.00196398, e_f 0.000221545, n_- 0 -> rejected (0.06 s)
+    LS: e_g 0.00211846, e_f 0.000199871, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 13, cell (1,0)): 772 functions, 18 fitted, 1656 samples; stage 1: e_g 0.00211846, e_f 0.000199871, n_- 0 -> ACCEPTED (0.03 s)
+    LS: e_g 0.00211846, e_f 0.000205247, n_- 0
+  Grendas group of 35 cell(s) on 12 patch(es) (first: patch 17, cell (1,1)): 604 functions, 181 fitted, 6048 samples; stage 1: e_g 0.00211846, e_f 0.000205247, n_- 0 -> rejected (0.06 s)
+    LS: e_g 0.00218296, e_f 0.000199871, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 13, cell (0,0)): 770 functions, 16 fitted, 1548 samples; stage 1: e_g 0.00218296, e_f 0.000199871, n_- 0 -> ACCEPTED (0.03 s)
+    LS: e_g 0.00218319, e_f 0.000209177, n_- 0
+  Grendas group of 34 cell(s) on 12 patch(es) (first: patch 17, cell (1,1)): 606 functions, 185 fitted, 6084 samples; stage 1: e_g 0.00218319, e_f 0.000209177, n_- 0 -> rejected (0.06 s)
+    LS: e_g 0.00218296, e_f 0.000199871, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 14, cell (1,1)): 763 functions, 26 fitted, 1188 samples; stage 1: e_g 0.00218296, e_f 0.000199871, n_- 0 -> ACCEPTED (0.03 s)
+    LS: e_g 0.00218319, e_f 0.000209174, n_- 0
+  Grendas group of 34 cell(s) on 12 patch(es) (first: patch 17, cell (1,1)): 602 functions, 181 fitted, 6048 samples; stage 1: e_g 0.00218319, e_f 0.000209174, n_- 0 -> rejected (0.06 s)
+    LS: e_g 0.00218296, e_f 0.000242779, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 14, cell (0,1)): 759 functions, 22 fitted, 1080 samples; stage 1: e_g 0.00218296, e_f 0.000242779, n_- 0 -> rejected (0.03 s)
+    LS: e_g 0.00218296, e_f 0.000227873, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 14, cell (1,0)): 759 functions, 22 fitted, 1080 samples; stage 1: e_g 0.00218296, e_f 0.000227873, n_- 0 -> rejected (0.03 s)
+    LS: e_g 0.00218296, e_f 0.000222444, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 14, cell (0,0)): 757 functions, 20 fitted, 1080 samples; stage 1: e_g 0.00218296, e_f 0.000222444, n_- 0 -> rejected (0.03 s)
+    LS: e_g 0.00218296, e_f 0.000199871, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 15, cell (1,1)): 756 functions, 29 fitted, 1440 samples; stage 1: e_g 0.00218296, e_f 0.000199871, n_- 0 -> ACCEPTED (0.03 s)
+    LS: e_g 0.00218318, e_f 0.000199871, n_- 0
+  Grendas group of 33 cell(s) on 11 patch(es) (first: patch 17, cell (1,1)): 599 functions, 163 fitted, 5580 samples; stage 1: e_g 0.00218318, e_f 0.000199871, n_- 0 -> ACCEPTED (0.06 s)
+    LS: e_g 0.00218336, e_f 0.000280431, n_- 0
+  Grendas group of 16 cell(s) on 13 patch(es) (first: patch 35, cell (0,0)): 538 functions, 221 fitted, 6084 samples; stage 1: e_g 0.00218336, e_f 0.000280431, n_- 0 -> rejected (0.06 s)
+    LS: e_g 0.00218318, e_f 0.000203032, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 15, cell (0,1)): 594 functions, 24 fitted, 1296 samples; stage 1: e_g 0.00218318, e_f 0.000203032, n_- 0 -> rejected (0.03 s)
+    LS: e_g 0.00218318, e_f 0.00071837, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 15, cell (1,0)): 594 functions, 24 fitted, 1116 samples; stage 1: e_g 0.00218318, e_f 0.00071837, n_- 0 -> rejected (0.03 s)
+    LS: e_g 0.00218318, e_f 0.00081949, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 15, cell (0,0)): 592 functions, 22 fitted, 1296 samples; stage 1: e_g 0.00218318, e_f 0.00081949, n_- 0 -> rejected (0.03 s)
+    LS: e_g 0.00218267, e_f 0.000199871, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 16, cell (0,1)): 596 functions, 18 fitted, 1116 samples; stage 1: e_g 0.00218267, e_f 0.000199871, n_- 0 -> ACCEPTED (0.03 s)
+    LS: e_g 0.00218336, e_f 0.000280431, n_- 0
+  Grendas group of 15 cell(s) on 13 patch(es) (first: patch 35, cell (0,0)): 538 functions, 221 fitted, 6084 samples; stage 1: e_g 0.00218336, e_f 0.000280431, n_- 0 -> rejected (0.06 s)
+    LS: e_g 0.00218336, e_f 0.000199871, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 16, cell (0,0)): 594 functions, 16 fitted, 1008 samples; stage 1: e_g 0.00218336, e_f 0.000199871, n_- 0 -> ACCEPTED (0.03 s)
+    LS: e_g 0.00218336, e_f 0.000280431, n_- 0
+  Grendas group of 14 cell(s) on 12 patch(es) (first: patch 35, cell (0,0)): 538 functions, 209 fitted, 5472 samples; stage 1: e_g 0.00218336, e_f 0.000280431, n_- 0 -> rejected (0.06 s)
+    LS: e_g 0.00218336, e_f 0.000199871, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 18, cell (1,1)): 587 functions, 27 fitted, 1296 samples; stage 1: e_g 0.00218336, e_f 0.000199871, n_- 0 -> ACCEPTED (0.03 s)
+    LS: e_g 0.00218336, e_f 0.000280431, n_- 0
+  Grendas group of 14 cell(s) on 12 patch(es) (first: patch 35, cell (0,0)): 534 functions, 205 fitted, 5436 samples; stage 1: e_g 0.00218336, e_f 0.000280431, n_- 0 -> rejected (0.06 s)
+    LS: e_g 0.00218336, e_f 0.000199871, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 18, cell (0,1)): 584 functions, 24 fitted, 1188 samples; stage 1: e_g 0.00218336, e_f 0.000199871, n_- 0 -> ACCEPTED (0.03 s)
+    LS: e_g 0.00218336, e_f 0.000259109, n_- 0
+  Grendas group of 14 cell(s) on 11 patch(es) (first: patch 35, cell (0,0)): 531 functions, 182 fitted, 4788 samples; stage 1: e_g 0.00218336, e_f 0.000259109, n_- 0 -> rejected (0.05 s)
+    LS: e_g 0.00218336, e_f 0.000199871, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 18, cell (1,0)): 579 functions, 19 fitted, 1080 samples; stage 1: e_g 0.00218336, e_f 0.000199871, n_- 0 -> ACCEPTED (0.03 s)
+    LS: e_g 0.00218336, e_f 0.000259109, n_- 0
+  Grendas group of 14 cell(s) on 11 patch(es) (first: patch 35, cell (0,0)): 526 functions, 182 fitted, 4788 samples; stage 1: e_g 0.00218336, e_f 0.000259109, n_- 0 -> rejected (0.05 s)
+    LS: e_g 0.00218336, e_f 0.000199871, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 18, cell (0,0)): 576 functions, 16 fitted, 972 samples; stage 1: e_g 0.00218336, e_f 0.000199871, n_- 0 -> ACCEPTED (0.03 s)
+    LS: e_g 0.00218336, e_f 0.000280431, n_- 0
+  Grendas group of 13 cell(s) on 11 patch(es) (first: patch 35, cell (0,0)): 526 functions, 185 fitted, 4860 samples; stage 1: e_g 0.00218336, e_f 0.000280431, n_- 0 -> rejected (0.05 s)
+    LS: e_g 0.00218336, e_f 0.000199871, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 19, cell (1,0)): 574 functions, 16 fitted, 900 samples; stage 1: e_g 0.00218336, e_f 0.000199871, n_- 0 -> ACCEPTED (0.02 s)
+    LS: e_g 0.00218336, e_f 0.000259109, n_- 0
+  Grendas group of 13 cell(s) on 10 patch(es) (first: patch 35, cell (0,0)): 523 functions, 170 fitted, 4500 samples; stage 1: e_g 0.00218336, e_f 0.000259109, n_- 0 -> rejected (0.05 s)
+    LS: e_g 0.00218336, e_f 0.000199871, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 21, cell (1,1)): 567 functions, 27 fitted, 1296 samples; stage 1: e_g 0.00218336, e_f 0.000199871, n_- 0 -> ACCEPTED (0.03 s)
+    LS: e_g 0.00218336, e_f 0.000259109, n_- 0
+  Grendas group of 13 cell(s) on 10 patch(es) (first: patch 35, cell (0,0)): 516 functions, 169 fitted, 4536 samples; stage 1: e_g 0.00218336, e_f 0.000259109, n_- 0 -> rejected (0.05 s)
+    LS: e_g 0.00218336, e_f 0.000372995, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 21, cell (0,1)): 563 functions, 23 fitted, 1188 samples; stage 1: e_g 0.00218336, e_f 0.000372995, n_- 0 -> rejected (0.03 s)
+    LS: e_g 0.00218336, e_f 0.00110118, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 21, cell (1,0)): 562 functions, 22 fitted, 1188 samples; stage 1: e_g 0.00218336, e_f 0.00110118, n_- 0 -> rejected (0.03 s)
+    LS: e_g 0.00218336, e_f 0.00132795, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 21, cell (0,0)): 561 functions, 21 fitted, 1188 samples; stage 1: e_g 0.00218336, e_f 0.00132795, n_- 0 -> rejected (0.03 s)
+    LS: e_g 0.00218336, e_f 0.000199871, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 22, cell (1,1)): 560 functions, 25 fitted, 1548 samples; stage 1: e_g 0.00218336, e_f 0.000199871, n_- 0 -> ACCEPTED (0.03 s)
+    LS: e_g 0.00218336, e_f 0.000280311, n_- 0
+  Grendas group of 11 cell(s) on 10 patch(es) (first: patch 35, cell (0,0)): 518 functions, 171 fitted, 4572 samples; stage 1: e_g 0.00218336, e_f 0.000280311, n_- 0 -> rejected (0.05 s)
+    LS: e_g 0.00218336, e_f 0.000199871, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 22, cell (0,1)): 557 functions, 22 fitted, 1440 samples; stage 1: e_g 0.00218336, e_f 0.000199871, n_- 0 -> ACCEPTED (0.03 s)
+    LS: e_g 0.00218336, e_f 0.000280431, n_- 0
+  Grendas group of 11 cell(s) on 9 patch(es) (first: patch 35, cell (0,0)): 515 functions, 154 fitted, 4140 samples; stage 1: e_g 0.00218336, e_f 0.000280431, n_- 0 -> rejected (0.05 s)
+    LS: e_g 0.00218336, e_f 0.000199871, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 22, cell (1,0)): 553 functions, 18 fitted, 1332 samples; stage 1: e_g 0.00218336, e_f 0.000199871, n_- 0 -> ACCEPTED (0.03 s)
+    LS: e_g 0.00218336, e_f 0.00028043, n_- 0
+  Grendas group of 11 cell(s) on 9 patch(es) (first: patch 35, cell (0,0)): 511 functions, 153 fitted, 4032 samples; stage 1: e_g 0.00218336, e_f 0.00028043, n_- 0 -> rejected (0.05 s)
+    LS: e_g 0.00218336, e_f 0.000199871, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 22, cell (0,0)): 551 functions, 16 fitted, 1224 samples; stage 1: e_g 0.00218336, e_f 0.000199871, n_- 0 -> ACCEPTED (0.03 s)
+    LS: e_g 0.00218336, e_f 0.00028043, n_- 0
+  Grendas group of 11 cell(s) on 9 patch(es) (first: patch 35, cell (0,0)): 509 functions, 153 fitted, 4032 samples; stage 1: e_g 0.00218336, e_f 0.00028043, n_- 0 -> rejected (0.05 s)
+    LS: e_g 0.00218336, e_f 0.000199871, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 23, cell (1,0)): 549 functions, 16 fitted, 648 samples; stage 1: e_g 0.00218336, e_f 0.000199871, n_- 0 -> ACCEPTED (0.02 s)
+    LS: e_g 0.00218336, e_f 0.00028043, n_- 0
+  Grendas group of 10 cell(s) on 8 patch(es) (first: patch 35, cell (0,0)): 509 functions, 141 fitted, 3816 samples; stage 1: e_g 0.00218336, e_f 0.00028043, n_- 0 -> rejected (0.05 s)
+    LS: e_g 0.00218336, e_f 0.000228632, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 24, cell (1,1)): 542 functions, 28 fitted, 1404 samples; stage 1: e_g 0.00218336, e_f 0.000228632, n_- 0 -> rejected (0.03 s)
+    LS: e_g 0.00218336, e_f 0.000227142, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 24, cell (0,1)): 543 functions, 29 fitted, 1152 samples; stage 1: e_g 0.00218336, e_f 0.000227142, n_- 0 -> rejected (0.03 s)
+    LS: e_g 0.00218336, e_f 0.00139029, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 24, cell (1,0)): 542 functions, 28 fitted, 1224 samples; stage 1: e_g 0.00218336, e_f 0.00139029, n_- 0 -> rejected (0.03 s)
+    LS: e_g 0.00218336, e_f 0.000988836, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 24, cell (0,0)): 542 functions, 28 fitted, 1080 samples; stage 1: e_g 0.00218336, e_f 0.000988836, n_- 0 -> rejected (0.03 s)
+    LS: e_g 0.00218336, e_f 0.000199871, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 25, cell (1,1)): 543 functions, 27 fitted, 1368 samples; stage 1: e_g 0.00218336, e_f 0.000199871, n_- 0 -> ACCEPTED (0.03 s)
+    LS: e_g 0.00218336, e_f 0.000280312, n_- 0
+  Grendas group of 8 cell(s) on 7 patch(es) (first: patch 35, cell (0,0)): 512 functions, 126 fitted, 3492 samples; stage 1: e_g 0.00218336, e_f 0.000280312, n_- 0 -> rejected (0.05 s)
+    LS: e_g 0.00218336, e_f 0.000199871, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 25, cell (0,1)): 539 functions, 23 fitted, 1260 samples; stage 1: e_g 0.00218336, e_f 0.000199871, n_- 0 -> ACCEPTED (0.03 s)
+    LS: e_g 0.00218336, e_f 0.000280312, n_- 0
+  Grendas group of 8 cell(s) on 7 patch(es) (first: patch 35, cell (0,0)): 509 functions, 126 fitted, 3384 samples; stage 1: e_g 0.00218336, e_f 0.000280312, n_- 0 -> rejected (0.04 s)
+    LS: e_g 0.00218336, e_f 0.000199871, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 25, cell (1,0)): 534 functions, 18 fitted, 1332 samples; stage 1: e_g 0.00218336, e_f 0.000199871, n_- 0 -> ACCEPTED (0.03 s)
+    LS: e_g 0.00218336, e_f 0.000280297, n_- 0
+  Grendas group of 8 cell(s) on 7 patch(es) (first: patch 35, cell (0,0)): 504 functions, 125 fitted, 3348 samples; stage 1: e_g 0.00218336, e_f 0.000280297, n_- 0 -> rejected (0.04 s)
+    LS: e_g 0.00218336, e_f 0.000199871, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 25, cell (0,0)): 532 functions, 16 fitted, 1224 samples; stage 1: e_g 0.00218336, e_f 0.000199871, n_- 0 -> ACCEPTED (0.03 s)
+    LS: e_g 0.00218336, e_f 0.000280299, n_- 0
+  Grendas group of 8 cell(s) on 7 patch(es) (first: patch 35, cell (0,0)): 502 functions, 125 fitted, 3348 samples; stage 1: e_g 0.00218336, e_f 0.000280299, n_- 0 -> rejected (0.04 s)
+    LS: e_g 0.00218336, e_f 0.000199871, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 26, cell (0,0)): 531 functions, 16 fitted, 540 samples; stage 1: e_g 0.00218336, e_f 0.000199871, n_- 0 -> ACCEPTED (0.02 s)
+    LS: e_g 0.00218336, e_f 0.000280299, n_- 0
+  Grendas group of 7 cell(s) on 6 patch(es) (first: patch 35, cell (0,0)): 502 functions, 110 fitted, 3060 samples; stage 1: e_g 0.00218336, e_f 0.000280299, n_- 0 -> rejected (0.04 s)
+    LS: e_g 0.00218336, e_f 0.000199871, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 27, cell (1,1)): 525 functions, 29 fitted, 1224 samples; stage 1: e_g 0.00218336, e_f 0.000199871, n_- 0 -> ACCEPTED (0.03 s)
+    LS: e_g 0.00218336, e_f 0.000281867, n_- 0
+  Grendas group of 7 cell(s) on 5 patch(es) (first: patch 35, cell (0,0)): 500 functions, 88 fitted, 2736 samples; stage 1: e_g 0.00218336, e_f 0.000281867, n_- 0 -> rejected (0.04 s)
+    LS: e_g 0.00218336, e_f 0.000199871, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 27, cell (0,1)): 520 functions, 24 fitted, 1188 samples; stage 1: e_g 0.00218336, e_f 0.000199871, n_- 0 -> ACCEPTED (0.03 s)
+    LS: e_g 0.00218336, e_f 0.000286029, n_- 0
+  Grendas group of 7 cell(s) on 5 patch(es) (first: patch 35, cell (0,0)): 496 functions, 88 fitted, 2628 samples; stage 1: e_g 0.00218336, e_f 0.000286029, n_- 0 -> rejected (0.04 s)
+    LS: e_g 0.00218336, e_f 0.000644842, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 27, cell (1,0)): 515 functions, 19 fitted, 1080 samples; stage 1: e_g 0.00218336, e_f 0.000644842, n_- 0 -> rejected (0.02 s)
+    LS: e_g 0.00218336, e_f 0.000734373, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 27, cell (0,0)): 515 functions, 19 fitted, 1080 samples; stage 1: e_g 0.00218336, e_f 0.000734373, n_- 0 -> rejected (0.02 s)
+    LS: e_g 0.00218336, e_f 0.000199871, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 28, cell (0,1)): 517 functions, 17 fitted, 900 samples; stage 1: e_g 0.00218336, e_f 0.000199871, n_- 0 -> ACCEPTED (0.02 s)
+    LS: e_g 0.00218336, e_f 0.000286029, n_- 0
+  Grendas group of 6 cell(s) on 5 patch(es) (first: patch 35, cell (0,0)): 496 functions, 88 fitted, 2628 samples; stage 1: e_g 0.00218336, e_f 0.000286029, n_- 0 -> rejected (0.03 s)
+    LS: e_g 0.00218336, e_f 0.000199871, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 28, cell (0,0)): 516 functions, 16 fitted, 792 samples; stage 1: e_g 0.00218336, e_f 0.000199871, n_- 0 -> ACCEPTED (0.02 s)
+    LS: e_g 0.00218336, e_f 0.000263951, n_- 0
+  Grendas group of 6 cell(s) on 4 patch(es) (first: patch 35, cell (0,0)): 493 functions, 73 fitted, 2160 samples; stage 1: e_g 0.00218336, e_f 0.000263951, n_- 0 -> rejected (0.03 s)
+    LS: e_g 0.00218336, e_f 0.000263558, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 30, cell (1,1)): 509 functions, 27 fitted, 1296 samples; stage 1: e_g 0.00218336, e_f 0.000263558, n_- 0 -> rejected (0.03 s)
+    LS: e_g 0.00218336, e_f 0.000282416, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 30, cell (0,1)): 511 functions, 29 fitted, 1044 samples; stage 1: e_g 0.00218336, e_f 0.000282416, n_- 0 -> rejected (0.02 s)
+    LS: e_g 0.00218336, e_f 0.000750697, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 30, cell (1,0)): 509 functions, 27 fitted, 1188 samples; stage 1: e_g 0.00218336, e_f 0.000750697, n_- 0 -> rejected (0.03 s)
+    LS: e_g 0.00218336, e_f 0.000563092, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 30, cell (0,0)): 509 functions, 27 fitted, 1044 samples; stage 1: e_g 0.00218336, e_f 0.000563092, n_- 0 -> rejected (0.02 s)
+    LS: e_g 0.00218336, e_f 0.000199871, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 31, cell (1,1)): 512 functions, 19 fitted, 1224 samples; stage 1: e_g 0.00218336, e_f 0.000199871, n_- 0 -> ACCEPTED (0.03 s)
+    LS: e_g 0.00218336, e_f 0.000199871, n_- 0
+  Grendas group of 4 cell(s) on 3 patch(es) (first: patch 35, cell (0,0)): 498 functions, 49 fitted, 1764 samples; stage 1: e_g 0.00218336, e_f 0.000199871, n_- 0 -> ACCEPTED (0.03 s)
+    LS: e_g 0.00218336, e_f 0.000199871, n_- 0
+  Grendas group of 2 cell(s) on 1 patch(es) (first: patch 34, cell (1,1)): 491 functions, 18 fitted, 1008 samples; stage 1: e_g 0.00218336, e_f 0.000199871, n_- 0 -> ACCEPTED (0.03 s)
+    LS: e_g 0.00218336, e_f 0.000245551, n_- 0
+  Grendas group of 2 cell(s) on 2 patch(es) (first: patch 34, cell (1,0)): 483 functions, 38 fitted, 1260 samples; stage 1: e_g 0.00218336, e_f 0.000245551, n_- 0 -> rejected (0.03 s)
+    LS: e_g 0.00218336, e_f 0.000228547, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 33, cell (1,1)): 485 functions, 27 fitted, 1008 samples; stage 1: e_g 0.00218336, e_f 0.000228547, n_- 0 -> rejected (0.03 s)
+    LS: e_g 0.00218336, e_f 0.000227293, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 33, cell (0,1)): 485 functions, 27 fitted, 1080 samples; stage 1: e_g 0.00218336, e_f 0.000227293, n_- 0 -> rejected (0.03 s)
+    LS: e_g 0.00218336, e_f 0.00104356, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 33, cell (1,0)): 485 functions, 27 fitted, 1008 samples; stage 1: e_g 0.00218336, e_f 0.00104356, n_- 0 -> rejected (0.03 s)
+    LS: e_g 0.00218336, e_f 0.00140399, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 33, cell (0,0)): 484 functions, 26 fitted, 1080 samples; stage 1: e_g 0.00218336, e_f 0.00140399, n_- 0 -> rejected (0.03 s)
+    LS: e_g 0.00218336, e_f 0.000199871, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 34, cell (1,0)): 489 functions, 16 fitted, 900 samples; stage 1: e_g 0.00218336, e_f 0.000199871, n_- 0 -> ACCEPTED (0.03 s)
+level 1 (cells of level 0 refined to 1): 24 eligible cells
+    LS: e_g 0.00218336, e_f 0.000311619, n_- 0
+  Grendas group of 9 cell(s) on 9 patch(es) (first: patch 17, cell (0,0)): 433 functions, 60 fitted, 3024 samples; stage 1: e_g 0.00218336, e_f 0.000311619, n_- 0 -> rejected (0.05 s)
+    LS: e_g 0.00363339, e_f 0.00353603, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 1, cell (0,0)): 482 functions, 9 fitted, 1404 samples; stage 1: e_g 0.00363339, e_f 0.00353603, n_- 0 -> rejected (0.03 s)
+    LS: e_g 0.00250325, e_f 0.000199871, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 2, cell (0,0)): 482 functions, 9 fitted, 1836 samples; stage 1: e_g 0.00250325, e_f 0.000199871, n_- 0 -> ACCEPTED (0.03 s)
+    LS: e_g 0.00250325, e_f 0.000279392, n_- 0
+  Grendas group of 8 cell(s) on 8 patch(es) (first: patch 6, cell (0,0)): 432 functions, 57 fitted, 3024 samples; stage 1: e_g 0.00250325, e_f 0.000279392, n_- 0 -> rejected (0.04 s)
+    LS: e_g 0.00250325, e_f 0.000199871, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 3, cell (0,0)): 476 functions, 9 fitted, 648 samples; stage 1: e_g 0.00250325, e_f 0.000199871, n_- 0 -> ACCEPTED (0.02 s)
+    LS: e_g 0.00250325, e_f 0.000311619, n_- 0
+  Grendas group of 8 cell(s) on 8 patch(es) (first: patch 6, cell (0,0)): 427 functions, 54 fitted, 2916 samples; stage 1: e_g 0.00250325, e_f 0.000311619, n_- 0 -> rejected (0.04 s)
+    LS: e_g 0.00281196, e_f 0.000199871, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 5, cell (0,0)): 470 functions, 9 fitted, 1512 samples; stage 1: e_g 0.00281196, e_f 0.000199871, n_- 0 -> ACCEPTED (0.03 s)
+    LS: e_g 0.00281196, e_f 0.000282104, n_- 0
+  Grendas group of 7 cell(s) on 7 patch(es) (first: patch 6, cell (0,0)): 427 functions, 51 fitted, 2916 samples; stage 1: e_g 0.00281196, e_f 0.000282104, n_- 0 -> rejected (0.04 s)
+    LS: e_g 0.00281196, e_f 0.000277959, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 6, cell (0,0)): 465 functions, 9 fitted, 432 samples; stage 1: e_g 0.00281196, e_f 0.000277959, n_- 0 -> rejected (0.02 s)
+    LS: e_g 0.00341552, e_f 0.000199871, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 8, cell (0,0)): 464 functions, 9 fitted, 2160 samples; stage 1: e_g 0.00341552, e_f 0.000199871, n_- 0 -> ACCEPTED (0.03 s)
+    LS: e_g 0.00341552, e_f 0.000311619, n_- 0
+  Grendas group of 7 cell(s) on 7 patch(es) (first: patch 9, cell (0,0)): 421 functions, 48 fitted, 2736 samples; stage 1: e_g 0.00341552, e_f 0.000311619, n_- 0 -> rejected (0.04 s)
+    LS: e_g 0.00341552, e_f 0.000281554, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 9, cell (0,0)): 458 functions, 9 fitted, 756 samples; stage 1: e_g 0.00341552, e_f 0.000281554, n_- 0 -> rejected (0.02 s)
+    LS: e_g 0.00403489, e_f 0.000199871, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 11, cell (0,0)): 458 functions, 9 fitted, 2916 samples; stage 1: e_g 0.00403489, e_f 0.000199871, n_- 0 -> ACCEPTED (0.04 s)
+    LS: e_g 0.00403489, e_f 0.000311619, n_- 0
+  Grendas group of 6 cell(s) on 6 patch(es) (first: patch 17, cell (0,0)): 421 functions, 39 fitted, 1980 samples; stage 1: e_g 0.00403489, e_f 0.000311619, n_- 0 -> rejected (0.04 s)
+    LS: e_g 0.00390686, e_f 0.000199871, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 13, cell (0,0)): 452 functions, 9 fitted, 2916 samples; stage 1: e_g 0.00390686, e_f 0.000199871, n_- 0 -> ACCEPTED (0.04 s)
+    LS: e_g 0.00390721, e_f 0.000397987, n_- 0
+  Grendas group of 5 cell(s) on 5 patch(es) (first: patch 17, cell (0,0)): 420 functions, 36 fitted, 1980 samples; stage 1: e_g 0.00390721, e_f 0.000397987, n_- 0 -> rejected (0.04 s)
+    LS: e_g 0.00382742, e_f 0.000199871, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 16, cell (0,0)): 446 functions, 9 fitted, 2376 samples; stage 1: e_g 0.00382742, e_f 0.000199871, n_- 0 -> ACCEPTED (0.03 s)
+    LS: e_g 0.00382659, e_f 0.000407256, n_- 0
+  Grendas group of 5 cell(s) on 5 patch(es) (first: patch 17, cell (0,0)): 415 functions, 36 fitted, 1872 samples; stage 1: e_g 0.00382659, e_f 0.000407256, n_- 0 -> rejected (0.03 s)
+    LS: e_g 0.00382667, e_f 0.000415828, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 17, cell (0,0)): 440 functions, 9 fitted, 864 samples; stage 1: e_g 0.00382667, e_f 0.000415828, n_- 0 -> rejected (0.02 s)
+    LS: e_g 0.00382742, e_f 0.00299835, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 18, cell (0,0)): 439 functions, 9 fitted, 1296 samples; stage 1: e_g 0.00382742, e_f 0.00299835, n_- 0 -> rejected (0.03 s)
+    LS: e_g 0.00382742, e_f 0.000199871, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 19, cell (0,0)): 440 functions, 9 fitted, 1728 samples; stage 1: e_g 0.00382742, e_f 0.000199871, n_- 0 -> ACCEPTED (0.03 s)
+    LS: e_g 0.00382742, e_f 0.000287826, n_- 0
+  Grendas group of 4 cell(s) on 4 patch(es) (first: patch 29, cell (0,0)): 415 functions, 30 fitted, 1368 samples; stage 1: e_g 0.00382742, e_f 0.000287826, n_- 0 -> rejected (0.03 s)
+    LS: e_g 0.00382742, e_f 0.000199871, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 20, cell (0,0)): 434 functions, 9 fitted, 540 samples; stage 1: e_g 0.00382742, e_f 0.000199871, n_- 0 -> ACCEPTED (0.02 s)
+    LS: e_g 0.00382742, e_f 0.000312278, n_- 0
+  Grendas group of 4 cell(s) on 4 patch(es) (first: patch 29, cell (0,0)): 410 functions, 27 fitted, 1080 samples; stage 1: e_g 0.00382742, e_f 0.000312278, n_- 0 -> rejected (0.03 s)
+    LS: e_g 0.00407961, e_f 0.000199871, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 22, cell (0,0)): 428 functions, 9 fitted, 1728 samples; stage 1: e_g 0.00407961, e_f 0.000199871, n_- 0 -> ACCEPTED (0.03 s)
+    LS: e_g 0.00407961, e_f 0.000279392, n_- 0
+  Grendas group of 3 cell(s) on 3 patch(es) (first: patch 29, cell (0,0)): 410 functions, 24 fitted, 1080 samples; stage 1: e_g 0.00407961, e_f 0.000279392, n_- 0 -> rejected (0.06 s)
+    LS: e_g 0.00407961, e_f 0.000257693, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 23, cell (0,0)): 423 functions, 9 fitted, 432 samples; stage 1: e_g 0.00407961, e_f 0.000257693, n_- 0 -> rejected (0.03 s)
+    LS: e_g 0.00382742, e_f 0.000199871, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 25, cell (0,0)): 422 functions, 9 fitted, 2052 samples; stage 1: e_g 0.00382742, e_f 0.000199871, n_- 0 -> ACCEPTED (0.03 s)
+    LS: e_g 0.00382742, e_f 0.000283076, n_- 0
+  Grendas group of 3 cell(s) on 3 patch(es) (first: patch 29, cell (0,0)): 404 functions, 21 fitted, 900 samples; stage 1: e_g 0.00382742, e_f 0.000283076, n_- 0 -> rejected (0.03 s)
+    LS: e_g 0.00382742, e_f 0.000272288, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 26, cell (0,0)): 416 functions, 9 fitted, 540 samples; stage 1: e_g 0.00382742, e_f 0.000272288, n_- 0 -> rejected (0.02 s)
+    LS: e_g 0.00382742, e_f 0.000199871, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 28, cell (0,0)): 416 functions, 9 fitted, 2160 samples; stage 1: e_g 0.00382742, e_f 0.000199871, n_- 0 -> ACCEPTED (0.04 s)
+    LS: e_g 0.00382742, e_f 0.000302182, n_- 0
+  Grendas group of 2 cell(s) on 2 patch(es) (first: patch 29, cell (0,0)): 404 functions, 15 fitted, 720 samples; stage 1: e_g 0.00382742, e_f 0.000302182, n_- 0 -> rejected (0.02 s)
+    LS: e_g 0.00382742, e_f 0.00031404, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 29, cell (0,0)): 410 functions, 9 fitted, 540 samples; stage 1: e_g 0.00382742, e_f 0.00031404, n_- 0 -> rejected (0.02 s)
+    LS: e_g 0.00382742, e_f 0.000199871, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 31, cell (0,0)): 410 functions, 9 fitted, 2160 samples; stage 1: e_g 0.00382742, e_f 0.000199871, n_- 0 -> ACCEPTED (0.03 s)
+    LS: e_g 0.00382742, e_f 0.0002965, n_- 0
+  Grendas group of 2 cell(s) on 2 patch(es) (first: patch 32, cell (0,0)): 399 functions, 15 fitted, 504 samples; stage 1: e_g 0.00382742, e_f 0.0002965, n_- 0 -> rejected (0.02 s)
+    LS: e_g 0.00382742, e_f 0.000278444, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 32, cell (0,0)): 404 functions, 9 fitted, 540 samples; stage 1: e_g 0.00382742, e_f 0.000278444, n_- 0 -> rejected (0.02 s)
+    LS: e_g 0.00382742, e_f 0.000199871, n_- 0
+  lex group of 1 cell(s) on 1 patch(es) (first: patch 34, cell (0,0)): 405 functions, 9 fitted, 1728 samples; stage 1: e_g 0.00382742, e_f 0.000199871, n_- 0 -> ACCEPTED (0.03 s)
+    LS: e_g 0.00382742, e_f 0.000246858, n_- 0
+  Grendas group of 1 cell(s) on 1 patch(es) (first: patch 35, cell (0,0)): 400 functions, 9 fitted, 324 samples; stage 1: e_g 0.00382742, e_f 0.000246858, n_- 0 -> rejected (0.02 s)
+  pass 2 over the 1 remaining eligible cells
+    LS: e_g 0.00382742, e_f 0.000246858, n_- 0
+  Grendas group of 1 cell(s) on 1 patch(es) (first: patch 35, cell (0,0)): 400 functions, 9 fitted, 324 samples; stage 1: e_g 0.00382742, e_f 0.000246858, n_- 0 -> rejected (0.02 s)
+gsMPBESUnrefinement: 3376 -> 405 MPBES functions, 206 accepted (206 LS, 0 LO, 0 NLO), 207 rejected; final e_g 0.00382742, e_f 0.000199871, certified; 32.6 s
