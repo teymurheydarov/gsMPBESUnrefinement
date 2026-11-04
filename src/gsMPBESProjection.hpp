@@ -739,11 +739,11 @@ gsMPBESProjection<T>::nonlinearOptimisation(gsMatrix<T> & coefs, const Weights &
 template<class T>
 typename gsMPBESProjection<T>::Weights
 gsMPBESProjection<T>::adaptiveWeights(T globalError, T featureError, T rho, index_t nMinus,
-                                      T b, bool linear)
+                                      T b, bool linear, T betaCap, T floorFraction)
 {
     const T rmax = math::max(globalError, math::max(rho, featureError));
-    const T beta = T(1.35) * (T(1) + math::min(T(10), T(nMinus) / T(10)));
-    auto weight = [&](T r) { return beta * b * (T(0.25) + T(0.75) * (rmax > 0 ? r / rmax : T(0))); };
+    const T beta = T(1.35) * (T(1) + math::min(betaCap, T(nMinus) / T(10)));
+    auto weight = [&](T r) { return beta * b * (floorFraction + (T(1) - floorFraction) * (rmax > 0 ? r / rmax : T(0))); };
     Weights w;
     w.uniformity = weight(rho);
     w.length     = weight(featureError);

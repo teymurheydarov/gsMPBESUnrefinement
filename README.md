@@ -114,8 +114,8 @@ in the history.
 | `yeti_nof_ef010`, `yeti_nof_ef030`, `yeti_nof_ef060` | Yeti | Table 2, row 2 | 239, 157, 122 |
 | `yeti_F_ef010`, `yeti_F_ef030`, `yeti_F_ef060` | Yeti | Table 2, row 3; Figure 3 | 178, 128, 117 |
 | `rotor_eg0001_ef0001`, `rotor_nog_ef0001` | rotor | Section 7.1; Figure 4 | 476, 242 |
-| `mask_folded_ls_only`, `mask_folded_lo_only`, `mask_folded_nlo_full` | mask | Table 3; Figure 5 | 1089, 1089, 175 |
-| `triangle_ls_only`, `triangle_lo_only`, `triangle_nlo_full` | triangle | Table 3; Figure 6 | 3169, 581, 581 |
+| `mask_bands_ls_only`, `mask_bands_lo_only`, `mask_bands_nlo_full` | mask | Table 3; Figure 5 | 568, 562, 351 |
+| `triangle_wedge_ls_only`, `triangle_wedge_lo_only`, `triangle_wedge_nlo_full` | triangle | Table 3; Figure 6 | 1994, 349, 349 |
 | `joystick_grendas`, `joystick_lex` | joystick | Table 4; Figure 7 | 512, 512 |
 | `joystick_global`, `joystick_lambda0`, `joystick_lambda1` | joystick | Section 7.2.3 | 512, 503, 503 |
 | `rotor_global`, `rotor_lambda0`, `rotor_lambda2` | rotor | Table 5; Figures 8, 9 | 168, 168, 168 |
@@ -125,14 +125,24 @@ Notes on the settings:
 - An unconstrained tolerance is the program's default `1e6`. The runs
   `yeti_nof_*` and `yeti_F_*` use `-g 1.0`, which never binds on the Yeti
   (the largest global error of a regular candidate in these runs is 0.079).
-- The mask input is itself not regular (the log reports 6 cells not certified
-  for the initial parameterization), so with LS alone, and also with LS+LO, no
-  coarsening is accepted: every candidate keeps folded cells after both stages.
-- The triangle (`triangle_wavy_L5.xml`) is a generated input: three bilinear
-  patches with a wavy boundary, 3169 MPBES functions over five levels, with two
-  folded cells in the initial parameterization. With LS alone no coarsening is
-  accepted; the linear stage removes the folds, and the non-linear stage adds
-  nothing.
+- The mask runs use `-g 1.5 -e 0.65` (0.65 is less than 1 % of the width of the domain) and the
+  feature set `-F` of the 18 true boundary sides (outer boundary and the two holes); the file's
+  boundary list contains the interface sides as well.
+- The mask input `mask_bands_L3.xml` is regular (every cell certified): the outer boundary and the
+  interfaces are those of `mask_L3_PatchOnly689_noR.xml` (the earlier input, whose six folded cells
+  at the left hole were repaired by moving interior control points), and a compressed band was added
+  inside every patch (det J down to 3 % of the patch median). The earlier input and its runs
+  `mask_folded_*` (1089, 1089, 225 at `-g 1.2 -e 0.65`, p0 not certified) are kept for reference.
+- The triangle (`triangle_wedge_L5.xml`) is a generated input: three bilinear
+  patches forming a thin triangle with two wavy sides, 3169 MPBES functions over
+  six levels, every cell certified. Its interior carries a ripple of amplitude
+  0.0065, below the tolerances `-g 0.007 -e 0.007`, that leaves cells close to
+  folding: the least-squares fit of a coarsened region folds them (LS alone ends at
+  1994 functions, 787 of its 789 rejections for regularity), the linear stage
+  removes every such fold (349 functions, all 120 rejections for the tolerances),
+  and the non-linear stage is never invoked. The earlier input `triangle_wavy_L5.xml`
+  (two folded cells in p0) and its runs `triangle_*` (3169, 581, 581 at `-g 0.01
+  -e 0.01`) are kept for reference.
 
 The times in the logs are those of single sequential runs on a Windows 11
 laptop on mains power; they depend on the machine and its power state. The

@@ -33,9 +33,9 @@ $Runs = [ordered]@{
     "yeti_F_ef010"         = @('yeti_mp2_thb_approximation_fine_L3_topology.xml', '-t 3 --noplot -g 1.0 -e 0.01 -F 0:u0,0:u1,1:u1,2:u0,2:u1,3:u1,4:u0,4:u1,5:v0,5:v1,6:v0,6:v1,7:v0,7:v1,8:v0,8:v1,9:v1,10:u0,10:u1,11:u0,12:u0,12:u1,13:u0,14:u0,14:u1,15:v1')
     "yeti_F_ef030"         = @('yeti_mp2_thb_approximation_fine_L3_topology.xml', '-t 3 --noplot -g 1.0 -e 0.03 -F 0:u0,0:u1,1:u1,2:u0,2:u1,3:u1,4:u0,4:u1,5:v0,5:v1,6:v0,6:v1,7:v0,7:v1,8:v0,8:v1,9:v1,10:u0,10:u1,11:u0,12:u0,12:u1,13:u0,14:u0,14:u1,15:v1')
     "yeti_F_ef060"         = @('yeti_mp2_thb_approximation_fine_L3_topology.xml', '-t 3 --noplot -g 1.0 -e 0.06 -F 0:u0,0:u1,1:u1,2:u0,2:u1,3:u1,4:u0,4:u1,5:v0,5:v1,6:v0,6:v1,7:v0,7:v1,8:v0,8:v1,9:v1,10:u0,10:u1,11:u0,12:u0,12:u1,13:u0,14:u0,14:u1,15:v1')
-    "mask_folded_ls_only"  = @('mask_L3_PatchOnly689_noR.xml', '-t 1 --noplot')
-    "mask_folded_lo_only"  = @('mask_L3_PatchOnly689_noR.xml', '-t 2 --noplot')
-    "mask_folded_nlo_full" = @('mask_L3_PatchOnly689_noR.xml', '-t 3 --noplot')
+    "mask_bands_ls_only"   = @('mask_bands_L3.xml', '-t 1 --noplot -g 1.5 -e 0.65 -F 0:v0,0:v1,1:v0,1:v1,2:u0,2:u1,3:u0,3:u1,4:u0,5:u0,6:u0,6:u1,7:u0,7:u1,8:v0,8:v1,9:u0,9:u1')
+    "mask_bands_lo_only"   = @('mask_bands_L3.xml', '-t 2 --noplot -g 1.5 -e 0.65 -F 0:v0,0:v1,1:v0,1:v1,2:u0,2:u1,3:u0,3:u1,4:u0,5:u0,6:u0,6:u1,7:u0,7:u1,8:v0,8:v1,9:u0,9:u1')
+    "mask_bands_nlo_full"  = @('mask_bands_L3.xml', '-t 3 --noplot -g 1.5 -e 0.65 -F 0:v0,0:v1,1:v0,1:v1,2:u0,2:u1,3:u0,3:u1,4:u0,5:u0,6:u0,6:u1,7:u0,7:u1,8:v0,8:v1,9:u0,9:u1')
     "joystick_global"      = @('joystick_approximation_fine_L3_NLO.xml', '-t 3 --noplot -e 0.020 -F 0:u0,0:u1,1:u0,1:u1,2:u0,2:u1,3:v0,3:v1,4:v0,8:v0,8:v1,9:u1,10:u0,11:v0,11:v1,12:v1,13:u0,13:u1,14:u0,14:u1,14:v0,15:v0,15:v1,16:v0,16:v1,17:u0,17:u1,17:v0,18:u0,18:u1,19:v1,20:v0,20:v1,21:u0,22:u1,23:v0,23:v1,27:v0,28:v0,28:v1,29:u0,29:u1')
     "joystick_lambda0"     = @('joystick_approximation_fine_L3_NLO.xml', '-t 3 --noplot -e 0.020 -l 0 -F 0:u0,0:u1,1:u0,1:u1,2:u0,2:u1,3:v0,3:v1,4:v0,8:v0,8:v1,9:u1,10:u0,11:v0,11:v1,12:v1,13:u0,13:u1,14:u0,14:u1,14:v0,15:v0,15:v1,16:v0,16:v1,17:u0,17:u1,17:v0,18:u0,18:u1,19:v1,20:v0,20:v1,21:u0,22:u1,23:v0,23:v1,27:v0,28:v0,28:v1,29:u0,29:u1')
     "joystick_lambda1"     = @('joystick_approximation_fine_L3_NLO.xml', '-t 3 --noplot -e 0.020 -l 1 -F 0:u0,0:u1,1:u0,1:u1,2:u0,2:u1,3:v0,3:v1,4:v0,8:v0,8:v1,9:u1,10:u0,11:v0,11:v1,12:v1,13:u0,13:u1,14:u0,14:u1,14:v0,15:v0,15:v1,16:v0,16:v1,17:u0,17:u1,17:v0,18:u0,18:u1,19:v1,20:v0,20:v1,21:u0,22:u1,23:v0,23:v1,27:v0,28:v0,28:v1,29:u0,29:u1')
@@ -46,9 +46,9 @@ $Runs = [ordered]@{
     "rotor_lambda2"        = @('rotorRE.xml', '-t 3 --noplot -g 0.03 -e 0.03 -x 2 -l 2')
     "rotor_eg0001_ef0001"  = @('rotorRE.xml', '-t 3 --noplot -g 0.001 -e 0.001 -x 2')
     "rotor_nog_ef0001"     = @('rotorRE.xml', '-t 3 --noplot -e 0.001 -x 2')
-    "triangle_ls_only"     = @('triangle_wavy_L5.xml', '-t 1 --noplot -g 0.01 -e 0.01')
-    "triangle_lo_only"     = @('triangle_wavy_L5.xml', '-t 2 --noplot -g 0.01 -e 0.01')
-    "triangle_nlo_full"    = @('triangle_wavy_L5.xml', '-t 3 --noplot -g 0.01 -e 0.01')
+    "triangle_wedge_ls_only"  = @('triangle_wedge_L5.xml', '-t 1 --noplot -g 0.007 -e 0.007')
+    "triangle_wedge_lo_only"  = @('triangle_wedge_L5.xml', '-t 2 --noplot -g 0.007 -e 0.007')
+    "triangle_wedge_nlo_full" = @('triangle_wedge_L5.xml', '-t 3 --noplot -g 0.007 -e 0.007')
 }
 
 function Count([string]$log) {

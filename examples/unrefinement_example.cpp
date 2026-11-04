@@ -59,7 +59,9 @@ int main(int argc, char *argv[])
 {
     std::string fn = "mask_L3_PatchOnly689_noR.xml";
     real_t epsG = 1e6, epsF = 1e6, delta = 0.2, sampleFactor = 1;
-    std::string feature, selection = "grendas", solver = "gn", out = "unrefined", logName, samples = "gauss";
+    real_t bLinear = 2e-4, bNonlinear = 2e-3, betaCap = 10, weightFloor = 0.25;
+    real_t scaleU = 1, scaleL = 1, scaleO = 1, scaleS = 1, scaleE = 1;
+    std::string feature, selection = "grendas", solver = "gn", out = "unrefined", logName, samples = "gauss", dumpFirst;
     index_t lambda = -1, stages = 3, verbosity = 1, maxIter = 10, gaussNodes = 0, quadNodes = 2;
     bool interfaces = false, noplot = false, freezeBoundary = false, quadWeights = false;
 
@@ -85,10 +87,20 @@ int main(int argc, char *argv[])
     cmd.addString("S", "solver",    "Optimiser of the stages: gn (Gauss-Newton) or ipopt", solver);
     cmd.addInt   ("i", "iterations","Gauss-Newton iterations of the non-linear stage", maxIter);
     cmd.addSwitch("freeze_boundary", "Keep the boundary functions fixed in the optimisation stages (not part of the paper's formulation)", freezeBoundary);
+    cmd.addReal  ("", "b_linear",       "Constant b of the adaptive weights of the linear stage", bLinear);
+    cmd.addReal  ("", "b_nonlinear",    "Constant b of the adaptive weights of the non-linear stage", bNonlinear);
+    cmd.addReal  ("", "beta_cap",       "Cap of n_-/10 in the factor beta = 1.35 (1 + min(cap, n_-/10)) of the weights", betaCap);
+    cmd.addReal  ("", "weight_floor",   "Floor of every weight as a fraction of beta b (paper: 0.25)", weightFloor);
+    cmd.addReal  ("", "scale_uniformity",    "Non-linear stage: factor on omega_u after the weight rule (1: paper, 0: off)", scaleU);
+    cmd.addReal  ("", "scale_length",        "Non-linear stage: factor on omega_l after the weight rule", scaleL);
+    cmd.addReal  ("", "scale_orthogonality", "Non-linear stage: factor on omega_o after the weight rule", scaleO);
+    cmd.addReal  ("", "scale_skewness",      "Non-linear stage: factor on omega_s after the weight rule", scaleS);
+    cmd.addReal  ("", "scale_eccentricity",  "Non-linear stage: factor on omega_e after the weight rule", scaleE);
     cmd.addString("o", "output",    "Prefix of the output files", out);
     cmd.addString("L", "log",       "Log file (default: <output>.log)", logName);
     cmd.addInt   ("v", "verbosity", "0 silent, 1 one line per candidate, 2 the stages", verbosity);
     cmd.addSwitch("noplot",         "No Paraview output", noplot);
+    cmd.addString("", "dump_first", "Write the cells and the fitting domain of the first candidate to this file", dumpFirst);
     try { cmd.getValues(argc, argv); } catch (int rv) { return rv; }
 
     gsMultiPatch<> mp;
@@ -117,6 +129,16 @@ int main(int argc, char *argv[])
     opt.projection.solver = solver;
     opt.projection.maxIterations = maxIter;
     opt.projection.freezeBoundary = freezeBoundary;
+    opt.dumpFirst = dumpFirst;
+    opt.projection.bLinear = bLinear;
+    opt.projection.bNonlinear = bNonlinear;
+    opt.projection.betaCap = betaCap;
+    opt.projection.floorFraction = weightFloor;
+    opt.projection.scaleUniformity = scaleU;
+    opt.projection.scaleLength = scaleL;
+    opt.projection.scaleOrthogonality = scaleO;
+    opt.projection.scaleSkewness = scaleS;
+    opt.projection.scaleEccentricity = scaleE;
     opt.projection.verbosity = verbosity;
     opt.verbosity = verbosity;
     std::ofstream logFile((logName.empty() ? out + ".log" : logName).c_str());

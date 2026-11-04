@@ -103,6 +103,7 @@ public:
         typename gsMPBESProjection<T>::Options projection;
         int verbosity = 1;                 ///< 0 silent, 1 one line per candidate, 2 details
         std::ostream * log = nullptr;      ///< an additional log stream
+        std::string dumpFirst;             ///< if set, the cells and the fitting domain of the first candidate are written to this file
     };
 
     /// A cell of level \a level (0-based) of \a patch with lower left
@@ -215,6 +216,16 @@ public:
     static std::vector< gsMatrix<T> > elementPoints(const gsMPBES<T> & basis,
                                                    const std::vector< std::vector< std::array<T,4> > > & domain);
 
+    /// Applies Options::scale* of the projection options to the weights of the non-linear stage
+    void scaleWeights(typename gsMPBESProjection<T>::Weights & w) const
+    {
+        w.uniformity    *= m_opt.projection.scaleUniformity;
+        w.length        *= m_opt.projection.scaleLength;
+        w.orthogonality *= m_opt.projection.scaleOrthogonality;
+        w.skewness      *= m_opt.projection.scaleSkewness;
+        w.eccentricity  *= m_opt.projection.scaleEccentricity;
+    }
+
     /// The acceptance test; the certificate is computed only if
     /// \a certify is set and the accuracy conditions hold
     Check check(const gsMPBES<T> & basis, const gsMatrix<T> & coefs, bool certify = true) const;
@@ -254,6 +265,7 @@ private:
     std::vector< gsMatrix<T> > m_gridTarget;  ///< p0 there (n x 2)
     std::vector< gsMatrix<T> > m_featurePts;  ///< per patch, the points of (C3)
     std::vector< gsMatrix<T> > m_featureTarget;
+    mutable bool            m_dumped = false; ///< Options::dumpFirst written
 };
 
 } // namespace gismo

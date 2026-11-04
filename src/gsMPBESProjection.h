@@ -72,6 +72,14 @@ public:
     {
         T   bLinear        = 2e-4;   ///< constant b of the weights of the linear stage
         T   bNonlinear     = 2e-3;   ///< constant b of the weights of the non-linear stage
+        /// Limits of the weight rule (adaptiveWeights): beta = 1.35 (1 + min(betaCap, n_- / 10))
+        /// and every weight is beta b (floorFraction + (1 - floorFraction) r / r_max); the
+        /// defaults are the values of the paper
+        T   betaCap        = 10;
+        T   floorFraction  = 0.25;
+        /// Factors applied to the five weights of the non-linear stage after the rule (1: the
+        /// paper's weights); 0 switches a functional off there; the linear stage is not affected
+        T   scaleUniformity = 1, scaleLength = 1, scaleOrthogonality = 1, scaleSkewness = 1, scaleEccentricity = 1;
         int maxIterations  = 10;     ///< Gauss-Newton iterations of the non-linear stage
         T   stepTolerance  = 1e-12;  ///< a step smaller than this (relative to the coefficients) ends the iteration
         int quadratureNodes = 2;     ///< Gauss nodes per direction and element for the functionals
@@ -191,9 +199,11 @@ public:
        \param nMinus       n_-, the number of cells not certified
        \param b            the stage constant (bLinear or bNonlinear)
        \param linear       the linear stage uses omega_u and omega_l only
+       \param betaCap      cap of n_- / 10 in the factor beta (Options::betaCap)
+       \param floorFraction floor of a weight as a fraction of beta b (Options::floorFraction)
     */
     static Weights adaptiveWeights(T globalError, T featureError, T rho, index_t nMinus,
-                                   T b, bool linear);
+                                   T b, bool linear, T betaCap = 10, T floorFraction = 0.25);
 
 private:
     /// Builds the quadrature of the functionals (nodes, weights, basis derivatives)

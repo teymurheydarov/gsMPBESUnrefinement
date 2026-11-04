@@ -26,6 +26,7 @@
 #include <set>
 #include <cmath>
 #include <sstream>
+#include <fstream>
 #include <iomanip>
 
 namespace gismo
@@ -479,6 +480,24 @@ void gsMPBESUnrefinement<T>::fittingSetup(const gsMPBES<T> & candidate, const st
         else
             proj.setSamples(m_grid);
     };
+    // diagnostic output of the first candidate (Options::dumpFirst): its cells and the boxes
+    // of the fitting domain, in the parameter domain of each patch; no box: every patch
+    auto dump = [&](const std::vector< std::vector< std::array<T,4> > > & domain, index_t nFree)
+    {
+        if (m_opt.dumpFirst.empty() || m_dumped) return;
+        m_dumped = true;
+        std::ofstream f(m_opt.dumpFirst);
+        f << "# first candidate; lines: cell|domain patch u0 u1 v0 v1; no domain line: whole parameterization\n";
+        f << "lambda " << m_opt.lambda << "\nfree " << nFree << " of " << N << "\n";
+        for (const Cell & c : group)
+        {
+            const std::array<T,4> b = cellBox(candidate, c);
+            f << "cell " << c.patch << " " << b[0] << " " << b[1] << " " << b[2] << " " << b[3] << "\n";
+        }
+        for (size_t p = 0; p != domain.size(); ++p)
+            for (const std::array<T,4> & b : domain[p])
+                f << "domain " << p << " " << b[0] << " " << b[1] << " " << b[2] << " " << b[3] << "\n";
+    };
     if (m_opt.lambda < 0)
     {
         proj.setFreeFunctions(std::vector<bool>());
@@ -486,6 +505,7 @@ void gsMPBESUnrefinement<T>::fittingSetup(const gsMPBES<T> & candidate, const st
         proj.setAugmentation([&candidate, whole]() { return elementPoints(candidate, whole); });
         proj.setFittingDomain(whole);
         numFree = N;
+        dump(whole, numFree);
         return;
     }
     // the extended cells E(c)
@@ -518,6 +538,7 @@ void gsMPBESUnrefinement<T>::fittingSetup(const gsMPBES<T> & candidate, const st
         setGlobalSamples();
         proj.setAugmentation([&candidate, whole]() { return elementPoints(candidate, whole); });
         proj.setFittingDomain(whole);
+        dump(whole, numFree);
         return;
     }
     // the fitting domain: the supports of the interior functions on every patch
@@ -526,6 +547,7 @@ void gsMPBESUnrefinement<T>::fittingSetup(const gsMPBES<T> & candidate, const st
         if (free[g])
             for (const typename gsMPBES<T>::Component & c : candidate.components(g))
                 domain[c.patch].push_back(internal::supportBox(candidate.tensorLevel(c.patch, c.level), c.index));
+    dump(domain, numFree);
     // the sample points: on every patch of the domain, the uniform grid of the box covering
     // Delta(c)|p at the density of the grid of (C2) (q_p points per unit length, at least 3)
     std::vector< gsMatrix<T> > uv(nP, gsMatrix<T>(2, 0));
@@ -604,7 +626,7 @@ bool gsMPBESUnrefinement<T>::project(const gsMPBES<T> & candidate, gsMatrix<T> &
     // Projection[2]: linear optimisation
     typename gsMPBESProjection<T>::Weights w = gsMPBESProjection<T>::adaptiveWeights(
         rec.check.globalError, rec.check.featureError, rho(rec.check), rec.check.notCertified,
-        m_opt.projection.bLinear, true);
+        m_opt.projection.bLinear, true, m_opt.projection.betaCap, m_opt.projection.floorFraction);
     clock.restart();
     proj.linearOptimisation(coefs, w);
     rec.secondsOptimisation += clock.stop();
@@ -623,7 +645,8 @@ bool gsMPBESUnrefinement<T>::project(const gsMPBES<T> & candidate, gsMatrix<T> &
     // determined by the linear-stage candidate
     w = gsMPBESProjection<T>::adaptiveWeights(
         rec.check.globalError, rec.check.featureError, rho(rec.check), rec.check.notCertified,
-        m_opt.projection.bNonlinear, false);
+        m_opt.projection.bNonlinear, false, m_opt.projection.betaCap, m_opt.projection.floorFraction);
+    scaleWeights(w);
     coefs = lsCoefs;
     Check last;
     typename gsMPBESProjection<T>::Validator validator = [&](const gsMatrix<T> & c) -> bool
@@ -668,7 +691,11 @@ typename gsMPBESUnrefinement<T>::Result gsMPBESUnrefinement<T>::run()
           << ", fit samples " << (m_opt.samples == GaussPoints ? "Gauss points"
                                   : m_opt.samples == GaussLobattoPoints ? "Gauss-Lobatto points" : "uniform grid")
           << (m_opt.samples != UniformGrid && m_opt.unitWeights ? " (unit weights)" : "")
-          << ", functional quadrature " << m_opt.projection.quadratureNodes << " nodes per direction";
+          << ", functional quadrature " << m_opt.projection.quadratureNodes << " nodes per direction"
+          << ", weights b " << m_opt.projection.bLinear << " / " << m_opt.projection.bNonlinear
+          << ", beta cap " << m_opt.projection.betaCap << ", floor " << m_opt.projection.floorFraction
+          << ", scales u/l/o/s/e " << m_opt.projection.scaleUniformity << "/" << m_opt.projection.scaleLength << "/"
+          << m_opt.projection.scaleOrthogonality << "/" << m_opt.projection.scaleSkewness << "/" << m_opt.projection.scaleEccentricity;
         log(1, s.str());
     }
 
