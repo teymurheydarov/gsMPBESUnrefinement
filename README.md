@@ -19,11 +19,13 @@ optimization stages are formulated with [CasADi](https://web.casadi.org).
 |---|---|
 | `src/` | the module: `gsMPBES` (the MPBES basis), `gsMPBESUnrefinement` (the algorithm), `gsMPBESProjection` (LS, LO, NLO), `gsBernsteinCertificate` (regularity check), `gsMPBESSampler` |
 | `examples/unrefinement_example.cpp` | the command-line program used for all experiments |
+| `examples/export_visualization_mesh.cpp` | writes the mesh lines and cells of a parameterization as text files, the input of the figure scripts |
 | `unittests/` | unit tests of the module (20 tests) |
 | `filedata/` | `two_patches_refined.xml`, the input of the unit tests (G+Smo adds this folder to its file search path) |
 | `data/geometries/` | the five input parameterizations of the paper and two earlier inputs kept for reference |
 | `runs/<run>/` | the logs of the 28 runs of Section 7 and of 6 reference runs on the earlier inputs (see below) |
 | `run_all.ps1` | reruns the 28 runs of the paper and compares the results with `runs/` (Windows) |
+| `figures/` | the scripts and data that draw the figures of the paper (see below) |
 
 ## Requirements
 
@@ -80,6 +82,62 @@ about 90 minutes.
 On other systems, and for the 6 reference runs, which the script does not
 contain, every run can be started with the command line in the first line of
 `runs/<run>/cmd_output.txt` (paths relative to the module folder).
+
+## Reproducing the figures
+
+The figures are drawn from the inputs in `data/geometries/` and the results
+`runs/<run>/out_final.xml`; nothing is recomputed. Build the export program and
+run the script from the module folder:
+
+```powershell
+cmake --build build --config Release --target export_visualization_mesh
+py figures\make_figures.py --exe <build>\bin\Release\export_visualization_mesh.exe `
+    --path <folder with casadi.dll>
+```
+
+The export program, like `unrefinement_example`, needs the CasADi library;
+`--path` puts its folder on the `PATH`. Names of figures as arguments select
+figures. The script writes `figures/output/<name>.png`, with the file names of
+the paper:
+
+| Paper | Figures | Drawn by |
+|---|---|---|
+| Figure 1 | `mask_bands_original`, `yeti_mp2_thb_approximation_fine_L3_original`, `joystick_approximation_fine_L3_NLO_original`, `rotorRE_original` | `viz_main.py` |
+| Figure 2 | `yeti_eg001_ef001_dof239`, `yeti_eg003_ef003_dof157`, `yeti_eg006_ef006_dof122` | `viz_main.py` |
+| Figure 3 | `yeti_F_ef010_dof178`, `yeti_F_ef030_dof128`, `yeti_F_ef060_dof117` | `viz_main.py` |
+| Figure 4 | `rotor_eg0001_ef0001_dof476`, `rotor_nog_ef0001_dof242` | `viz_main.py` |
+| Figure 5 | `mask_bands_ls_dof568`, `mask_bands_lo_dof562`, `mask_bands_nlo_full_dof351` | `viz_main.py` |
+| Figure 6 | `tri_wedge_original`, `tri_wedge_ls_dof1994`, `tri_wedge_lo_dof349` | `paper_panel.py` |
+| Figure 7 | `joystick_grendas_dof512` | `viz_main.py` |
+| Figure 8 | `rotor_subdomains_geometry`, `_lambda0`, `_lambda2`, `_global` | `plot_subdomains.py` |
+| Figure 9 | `rotor_lambda0_ef00002_dof356`, `rotor_lambda2_ef00002_dof405`, `rotor_global_ef00002_dof478` | `viz_main.py` |
+
+The number after `_dof` is checked against the last line of `runs/<run>/out.log`.
+`export_visualization_mesh` writes the mesh lines and cells of a
+parameterization in the text format of the research code of the single-patch
+algorithm; `viz_main.py` is the drawing script of that code. The triangle has
+several elements on level 0, on which `viz_main.py` does not terminate;
+`paper_panel.py` draws its mesh lines directly. Figure 8 uses the files in
+`figures/data/`: `first_candidate_<run>.txt`, the cells and the fitting
+subdomain of the first candidate, written by the runs `rotor_*_ef00002` with
+`--dump_first first_candidate.txt` (the final parameterizations of these runs
+are identical to those in `runs/`), and `rotorRE_lines.txt`,
+`rotorRE_lines_grid.txt`, patch outlines and grids of `rotorRE.xml` written by
+the research code.
+
+With Python 3.9.13, numpy 2.0.2 and matplotlib 3.9.4, without scipy
+(`viz_main.py` uses scipy only if it is installed), the script reproduces 18
+of the 26 pictures of the paper byte for byte: all except the input pictures
+of Yeti, joystick and rotor (Figure 1) and the Yeti results of Figures 2 and 3
+except `yeti_F_ef010_dof178`. The published versions of these eight were drawn
+from the export and the runs of the research code; the script draws them from
+the inputs and runs of this repository, with the same final numbers of MPBES
+functions and the same cells. Two differences are visible: the patch numbers
+are placed slightly differently, and the published rotor input shows patch 22
+refined uniformly, while the redrawn one shows its hierarchy in `rotorRE.xml`
+(one level above the other patches, two in the box (0.25, 0.75)^2), as stated
+in the caption of Figure 8. Other versions of the Python packages may change
+the pixels.
 
 ## The runs
 

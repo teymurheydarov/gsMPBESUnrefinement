@@ -5,3 +5,4 @@ output/
 *.vtu
 *.log
 !runs/**/out.log
+__pycache__/
