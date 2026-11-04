@@ -2,7 +2,8 @@
 
     @brief The final parameterisation of unrefinement_example (<output>_final.xml,
     THB-spline patches with topology) written as the visualisation files of the
-    research code (generateVisualizationMesh in THBSelf/examples/poissonTHB_example.cpp):
+    research code of the single-patch algorithm (generateVisualizationMesh in
+    poissonTHB_example.cpp):
 
       <prefix>.txt                  mesh lines: x y patch direction, blank line between lines
       <prefix>_boxes.txt            patch level u0 v0 u1 v1 ix0 iy0 ix1 iy1
@@ -14,8 +15,8 @@
     The line order and the number of points per line are those of the research code
     (the boxes of every patch, u-lines then v-lines, degree samples per finest cell,
     n^2 points on a patch side; then one full line per interface side in the order of
-    the interface file), so that THBSelf/Dokumentierung/experiment_plan/viz/main.py
-    draws the files as it draws those of the research code. The boxes are the leaves
+    the interface file), so that figures/viz_main.py draws the files as it draws
+    those of the research code. The boxes are the leaves
     of the hierarchy, each with its level and its indices in that level. Level 0 may
     consist of several elements per direction (the research code has one per patch);
     its knots are then assumed uniform in [0,1].
@@ -61,6 +62,13 @@ gsVector<> unit(const gsVector<> & v)
 }
 
 struct Box { index_t level, x0, y0, x1, y1; };
+
+// a file that cannot be opened (e.g. a path beyond the 260 characters of Windows) is an error
+void openOut(std::ofstream & f, const std::string & name)
+{
+    f.open(name.c_str());
+    GISMO_ENSURE(f.is_open(), "Cannot write " << name);
+}
 }
 
 int main(int argc, char * argv[])
@@ -121,14 +129,15 @@ int main(int argc, char * argv[])
     out << std::setprecision(12);
 
     // _mesh_meta.txt
-    out.open((prefix + "_mesh_meta.txt").c_str());
+    openOut(out, prefix + "_mesh_meta.txt");
     out << "# Mesh metadata for Python visualization\n" << "degree " << degree << "\n";
     out.close();
 
     // _boxes.txt and _boxes_phys.txt
-    std::ofstream phys((prefix + "_boxes_phys.txt").c_str());
+    std::ofstream phys;
+    openOut(phys, prefix + "_boxes_phys.txt");
     phys << std::setprecision(12);
-    out.open((prefix + "_boxes.txt").c_str());
+    openOut(out, prefix + "_boxes.txt");
     out << "# Box structure in parameter space [0,1]x[0,1]\n" << "# Format: patch level u0 v0 u1 v1 ix0 iy0 ix1 iy1\n";
     phys << "# Box physical corners\n" << "# Format: patch level x0 y0 x1 y1 x2 y2 x3 y3  (corners: sw se ne nw)\n";
     for (index_t p = 0; p != nP; ++p)
@@ -151,7 +160,7 @@ int main(int argc, char * argv[])
     phys.close();
 
     // _patch_meta.txt: centre, unit Jacobian columns, det J at (0.5, 0.5)
-    out.open((prefix + "_patch_meta.txt").c_str());
+    openOut(out, prefix + "_patch_meta.txt");
     out << "# Patch visualization metadata\n"
         << "# Format: patch mirrored jac_det center_x center_y u_dir_x u_dir_y v_dir_x v_dir_y\n";
     for (index_t p = 0; p != nP; ++p)
@@ -168,7 +177,7 @@ int main(int argc, char * argv[])
     out.close();
 
     // _interface_meta.txt
-    out.open((prefix + "_interface_meta.txt").c_str());
+    openOut(out, prefix + "_interface_meta.txt");
     out << "# Interface visualization metadata\n"
         << "# Format: patchA patchB sideA sideB reversed mirroredA mirroredB gap xA yA tanAx tanAy xB yB tanBx tanBy\n";
     for (const Iface & f : ifaces)
@@ -239,7 +248,7 @@ int main(int argc, char * argv[])
             lineDir.push_back(e.second.direction() == 0 ? 'v' : 'u');
         }
     }
-    out.open((prefix + ".txt").c_str());
+    openOut(out, prefix + ".txt");
     out << "# Visualization Mesh\n" << "# Format: x y patch_id direction\n"
         << "# Blank line separates different grid lines\n" << "# Total lines: " << uvLines.size() << "\n\n";
     for (size_t k = 0; k != uvLines.size(); ++k)

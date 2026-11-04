@@ -1,5 +1,5 @@
 """Draw the line file of export_visualization_mesh (<prefix>.txt: "x y patch dir" per point,
-blank line between lines) without the heuristics of experiment_plan/viz/main.py.
+blank line between lines) without the heuristics of viz_main.py.
 
 usage: py draw_lines.py <out.png> "<title>" <prefix.txt> [<prefix.txt> ...]  (one panel per file;
        a panel title may be given as path=title)
